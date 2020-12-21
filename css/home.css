@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@350&display=swap');
 
 html, body {
 	margin: 0;
@@ -6,19 +6,30 @@ html, body {
 }
 #panel {
 	display: flex;
-	background-color: #3d71ff;
-	padding: 30px;
-}
-
-.logo-div {
-	background:  rgb(0,0,0,0);
-	width: 200px;
-	border-radius: 500px;
+	align-items: center;
+	background: white;
+	padding: 20px;
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	border-bottom: 3px solid;
+    border-image-source: linear-gradient(to top right, dodgerblue, mediumspringgreen);
+	border-image-slice: 60 30;
+	top: 0;
+	z-index: 1;
+	/*box-shadow: 0px 0px 10px rgb(105, 105, 105);*/
 }
 
 .name {
+	text-transform: uppercase;
 	flex: 1;
-	color: white;
-	font-size: 50px;
+	color: black;
+	font-size: 30px;
 	font-family: "Work Sans";
+	margin-left: 10px;
 }
+
+
+
+
+
