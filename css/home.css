@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@350&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 html, body {
 	margin: 0;
@@ -17,7 +18,7 @@ html, body {
 	border-image-slice: 60 30;
 	top: 0;
 	z-index: 1;
-	/*box-shadow: 0px 0px 10px rgb(105, 105, 105);*/
+	box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
 .name {
@@ -28,8 +29,76 @@ html, body {
 	font-family: "Work Sans";
 	margin-left: 10px;
 }
+#titleimage {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	filter: brightness(50%);
+}
 
+#titletext {
+	position: absolute; 
+	top: 50%; 
+	margin-left: auto; 
+	margin-right: auto;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+#titletextleft {
+	display: flex;
+	align-items: center;
+}
 
+#titlelogoimage {
+	background-attachment: fixed;
+}
 
+#titletextname {
+	text-transform: uppercase;
+	color: white;
+	font-family: "Work Sans";
+	font-size: 120px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+#titletextslogan {
+	color: white;
+	font-family: "Work Sans";
+	font-size: 30px;
+}
+
+#scrolldown {
+	background: white;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 95%; 
+	left: 50%;
+	-ms-transform: translate(-95%, -50%);
+	transform: translate(-95%, -50%);
+	border-radius: 100%;
+	outline: none; 
+	border: none;
+	box-shadow: 0px 0px 30px rgb(36, 36, 36);
+	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 4px solid white;
+	font-family: "Orbitron";
+	font-weight: bold;
+	transition: border .5s;
+}
+
+#scrolldown:hover {
+	border: 4px solid mediumspringgreen;
+}
 
 
