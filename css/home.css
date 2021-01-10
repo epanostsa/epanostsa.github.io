@@ -114,15 +114,15 @@ a {
 }
 
 
-.appointment-description, .bot-description {
+#appointment-description, #bot-description {
 	display: flex; justify-content: center; align-items: center;
 	height: 700px; background: whitesmoke;
 }
-.bot-description {
+#bot-description {
 	background: #576178ff; top: 0;
 }
 
-.appointment-header, .bot-header {
+#appointment-header, #bot-header {
 	font-size: 35px;
 	font-family: 'Nunito';
 	border-bottom: 4px solid;
@@ -132,27 +132,27 @@ a {
 	padding-bottom: 10px;
 	font-weight: bold;
 }
-.bot-header {
+#bot-header {
 	color: white;
 	border-bottom: 4px solid;
     border-image-source: linear-gradient(to right, rgb(165, 186, 235), #ffffff);
 	border-image-slice: 60 30;
 }
 
-.appointment-paragraph, .bot-paragraph {
+#appointment-paragraph, #bot-paragraph {
 	margin-top: 15px;
 	font-family: 'Nunito';
 	font-size: 20px;
 	width: 500px;
 }
-.bot-paragraph {
+#bot-paragraph {
 	color: white
 }
 
 .appointment-image {
 	margin-left: 100px;
 }
-.bot-image {
+#bot-image {
 	margin-right: 100px;
 }
 
