@@ -215,7 +215,8 @@ a {
 
 #newsletter {
 	background: #3b4252ff; 
-	font-family: "Nunito"; 
+	font-family: "Nunito";
+	height: 900px;
 	text-align: center; 
 	padding-top: 50px;
 }
@@ -234,23 +235,23 @@ a {
 }
 #newsletter-articles {
 	display: flex; 
-	align-items: center; 
 	justify-content: center;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .newsletter-article {
-	width: 400px; 
-	background: white; 
-	height: 700px; 
+	width: 350px; 
+	background: white;
+	padding-bottom: 20px;
+	height: 500px; 
 	margin-left: 10px;
 	border-radius: 20px; 
 	margin-right: 10px; 
-	margin-bottom: 1000px;
+	margin-bottom: 200px;
 	box-shadow: 0 25px 50px rgba(0, 0, 0, 0.438);
 }
 .newsletter-article-image {
-	width: 400px; 
-	height: 400px; 
+	width: 350px; 
+	height: 200px; 
 	object-fit: cover; 
 	border-top-left-radius: 20px; 
 	border-top-right-radius: 20px;
@@ -282,6 +283,7 @@ a {
 	font-size: 20px;
 	color: #ffffff;
 	background: #3b4252ff;
+	border: none;
 	border-radius: 5px;
 	transition: 0.3s;
 	cursor: pointer;
@@ -294,5 +296,36 @@ a {
 	box-shadow: 3px 3px 3px rgb(161, 161, 161);
 }
 
+#contact {
+	background: whitesmoke; 
+	font-family: "Nunito";
+	height: 350px;
+	margin-top: 50px;
+	padding-top: 50px;
+}
+
+#contact-header {
+	background: whitesmoke; 
+	font-family: "Nunito";
+	font-size: 40px;
+	margin-left: 100px;
+	color: #2E3440;
+	font-weight: bold;
+}
+
+.social-media-label {
+	margin-left:30px;
+}
+
+.social-media-image {
+	width: 25px;
+}
+
+#contact-info {
+	line-height: 3;
+	font-size: 15px;
+	margin-left: 100px;
+	font-family: Nunito;
+}
 
 
