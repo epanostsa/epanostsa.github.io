@@ -11,9 +11,12 @@
     <img height="50" width="auto" src="https://imgur.com/sOQ5TCf.png">
     <p class="name">Epanos</p>
     <a href='' style="margin-left: 20px" class="tab">Home</a> <span class='grey'>│</span>
-    <a href='' class="tab">Self Diagnosis</a> <span class='grey'>│</span>
-    <a href='' class="tab">Schedule meeting</a> <span class='grey'>│</span>
-    <a href='' class="tab">Doctors</a> <span class='grey'>│</span>
+    <a href='javascript:goToSection("appointment-description")' class="tab">Appointments</a> <span class='grey'>│</span>
+    <a href='javascript:goToSection("bot-description")' class="tab">Assistant</a> <span class='grey'>│</span>
+    <a href='javascript:goToSection("doctor-description")' class="tab">Doctors</a> <span class='grey'>│</span>
+    <a href='javascript:goToSection("diagnosis-description")' class="tab">Diagnosis</a> <span class='grey'>│</span>
+    <a href='javascript:goToSection("newsletter")' class="tab">Newsletter</a> <span class='grey'>│</span>
+    <a href='javascript:goToSection("contact")' class="tab">Contact</a> <span class='grey'>│</span>
     <a href='' class="tab">About</a>
     <div id="other">
       <a href='' class="right-tab">Project</a>
@@ -25,7 +28,6 @@
   <div id="titletext">
     <img width="100%" id="wavy" src="https://cdn.discordapp.com/attachments/769383711379816539/795735266027372566/transparent-curve-homebanner.png">
     <div id="titletextleft">
-      <img height="125" width="auto" id="titlelogoimage"src="https://imgur.com/sOQ5TCf.png">
       <p id="titletextname">Epanos<span>│</span></p>
     </div>
     <p id="titletextslogan">Healthcare at<br>your fingertips</p>
@@ -51,7 +53,7 @@
     <div id="bot-right">
       <div id="bot-header">Virtual Assistant</div>
       <div id="bot-paragraph">
-        A virtual assistant could be helpful but ours is just a fake bot that doesn’t actually read what you put and just gives a random list of diseases. So either way, you have common cold or you have skin cancer. This is not a reliable bot so I do not suggest using it to do anything with so don’t actually use it to diagnose yourself. Anyways, the paragraph is almost at its necessary length to make it look real and like it’s an actual description.
+        This site features a virtual assistant that can help you navigate through all of Epanos’s features. You can chat with the bot to make it even easier to find doctors and schedule appointments. It can even answer some basic medical questions! All of Epanos will be at your fingertips.
       </div>
       <a href='' id="bot-button">Chat</a>
     </div>
@@ -61,7 +63,7 @@
     <div id="doctor-left">
       <div id="doctor-header">Doctors</div>
       <div id="doctor-paragraph">
-        Our Doctors page consists of thousands of medical professionals and we guarantee that our list includes at least one medical professional of a specific medical subfield. The doctors on the list are people from all over the world that are trying to medically care for patients in need. Each of our doctors profiles have all of the necessary information that our patients may need. This information may include genuine ratings, years of experience, full name, and personal emails. 
+        Epanos features a myriad of doctors and specialists. You will always find one that suits your needs. Every doctor has a bio where you can find out about their qualifications and background. Contact details can then be found, and an appointment can be made. Choosing a new doctor has been made simple.
       </div>
       <a href='' id="doctor-button">See Doctors</a>
     </div>
@@ -73,7 +75,7 @@
     <div id="diagnosis-right">
       <div id="diagnosis-header">Diagnosis</div>
       <div id="diagnosis-paragraph">
-        A virtual assistant could be helpful but ours is just a fake bot that doesn’t actually read what you put and just gives a random list of diseases. So either way, you have common cold or you have skin cancer. This is not a reliable bot so I do not suggest using it to do anything with so don’t actually use it to diagnose yourself. Anyways, the paragraph is almost at its necessary length to make it look real and like it’s an actual description.
+        With appointments happening through video calls, it can be difficult to get an accurate assessment of your health. However, with Epanos, you can be just as sure of your health as before. During your appointments, your doctor can send a questionnaire that will help determine and illness you might have. Your doctor can walk you through any tests you can carry out yourself, and will identify if something can only be determined by an in-person visit. Diagnosis can still be effective online.
       </div>
       <a href='' id="diagnosis-button">Diagnosis</a>
     </div>
@@ -105,15 +107,28 @@
 
   <div id="contact">
     <p id="contact-header">Contact Us</p>
-    <p id="contact-info">
-      <img class="social-media-image" src="https://iconsplace.com/wp-content/uploads/_icons/000000/256/png/phone-icon-256.png"><span class="social-media-label">Call us at 012-345-6789</span>
-      <br><img class="social-media-image" src="https://assets.stickpng.com/images/5ecec78673e4440004f09e77.png"><span class="social-media-label">@epanoshealth</span>
-      <br><img class="social-media-image"  src="https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png"><span class="social-media-label">@epanoshealth</span>
+    <div id="contact-info">
+      <div style="flex:1">
+        <img class="social-media-image" src="https://iconsplace.com/wp-content/uploads/_icons/000000/256/png/phone-icon-256.png">
+        <br><span class="social-media-label">Call us at 012-345-6789</span>
+      </div>
+      <div style="flex:1">
+        <img class="social-media-image" src="https://assets.stickpng.com/images/5ecec78673e4440004f09e77.png">
+        <br><span class="social-media-label">@epanoshealth</span>
+      </div>
+      <div style="flex:1">
+        <img class="social-media-image" src="https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png">
+        <br><span class="social-media-label">@epanoshealth</span>
+      </div>
+      <div style="flex:1">
+        <img class="social-media-image" src="https://www.oogazone.com/wp-content/uploads/2019/02/top-black-twitter-clipart-image.jpg">
+        <br><span class="social-media-label">@epanoshealth</span>
+      </div>
     </p>
   </div>
 
 
-  <script>
-  </script>
+  <script src="js/assistant.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>

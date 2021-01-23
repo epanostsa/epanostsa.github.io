@@ -29,7 +29,7 @@ a {
 	padding-right: 10px;
 	margin-right: 1px;
 	margin-left: 1px;
-	font-size: 20px;
+	font-size: 17px;
 	background: transparent;
 	border-radius: 5px;
 	transition: 0.3s;
@@ -305,27 +305,41 @@ a {
 }
 
 #contact-header {
+	border-bottom: 4px solid;
+    border-image-source: linear-gradient(to right,#2E3440,#4C566A);
+	border-image-slice: 60 30;
+	padding-bottom:20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	text-align: center;
 	background: whitesmoke; 
 	font-family: "Nunito";
 	font-size: 40px;
-	margin-left: 100px;
-	color: #2E3440;
+	color: black;
 	font-weight: bold;
 }
 
 .social-media-label {
-	margin-left:30px;
+	font-family: "Nunito";
+	font-weight: bold;
+	text-align: center;
 }
 
 .social-media-image {
-	width: 25px;
+	width: 100px;
 }
 
 #contact-info {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 	line-height: 3;
 	font-size: 15px;
-	margin-left: 100px;
 	font-family: Nunito;
+	width: 1000px;
+	display: flex;
 }
 
 
