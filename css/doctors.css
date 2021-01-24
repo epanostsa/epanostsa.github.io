@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@350&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #3b4252ff;
+}
+
+a {
+    text-decoration: none;
+}
+.grey {
+    color: grey; /* xP */
+}
+
+#other {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.tab {
+    color: black;
+    font-family: 'Nunito';
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 1px;
+    margin-left: 1px;
+    font-size: 17px;
+    background: transparent;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.tab:hover {
+    color: #ffffff;
+    background: #3b4252ff;
+}
+
+.right-tab {
+    font-family: 'Nunito';
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 1px;
+    margin-left: 1px;
+    font-size: 20px;
+    color: #ffffff;
+    background: #3b4252ff;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px rgb(161, 161, 161);
+}
+
+.right-tab:hover {
+    color: #ffffff;
+    background: rgb(45, 50, 61);
+    box-shadow: 3px 3px 3px rgb(161, 161, 161);
+}
+
+.spacer {
+    width: 10px;
+}
+
+#panel {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 8;
+    box-shadow: 0px 0px 15px rgb(63, 63, 63);
+}
+
+.name {
+    text-transform: uppercase;
+    color: black;
+    font-size: 30px;
+    font-family: "Nunito";
+    margin-left: 10px;
+}
+
+#wave {
+    position: absolute; 
+    z-index: 0;
+    height: 80vh;
+    width: 100%;
+}
+
+#titlearea {
+    position: absolute; 
+    display: flex; 
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 90%;
+}
+
+#titletitle {
+    font-family: "Nunito";
+    color: #3b4252ff;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+#doctorsections {
+    font-family: "Nunito";
+
+}
+
+.doctorbox {
+    width: 60vw;
+    background: white;
+    display: flex;
+    border-radius: 40px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; margin-right: auto;
+    padding-left: 35px; padding-right: 40px;
+}
+.doctorimage {
+    width: 250px; height: 250px;
+    background-position: top;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.doctortext {
+    margin-left: 40px;
+}
+.doctorname {
+    font-size: 45px;
+    font-weight: bold;
+    color: #3b4252ff;
+}
+.doctorfield {
+    font-size: 25px; 
+    position: absolute;
+    margin-top: -45px; 
+}
+.doctordescription {
+    font-size: 20px; 
+}
+.doctorspacer {
+    color: white;
+    font-size: 1px;
+}
+
+#contact {
+    background: whitesmoke; 
+    font-family: "Nunito";
+    height: 350px;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+#contact-header {
+    border-bottom: 4px solid;
+    border-image-source: linear-gradient(to right,#2E3440,#4C566A);
+    border-image-slice: 60 30;
+    padding-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    text-align: center;
+    background: whitesmoke; 
+    font-family: "Nunito";
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+.social-media-label {
+    font-family: "Nunito";
+    font-weight: bold;
+    text-align: center;
+}
+
+.social-media-image {
+    width: 100px;
+}
+
+#contact-info {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 3;
+    font-size: 15px;
+    font-family: Nunito;
+    width: 1000px;
+    display: flex;
+}
