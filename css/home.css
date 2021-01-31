@@ -382,7 +382,7 @@ a {
 	}
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1081) {
 	#tabs {
 		display: none;
 	}
