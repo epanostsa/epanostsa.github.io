@@ -27,3 +27,9 @@ function showPanel() {
         }, 5);
     }
 };
+
+setInterval(() => {
+    if (document.body.clientWidth > 900) {
+        document.getElementById("tabs").style.display = "none";
+    }
+}, 100)

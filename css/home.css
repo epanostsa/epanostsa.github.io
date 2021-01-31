@@ -343,7 +343,7 @@ a {
 }
 
 #tabs {
-	height: 0px;
+	display: none;
 	overflow: hidden;
 }
 
@@ -358,8 +358,12 @@ a {
 }
 
 @media only screen and (max-width: 900px) {
+	#tabs2 {
+		display: none;
+	}
 	#tabs {
 		opacity: 1;
+		height: 0px;
 		text-align: center;
 		position: fixed;
 		top: 60px;
@@ -375,5 +379,11 @@ a {
 	#show-panel-button {
 		margin-left: 10px;
 		display: inline;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	#tabs {
+		display: none;
 	}
 }
