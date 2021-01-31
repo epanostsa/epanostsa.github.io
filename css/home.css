@@ -361,6 +361,7 @@ a {
 	#tabs2 {
 		display: none;
 	}
+
 	#tabs {
 		opacity: 1;
 		height: 0px;
@@ -373,6 +374,8 @@ a {
 		width: 100%;
 		line-height: 4;
 	}
+
+	.tab { font-size: 25px; }
 
 	.grey { display: none }
 
