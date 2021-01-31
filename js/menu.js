@@ -9,7 +9,7 @@ function goToSection(id) {
 function hidePanel() {
     var rollUp = setInterval(() => {
         if (document.getElementById("tabs").clientHeight > 0) {
-            document.getElementById("tabs").style.height = document.getElementById("tabs").clientHeight - 5 + 'px';
+            document.getElementById("tabs").style.height = document.getElementById("tabs").clientHeight - 10 + 'px';
         } else {
             document.getElementById("tabs").style.display = "none";
             clearInterval(rollUp)
@@ -22,7 +22,7 @@ function showPanel() {
         document.getElementById("tabs").style.display = "inline";
         var rollDown = setInterval(() => {
             if (document.getElementById("tabs").clientHeight < 200) {
-                document.getElementById("tabs").style.height = document.getElementById("tabs").clientHeight + 5 + 'px';
+                document.getElementById("tabs").style.height = document.getElementById("tabs").clientHeight + 10 + 'px';
             } else {
                 clearInterval(rollDown);
             }
