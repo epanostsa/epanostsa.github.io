@@ -342,4 +342,38 @@ a {
 	display: flex;
 }
 
+#tabs {
+	height: 0px;
+	overflow: hidden;
+}
 
+#show-panel-button {
+	display: none;
+	transition: opacity 0.5s;
+}
+
+#show-panel-button:hover {
+	background: none;
+	opacity: 0.3;
+}
+
+@media only screen and (max-width: 900px) {
+	#tabs {
+		opacity: 1;
+		text-align: center;
+		position: fixed;
+		top: 60px;
+		left: 0;
+		display: none;
+		background-color: white;
+		width: 100%;
+		line-height: 4;
+	}
+
+	.grey { display: none }
+
+	#show-panel-button {
+		margin-left: 10px;
+		display: inline;
+	}
+}
