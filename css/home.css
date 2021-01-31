@@ -357,7 +357,7 @@ a {
 	opacity: 0.3;
 }
 
-@media only screen and (max-width: 1081px) {
+@media only screen and (max-width: 900px) {
 	#tabs2 {
 		display: none;
 	}
@@ -382,7 +382,7 @@ a {
 	}
 }
 
-@media screen and (min-width: 1081) {
+@media screen and (min-width: 900) {
 	#tabs {
 		display: none;
 	}
