@@ -6,10 +6,21 @@ function goToSection(id) {
     }
 }
 
+function hidePanel() {
+    var rollUp = setInterval(() => {
+        if (document.getElementById("tabs").clientHeight > 0) {
+            document.getElementById("tabs").style.height = document.getElementById("tabs").clientHeight - 5 + 'px';
+        } else {
+            document.getElementById("tabs").style.display = "none";
+            clearInterval(rollUp)
+        }
+    }, 5);
+}
+
 function showPanel() {
     if (document.getElementById("tabs").style.display == "none" || document.getElementById("tabs").style.display == "") {
         document.getElementById("tabs").style.display = "inline";
-       var rollDown = setInterval(() => {
+        var rollDown = setInterval(() => {
             if (document.getElementById("tabs").clientHeight < 150) {
                 document.getElementById("tabs").style.height = document.getElementById("tabs").clientHeight + 5 + 'px';
             } else {
@@ -17,16 +28,15 @@ function showPanel() {
             }
         }, 5);
     } else {
-        var rollUp = setInterval(() => {
-            if (document.getElementById("tabs").clientHeight > 0) {
-                document.getElementById("tabs").style.height = document.getElementById("tabs").clientHeight - 5 + 'px';
-            } else {
-                document.getElementById("tabs").style.display = "none";
-                clearInterval(rollUp)
-            }
-        }, 5);
+        hidePanel();
     }
 };
+
+document.addEventListener('click', (event) => {
+    if (event.y > 200 && document.getElementById("tabs").style.display == "inline") {
+        hidePanel();
+    }
+})
 
 setInterval(() => {
     if (document.body.clientWidth > 900) {
