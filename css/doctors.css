@@ -199,3 +199,54 @@ a {
     width: 1000px;
     display: flex;
 }
+
+/* mobile friendliness stuff */
+
+#tabs {
+	display: none;
+	overflow: hidden;
+}
+
+#show-panel-button {
+	display: none;
+	transition: opacity 0.5s;
+}
+
+#show-panel-button:hover {
+	background: none;
+	opacity: 0.3;
+}
+
+@media only screen and (max-width: 900px) {
+	#tabs2 {
+		display: none;
+	}
+
+	#tabs {
+		opacity: 1;
+		height: 0px;
+		text-align: center;
+		position: fixed;
+		top: 60px;
+		left: 0;
+		display: none;
+		background-color: white;
+		width: 100%;
+		line-height: 4;
+	}
+
+	.tab { font-size: 25px; }
+
+	.grey { display: none }
+
+	#show-panel-button {
+		margin-left: 10px;
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 900) {
+	#tabs {
+		display: none;
+	}
+}
