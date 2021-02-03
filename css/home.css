@@ -94,6 +94,7 @@ a {
 	z-index: 0;
 	position: absolute;
 	top: 0;
+	left: 0;
 	width: 100%;
 	height: 520px;
 	filter: brightness(200%);
@@ -299,7 +300,7 @@ a {
 #contact {
 	background: whitesmoke; 
 	font-family: "Nunito";
-	height: 350px;
+	height: fit-content;
 	margin-top: 50px;
 	padding-top: 50px;
 }
@@ -357,9 +358,73 @@ a {
 	opacity: 0.3;
 }
 
+.social-media-section {
+	flex: 1;
+}
+
 @media only screen and (max-width: 900px) {
+	body {
+		position: relative;
+		left: 0px;
+	}
+
+	#titletextname {
+		font-size: 40px;
+	}
+
+	#titletextslogan {
+		font-size: 15px;
+	}
+
+	#titletext {
+		top: 200px;
+	}
+	
+	#wavy {
+		height: 300px;
+		top: -100px;
+	}
+
+	#titleimage {
+		height: 350px;
+	}
+
 	#tabs2 {
 		display: none;
+	}
+	
+	#appointment-paragraph, #bot-paragraph, #doctor-paragraph, #diagnosis-paragraph {
+		font-size: 18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 92%;
+		text-align: center;
+	}
+
+	#appointment-image, #doctor-image, #bot-image, #diagnosis-image {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 480px;
+		width: 200px;
+		height: 200px;
+	}
+
+	.social-media-image {
+		width: 40px;
+		height: 40px;
+	}
+
+	#contact-info {
+		display: block;
+		width: auto;
+	}
+
+	.social-media-section {
+		text-align: center;
+		width: fit-content;
+		margin-right: auto;
+		margin-left: auto;
 	}
 
 	#tabs {
@@ -375,7 +440,55 @@ a {
 		line-height: 4;
 	}
 
-	.tab { font-size: 25px; }
+	#appointment-header, #doctor-header, #diagnosis-header, #bot-header, #newsletter-header, #contact-header {
+		margin-top: 80px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	#newsletter-articles {
+		display: block;
+	}
+
+	.newsletter-article {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -180px;
+	}
+
+	#newsletter {
+		height: 1800px;
+	}
+
+	#first-article {
+		margin-top: 20px;
+	}
+
+	#diagnosis-image {
+		margin-bottom: 540px;
+	}
+	#diagnosis-description {
+		height: 750px;
+	}
+
+	#appointment-button, #bot-button, #doctor-button, #diagnosis-button {
+		left: 0;
+		right: 0;
+		width: fit-content;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#appointment-description {
+		position: relative;
+		top: -220px;
+	}
+
+	.tab { font-size: 17px; }
 
 	.grey { display: none }
 
