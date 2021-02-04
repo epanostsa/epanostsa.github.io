@@ -150,6 +150,11 @@ a {
 	display: flex; justify-content: center; align-items: center;
 	height: 700px; background: whitesmoke;
 }
+
+#appointment-description {
+	margin-top: 750px;
+}
+
 #bot-description, #diagnosis-description {
 	background: #576178ff; top: 0;
 }
@@ -368,6 +373,10 @@ a {
 		left: 0px;
 	}
 
+	#appointment-description {
+		margin-top: 450px;
+	}
+
 	#titletextname {
 		font-size: 40px;
 	}
@@ -405,7 +414,7 @@ a {
 		position: absolute;
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 480px;
+		margin-top: -480px;
 		width: 200px;
 		height: 200px;
 	}
@@ -467,9 +476,6 @@ a {
 		margin-top: 20px;
 	}
 
-	#diagnosis-image {
-		margin-bottom: 540px;
-	}
 	#diagnosis-description {
 		height: 750px;
 	}
@@ -485,7 +491,6 @@ a {
 
 	#appointment-description, #bot-description, #doctor-description, #diagnosis-description, #newsletter, #contact {
 		position: relative;
-		top: -220px;
 	}
 
 	.tab { font-size: 17px; }
