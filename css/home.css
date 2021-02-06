@@ -11,15 +11,6 @@ html, body {
 a {
 	text-decoration: none;
 }
-.grey {
-	color: grey; /* xP */
-}
-
-#other {
-	flex: 1;
-	text-align: right;
-	padding-right: 30px;
-}
 
 .tab {
 	color: black;
@@ -113,8 +104,12 @@ a {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-
 }
+
+#appointment-image-m, #bot-image-m, #diagnosis-image-m, #doctor-image-m {
+	display: none;
+}
+
 #titletextleft {
 	display: flex;
 	align-items: center;
@@ -192,6 +187,7 @@ a {
 #appointment-image, #doctor-image {
 	margin-left: 60px;
 }
+
 #bot-image, #diagnosis-image {
 	margin-right: 60px;
 }
@@ -367,144 +363,4 @@ a {
 	flex: 1;
 }
 
-@media only screen and (max-width: 900px) {
-	body {
-		position: relative;
-		left: 0px;
-	}
 
-	#appointment-description {
-		margin-top: 450px;
-	}
-
-	#titletextname {
-		font-size: 40px;
-	}
-
-	#titletextslogan {
-		font-size: 15px;
-	}
-
-	#titletext {
-		top: 200px;
-	}
-	
-	#wavy {
-		height: 300px;
-		top: -100px;
-	}
-
-	#titleimage {
-		height: 350px;
-	}
-
-	#tabs2 {
-		display: none;
-	}
-	
-	#appointment-paragraph, #bot-paragraph, #doctor-paragraph, #diagnosis-paragraph {
-		font-size: 18px;
-		margin-left: auto;
-		margin-right: auto;
-		width: 92%;
-		text-align: center;
-	}
-
-	#appointment-image, #doctor-image, #bot-image, #diagnosis-image {
-		position: absolute;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: -480px;
-		width: 200px;
-		height: 200px;
-	}
-
-	.social-media-image {
-		width: 40px;
-		height: 40px;
-	}
-
-	#contact-info {
-		display: block;
-		width: auto;
-	}
-
-	.social-media-section {
-		text-align: center;
-		width: fit-content;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	#tabs {
-		opacity: 1;
-		height: 0px;
-		text-align: center;
-		position: fixed;
-		top: 60px;
-		left: 0;
-		display: none;
-		background-color: white;
-		width: 100%;
-		line-height: 4;
-	}
-
-	#appointment-header, #doctor-header, #diagnosis-header, #bot-header, #newsletter-header, #contact-header {
-		margin-top: 80px;
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		font-size: 25px;
-	}
-
-	#newsletter-articles {
-		display: block;
-	}
-
-	.newsletter-article {
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: -180px;
-	}
-
-	#newsletter {
-		height: 1800px;
-	}
-
-	#first-article {
-		margin-top: 20px;
-	}
-
-	#diagnosis-description {
-		height: 750px;
-	}
-
-	#appointment-button, #bot-button, #doctor-button, #diagnosis-button {
-		left: 0;
-		right: 0;
-		width: fit-content;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	#appointment-description, #bot-description, #doctor-description, #diagnosis-description, #newsletter, #contact {
-		position: relative;
-	}
-
-	.tab { font-size: 17px; }
-
-	.grey { display: none }
-
-	#show-panel-button {
-		margin-left: 10px;
-		display: inline;
-	}
-}
-
-@media screen and (min-width: 900) {
-	#tabs {
-		display: none;
-	}
-}

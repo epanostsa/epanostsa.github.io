@@ -1,0 +1,217 @@
+.m {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+	body {
+		position: relative;
+		left: 0px;
+	}
+
+	#appointment-description {
+        text-align: center;
+		margin-top: 450px;
+	}
+
+	#titletextname {
+		font-size: 40px;
+	}
+
+	#titletextslogan {
+		font-size: 15px;
+	}
+
+	#titletext {
+		top: 200px;
+	}
+	
+	#wavy {
+		height: 300px;
+		top: -100px;
+	}
+
+	#titleimage {
+		height: 350px;
+	}
+
+	#tabs2 {
+		display: none;
+	}
+	
+	#appointment-paragraph, #bot-paragraph, #doctor-paragraph, #diagnosis-paragraph {
+		font-size: 18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 92%;
+		text-align: center;
+	}
+
+    #appointment-image, #bot-image, #diagnosis-image, #doctor-image, #about-main-image {
+        display: none;
+    }
+
+    #appointment-image-m, #bot-image-m, #diagnosis-image-m, #doctor-image-m {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+	.social-media-image {
+		width: 40px;
+		height: 40px;
+	}
+
+	#contact-info {
+		display: block;
+		width: auto;
+	}
+
+	.social-media-section {
+		text-align: center;
+		width: fit-content;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#tabs {
+		opacity: 1;
+		height: 0px;
+		text-align: center;
+		position: fixed;
+		top: 60px;
+		left: 0;
+		display: none;
+		background-color: white;
+		width: 100%;
+		line-height: 4;
+	}
+
+	#appointment-header, #doctor-header, #diagnosis-header, #bot-header, #newsletter-header, #contact-header {
+		margin-top: 20px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	#newsletter-articles {
+		display: block;
+	}
+
+	.newsletter-article {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -180px;
+	}
+
+	#newsletter {
+		height: 1800px;
+	}
+
+	#first-article {
+		margin-top: 20px;
+	}
+
+	#diagnosis-description {
+		height: 750px;
+	}
+
+	#appointment-button, #bot-button, #doctor-button, #diagnosis-button {
+		left: 0;
+		right: 0;
+		width: fit-content;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#appointment-description, #bot-description, #doctor-description, #diagnosis-description, #newsletter, #contact {
+		position: relative;
+	}
+
+	.tab { font-size: 17px; }
+
+	.grey { display: none }
+
+	#show-panel-button {
+		margin-left: 10px;
+		display: inline;
+	}
+
+    #titletitle {
+        font-size: 50px;
+        margin-top: 100px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    #about-main-image-m {
+        width: 100%;
+        left: 0;
+        height: auto;
+        display: block;
+    }
+
+    #about-main-left {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #about-main-title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-main {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 400px;
+    }
+
+    #about-main-paragraph {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+
+    #wave {
+        top: 80px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 300px) { /* literally just for the galaxy fold */
+    #appointment-description, #bot-description, #doctor-description, #diagnosis-description {
+        height: 850px;
+    }
+
+    #wave {
+        height: 350px;
+    }
+
+    .newsletter-article-image {
+        width: 100%;
+    }
+
+    .newsletter-article-header {
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .newsletter-article {
+        width: calc(100% - 10px);
+    }
+
+}
+
+@media screen and (min-width: 900) {
+	#tabs {
+		display: none;
+	}
+}

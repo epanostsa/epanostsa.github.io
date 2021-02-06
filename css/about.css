@@ -6,14 +6,20 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: #3b4252ff;
+    background: white;
 }
 
 a {
     text-decoration: none;
 }
 .grey {
-    color: grey;
+    color: grey; /* xP */
+}
+
+#other {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
 }
 
 .tab {
@@ -88,70 +94,61 @@ a {
     width: 100%;
 }
 
+#about-main-image-m {
+    display: none;
+}
+
 #titlearea {
     position: absolute; 
     display: flex; 
     z-index: 1;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    width: 90%;
+    margin-top: 50px;
+    width: 100%;
+    margin-left: auto; margin-right: auto;
+    
 }
 
 #titletitle {
     font-family: "Nunito";
-    color: #3b4252ff;
+    color: white;
     font-size: 100px;
     font-weight: bold;
+    border-bottom: 5px solid;
+    border-image-source: linear-gradient(to right, white, #aabeec);
+    border-image-slice: 60 30;
+    border-left: 5px solid white;
+    padding-left: 40px; padding-bottom: 40px; padding-right: 80px; padding-top: 40px;
 }
 
-#doctorsections {
-    font-family: "Nunito";
-
-}
-
-.doctorbox {
-    width: 60vw;
-    background: white;
+#about-main {
+    margin-top: 85vh;
     display: flex;
-    border-radius: 40px;
-    height: 300px;
-    align-items: center;
     justify-content: center;
-    margin-left: auto; margin-right: auto;
-    padding-left: 35px; padding-right: 40px;
+    align-items: center;
+    font-family: "Nunito";
+    width: 100%;
 }
-.doctorimage {
-    width: 250px; height: 250px;
-    background-position: top;
-    object-fit: cover;
-    border-radius: 100%;
+#about-main-left {
+    width: 600px;
+    margin-right: 50px;
 }
-.doctortext {
-    margin-left: 40px;
+#about-main-title {
+    border-bottom: 4px solid;
+    border-image-source: linear-gradient(to left, #3b4252, #aabeec);
+    border-image-slice: 60 30;
+    font-size: 35px;
+    padding-bottom: 15px;
 }
-.doctorname {
-    font-size: 45px;
-    font-weight: bold;
-    color: #3b4252ff;
-}
-.doctorfield {
-    font-size: 25px; 
-    position: absolute;
-    margin-top: -45px; 
-}
-.doctordescription {
-    font-size: 20px; 
-}
-.doctorspacer {
-    color: white;
-    font-size: 1px;
+#about-main-paragraph {
+    font-size: 20px;
 }
 
 #contact {
     background: whitesmoke; 
     font-family: "Nunito";
-    height: 350px;
+    height: fit-content;
     margin-top: 50px;
     padding-top: 50px;
 }
@@ -194,53 +191,21 @@ a {
     display: flex;
 }
 
-/* mobile friendliness stuff */
-
 #tabs {
-	display: none;
-	overflow: hidden;
+    display: none;
+    overflow: hidden;
 }
 
 #show-panel-button {
-	display: none;
-	transition: opacity 0.5s;
+    display: none;
+    transition: opacity 0.5s;
 }
 
 #show-panel-button:hover {
-	background: none;
-	opacity: 0.3;
+    background: none;
+    opacity: 0.3;
 }
 
-@media only screen and (max-width: 900px) {
-	#tabs2 {
-		display: none;
-	}
-
-	#tabs {
-		opacity: 1;
-		height: 0px;
-		text-align: center;
-		position: fixed;
-		top: 60px;
-		left: 0;
-		display: none;
-		background-color: white;
-		width: 100%;
-		line-height: 4;
-	}
-
-	.tab { font-size: 20px; }
-
-	.grey { display: none }
-
-	#show-panel-button {
-		margin-left: 10px;
-		display: inline;
-	}
-}
-
-@media screen and (min-width: 900) {
-	#tabs {
-		display: none;
-	}
+.social-media-section {
+    flex: 1;
 }
