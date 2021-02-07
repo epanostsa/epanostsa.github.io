@@ -259,7 +259,7 @@ a {
 	border-top-right-radius: 20px;
 }
 .newsletter-article-header {
-	font-size: 30px;
+	font-size: 20px;
 	border-bottom: 4px solid;
 	border-image-source: linear-gradient(to right,#2E3440,#4C566A);
 	width: 300px; 
@@ -297,70 +297,4 @@ a {
 	background: rgb(45, 50, 61);
 	box-shadow: 3px 3px 3px rgb(161, 161, 161);
 }
-
-#contact {
-	background: whitesmoke; 
-	font-family: "Nunito";
-	height: fit-content;
-	margin-top: 50px;
-	padding-top: 50px;
-}
-
-#contact-header {
-	border-bottom: 4px solid;
-    border-image-source: linear-gradient(to right,#2E3440,#4C566A);
-	border-image-slice: 60 30;
-	padding-bottom:20px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 900px;
-	text-align: center;
-	background: whitesmoke; 
-	font-family: "Nunito";
-	font-size: 40px;
-	color: black;
-	font-weight: bold;
-}
-
-.social-media-label {
-	font-family: "Nunito";
-	font-weight: bold;
-	text-align: center;
-}
-
-.social-media-image {
-	width: 100px;
-}
-
-#contact-info {
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	line-height: 3;
-	font-size: 15px;
-	font-family: Nunito;
-	width: 1000px;
-	display: flex;
-}
-
-#tabs {
-	display: none;
-	overflow: hidden;
-}
-
-#show-panel-button {
-	display: none;
-	transition: opacity 0.5s;
-}
-
-#show-panel-button:hover {
-	background: none;
-	opacity: 0.3;
-}
-
-.social-media-section {
-	flex: 1;
-}
-
 

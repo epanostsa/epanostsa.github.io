@@ -84,21 +84,21 @@ a {
 #wave {
     position: absolute; 
     z-index: 0;
-    height: 80vh;
+    height: 508px;
     width: 100%;
 }
 
-#titlearea {
+#titlearea-doctors {
     position: absolute; 
     display: flex; 
     z-index: 1;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 550px;
     width: 90%;
 }
 
-#titletitle {
+#titletitle-doctors {
     font-family: "Nunito";
     color: #3b4252ff;
     font-size: 100px;
@@ -110,8 +110,12 @@ a {
 
 }
 
+#first-doctorbox {
+    margin-top: 635px;
+}
+
 .doctorbox {
-    width: 60vw;
+    width: 820px;
     background: white;
     display: flex;
     border-radius: 40px;
@@ -137,7 +141,7 @@ a {
 }
 .doctorfield {
     font-size: 25px; 
-    position: absolute;
+    position: relative;
     margin-top: -45px; 
 }
 .doctordescription {
@@ -146,101 +150,4 @@ a {
 .doctorspacer {
     color: white;
     font-size: 1px;
-}
-
-#contact {
-    background: whitesmoke; 
-    font-family: "Nunito";
-    height: 350px;
-    margin-top: 50px;
-    padding-top: 50px;
-}
-
-#contact-header {
-    border-bottom: 4px solid;
-    border-image-source: linear-gradient(to right,#2E3440,#4C566A);
-    border-image-slice: 60 30;
-    padding-bottom:20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 900px;
-    text-align: center;
-    background: whitesmoke; 
-    font-family: "Nunito";
-    font-size: 40px;
-    color: black;
-    font-weight: bold;
-}
-
-.social-media-label {
-    font-family: "Nunito";
-    font-weight: bold;
-    text-align: center;
-}
-
-.social-media-image {
-    width: 100px;
-}
-
-#contact-info {
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    line-height: 3;
-    font-size: 15px;
-    font-family: Nunito;
-    width: 1000px;
-    display: flex;
-}
-
-/* mobile friendliness stuff */
-
-#tabs {
-	display: none;
-	overflow: hidden;
-}
-
-#show-panel-button {
-	display: none;
-	transition: opacity 0.5s;
-}
-
-#show-panel-button:hover {
-	background: none;
-	opacity: 0.3;
-}
-
-@media only screen and (max-width: 900px) {
-	#tabs2 {
-		display: none;
-	}
-
-	#tabs {
-		opacity: 1;
-		height: 0px;
-		text-align: center;
-		position: fixed;
-		top: 60px;
-		left: 0;
-		display: none;
-		background-color: white;
-		width: 100%;
-		line-height: 4;
-	}
-
-	.tab { font-size: 20px; }
-
-	.grey { display: none }
-
-	#show-panel-button {
-		margin-left: 10px;
-		display: inline;
-	}
-}
-
-@media screen and (min-width: 900) {
-	#tabs {
-		display: none;
-	}
 }
