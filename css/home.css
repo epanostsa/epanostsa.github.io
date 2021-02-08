@@ -170,10 +170,16 @@ a {
 
 #appointment-image, #doctor-image {
 	margin-left: 60px;
+	transition: transform 0.5s;
 }
 
 #bot-image, #diagnosis-image {
 	margin-right: 60px;
+	transition: transform 0.5s;
+}
+
+#appointment-image:hover, #doctor-image:hover, #bot-image:hover, #diagnosis-image:hover {
+	transform: scale(1.1, 1.1);
 }
 
 #appointment-button, #bot-button, #doctor-button, #diagnosis-button {
@@ -234,7 +240,13 @@ a {
 	margin-right: 10px; 
 	margin-bottom: 200px;
 	box-shadow: 0 25px 50px rgba(0, 0, 0, 0.438);
+	transition: transform 0.5s;
 }
+
+.newsletter-article:hover {
+	transform: scale(1.1, 1.1);
+}
+
 .newsletter-article-image {
 	width: 350px; 
 	height: 200px; 

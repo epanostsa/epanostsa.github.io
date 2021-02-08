@@ -45,6 +45,7 @@ a {
 }
 
 #panel {
+	z-index: 9999;
 	display: flex;
 	align-items: center;
 	background: white;
@@ -63,14 +64,14 @@ a {
 	height: fit-content;
 	margin-top: 50px;
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 80px;
 }
 
 #contact-header {
 	border-bottom: 4px solid;
     border-image-source: linear-gradient(to right,#2E3440,#4C566A);
 	border-image-slice: 60 30;
-	padding-bottom:20px;
+	padding-bottom: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 900px;
@@ -106,6 +107,11 @@ a {
 
 .social-media-section {
 	flex: 1;
+	transition: transform 0.5s;
+}
+
+.social-media-section:hover {
+	transform: scale(1.4, 1.4);
 }
 
 #tabs {
@@ -319,7 +325,7 @@ a {
 	}
 
 	#first-doctorbox {
-		margin-top: 450px;
+		margin-top: 10px;
 	}
 
 	.doctorname {

@@ -82,16 +82,17 @@ a {
 }
 
 #wave {
-    position: absolute; 
+    position: absolute;
     z-index: 0;
     height: 508px;
+    top: 80px;
     width: 100%;
 }
 
 #titlearea-doctors {
-    position: absolute; 
+    position: relative; 
     display: flex; 
-    z-index: 1;
+    z-index: 0;
     align-items: center;
     justify-content: center;
     height: 550px;
@@ -103,6 +104,7 @@ a {
     color: #3b4252ff;
     font-size: 100px;
     font-weight: bold;
+    z-index: 2;
 }
 
 #doctorsections {
@@ -111,7 +113,7 @@ a {
 }
 
 #first-doctorbox {
-    margin-top: 635px;
+    margin-top: 170px;
 }
 
 .doctorbox {
@@ -130,6 +132,7 @@ a {
     background-position: top;
     object-fit: cover;
     border-radius: 100%;
+    z-index: ;
 }
 .doctortext {
     margin-left: 40px;
