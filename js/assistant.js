@@ -10,7 +10,7 @@ function generateResponse(msg) {
     if (/cov|corona|sars|-19/.test(msg)) return sentences[0];
     else if (/who|about/.test(msg)) return sentences[1];
     else if (/doctor|logist|ician/.test(msg)) return sentences[2];
-    else if (/contact/.test(msg)) return sentences[3];
+    else if (/contact|call|phone|media|message/.test(msg)) return sentences[3];
     else if (/appointment|schedule|book/.test(msg)) return sentences[4];
     else if (/diagnos/.test(msg)) return sentences[5];
 
