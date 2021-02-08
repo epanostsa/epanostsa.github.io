@@ -99,12 +99,12 @@ a {
 }
 
 #titlearea {
-    position: absolute; 
+    position: relative; 
     display: flex; 
-    z-index: 1;
+    margin-top: 40px;
+    z-index: 0;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
     width: 100%;
     margin-left: auto; margin-right: auto;
     
@@ -123,7 +123,7 @@ a {
 }
 
 #about-main {
-    margin-top: 540px;
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
