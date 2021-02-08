@@ -129,7 +129,7 @@ a {
 	opacity: 0.3;
 }
 
-@media only screen and (max-width: 1075px) {
+@media only screen and (max-width: 1025px) {
 	#contact-header {
 		border-bottom: 2px solid;
 	}
