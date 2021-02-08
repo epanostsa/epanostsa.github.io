@@ -68,6 +68,14 @@ a {
 	padding-bottom: 80px;
 }
 
+#logo {
+	transition: transform 0.5s;
+}
+
+#logo:hover {
+	transform: rotate(360deg);
+}
+
 #contact-header {
 	border-bottom: 4px solid;
     border-image-source: linear-gradient(to right,#2E3440,#4C566A);
