@@ -1,0 +1,118 @@
+#content {
+    display: flex;
+    margin-top: 100px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botimage {
+    margin-top: 35px;
+    margin-left: 35px
+}
+
+#botimage-surrounding {
+    width: 350px;
+    height: 350px;
+    background: rgb(89, 100, 126);
+    border-radius: 175px;
+    margin-left: auto;
+    margin-right: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#bot {
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#chatarea {
+    z-index: 1;
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    background-color: rgb(89, 100, 126);
+    border-radius: 20px;
+    border: 10px solid rgb(89, 100, 126);
+}
+
+#chatbox {
+    scroll-behavior: smooth;
+    display: flex;
+    height: 320px;
+    padding: 20px;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+#chatbox::-webkit-scrollbar {
+    display: none;
+  }
+
+#chatbox-left {
+    width: 250px;
+}
+
+#chatbox-right {
+    margin-right: 10px;
+    text-align: right;
+    width: 250px;
+}
+
+.message {
+    font-family: "nunito";
+    height: fit-content;
+    max-width: 250px;
+}
+
+.message-invis {
+    font-family: "nunito";
+    height: fit-content;
+    max-width: 250px;
+    opacity: 0;
+}
+
+.botmessage {
+    word-wrap: break-word;
+    width: fit-content;
+    max-width: 200px;
+    margin-left: auto;
+    text-align: left;
+    padding: 10px;
+    color: rgb(0, 61, 131);
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.clientmessage {
+    width: fit-content;
+    word-wrap: break-word;
+    text-align: left;
+    max-width: 200px;
+    padding: 10px;
+    background: rgb(121, 137, 173);
+    color: white;
+    border-radius: 20px;
+}
+
+#chatbar {
+    font-family: "Nunito";
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    bottom: 0px;
+    width: 470px;
+    height: 20px;
+    padding-left: 20px;
+    background-color: #fafafa;
+}

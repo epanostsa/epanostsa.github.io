@@ -1,6 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@350&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
 .m {
     display: none;
+}
+
+.tab {
+	color: black;
+	font-family: 'Nunito';
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 1px;
+	margin-left: 1px;
+	font-size: 17px;
+	background: transparent;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+a {
+	text-decoration: none;
+}
+
+.name {
+	text-transform: uppercase;
+	color: black;
+	font-size: 30px;
+	font-family: "Nunito";
+	margin-left: 10px;
+}
+
+.tab:hover {
+	color: #ffffff;
+	background: #3b4252ff;
+}
+
+#panel {
+	display: flex;
+	align-items: center;
+	background: white;
+	padding: 20px;
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	box-shadow: 0px 0px 15px rgb(63, 63, 63);
 }
 
 #contact {
@@ -69,7 +123,7 @@
 	opacity: 0.3;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1025px) {
 	#contact-header {
 		border-bottom: 2px solid;
 	}
@@ -310,6 +364,108 @@
         top: 80px;
         height: 300px;
     }
+
+	#content {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#botimage {
+		height: 270px;
+		margin-left: 25px;
+		margin-top: 30px;
+	}
+
+	#botimage-surrounding {
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
+		height: 300px;
+	}
+
+	#bot {
+		margin-top: 60px;
+	}
+
+	#chatarea, #chatbox {
+		width: 500px;
+	}
+
+	#chatarea {
+		height: 700px;
+	}
+
+	#chatbox {
+		height: 590px;
+	}
+
+	#chatbox-right {
+		margin-right: 40px;
+	}
+
+	#chatbar {
+		font-size: 27px;
+		width: 470px;
+		height: 50px;
+		border-radius: 50px;
+	}
+
+	.clientmessage, .botmessage {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.clientmessage, .botmessage {
+		font-size: initial;
+	}
+
+	#content {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#botimage {
+		height: 140px;
+		margin-left: 25px;
+		margin-top: 30px;
+	}
+
+	#botimage-surrounding {
+		margin-left: auto;
+		margin-right: auto;
+		width: 180px;
+		height: 180px;
+	}
+
+	#bot {
+		margin-top: 60px;
+	}
+
+	#chatarea, #chatbox {
+		width: 300px;
+	}
+
+	#chatbox {
+		height: 200px;
+	}
+
+	#chatarea {
+		height: 280px;
+	}
+
+	#chatbox-right {
+		margin-right: 40px;
+	}
+
+	#chatbar {
+		font-size: initial;
+		width: 270px;
+		height: 20px;
+		border-radius: 40px;
+	}
 }
 
 @media only screen and (max-width: 300px) { /* literally just for the galaxy fold */
@@ -344,6 +500,17 @@
         width: calc(100% - 10px);
     }
 
+	#chatarea, #chatbox {
+		width: 250px;
+	}
+
+	#chatbar {
+		width: 220px
+	}
+
+	#chatbox-right {
+		margin-right: 40px;
+	}
 }
 
 @media screen and (min-width: 900) {
