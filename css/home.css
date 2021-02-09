@@ -203,7 +203,7 @@ a {
 	font-size: 40px; 
 	font-weight: bold; 
 	margin-top: 50px;
-	border-bottom: 4px solid;
+	border-bottom: 2px solid;
     border-image-source: linear-gradient(to top right, rgb(165, 186, 235),#4C566A);
 	border-image-slice: 60 30;
 	padding-bottom: 30px;
@@ -214,7 +214,6 @@ a {
 #newsletter-articles {
 	display: flex; 
 	justify-content: center;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .newsletter-article {
 	width: 350px; 

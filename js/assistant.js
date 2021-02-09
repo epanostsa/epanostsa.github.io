@@ -2,7 +2,7 @@ sentences = [
     "News regarding COVID-19 can be found on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletters</a>.",
     "If you want to know who we are and what we do, check our <a style='text-decoration: underline' href='./about.html'>about page</a>.",
     "To learn more about our doctors, check out our <a style='text-decoration: underline' href='./index.html#doctor-description'>doctors service</a>.",
-    "Ways to contact us can be found <a style='text-decoration: underline' href='javascript:$(\"html\").scrollTop($(\"html\")[0].scrollHeight)'>here</a>.",
+    "Ways to contact us can be found <a style='text-decoration: underline' href='javascript:document.getElementById(\"contact\").scrollIntoView()'>here</a>.",
     "Learn more about our appointments <a style='text-decoration: underline' href='./index.html#appointment-description'>here</a>.",
     "At Epanos, we make sure to help diagnose your condition. More about this can be found <a style='text-decoration: underline' href='./index.html#diagnosis-description'>here</a>.",
     "Find some of our latest articles on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>."
