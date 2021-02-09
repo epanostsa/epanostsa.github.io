@@ -4,15 +4,18 @@ sentences = [
     "To learn more about our doctors, check out our <a style='text-decoration: underline' href='./index.html#doctor-description'>doctors service</a>.",
     "Ways to contact us can be found <a style='text-decoration: underline' href='javascript:$(\"html\").scrollTop($(\"html\")[0].scrollHeight)'>here</a>.",
     "Learn more about our appointments <a style='text-decoration: underline' href='./index.html#appointment-description'>here</a>.",
-    "At Epanos, we make sure to help diagnose your condition. More about this can be found <a style='text-decoration: underline' href='./index.html#diagnosis-description'>here</a>."
+    "At Epanos, we make sure to help diagnose your condition. More about this can be found <a style='text-decoration: underline' href='./index.html#diagnosis-description'>here</a>.",
+    "Find some of our latest articles on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>."
 ]
 function generateResponse(msg) {
-    if (/cov|corona|sars|-19/.test(msg)) return sentences[0];
+    if (/reference|judg|copyright|checklist|grade|grading/.test(msg)) return "Are you a judge? See our references and checklists <a style='text-decoration: underline' href='./references.html'>here</a>.";
+    else if (/cov|corona|sars|-19/.test(msg)) return sentences[0];
     else if (/who|about/.test(msg)) return sentences[1];
     else if (/doctor|logist|ician/.test(msg)) return sentences[2];
     else if (/contact|call|phone|media|message/.test(msg)) return sentences[3];
     else if (/appointment|schedule|book/.test(msg)) return sentences[4];
     else if (/diagnos/.test(msg)) return sentences[5];
+    else if (/news|article/.test(msg)) return sentences[6];
     return sentences[Math.floor(Math.random() * sentences.length)]
 }
 
