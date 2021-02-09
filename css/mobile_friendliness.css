@@ -15,7 +15,7 @@ html, body {
 }
 
 .tab {
-	color: black;
+	color: rgb(0, 64, 124);
 	font-family: 'Nunito';
 	padding: 5px;
 	padding-left: 10px;
@@ -26,6 +26,10 @@ html, body {
 	background: transparent;
 	border-radius: 5px;
 	transition: 0.3s;
+}
+
+#tabs2 {
+	color: rgb(0, 64, 124);
 }
 
 a {
@@ -154,24 +158,42 @@ a {
 	}
 
 	#titletextname {
-		font-size: 40px;
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		border-bottom: 2px solid white;
+		font-size: 70px;
+		margin-bottom: 20px;
+	}
+
+	#br {
+		display: none;
 	}
 
 	#titletextslogan {
-		font-size: 15px;
+		margin-top: 0;
+		font-size: 20px;
+		width: 100%;
+		text-align: center;
 	}
 
 	#titletext {
+		display: block;
 		top: 200px;
-	}
-	
-	#wavy {
-		height: 300px;
-		top: -100px;
 	}
 
 	#titleimage {
-		height: 350px;
+		height: 450px;
+	}
+
+	#line {
+		display: none;
+	}
+	
+	#wavy {
+		height: 500px;
+		top: -100px;
 	}
 
 	#tabs2 {
