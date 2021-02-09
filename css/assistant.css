@@ -36,9 +36,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: -20px;
-    background-color: rgb(89, 100, 126);
+    background-color: white;
     border-radius: 20px;
-    border: 10px solid rgb(89, 100, 126);
+    border: 10px solid white;
 }
 
 #chatbox {
@@ -89,7 +89,7 @@
     text-align: left;
     padding: 10px;
     color: rgb(0, 61, 131);
-    background: rgb(255, 255, 255);
+    background: rgb(240, 240, 240);
     border-radius: 20px;
 }
 
@@ -115,5 +115,5 @@
     width: 470px;
     height: 20px;
     padding-left: 20px;
-    background-color: #fafafa;
+    background-color: #e6efff;
 }
