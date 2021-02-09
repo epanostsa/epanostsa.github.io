@@ -1,3 +1,11 @@
+@keyframes colorchange {
+    0% { background: rgb(89, 100, 126); }
+    25% { background: lightgreen; }
+    50% { background: fuchsia; }
+    75% { background: lightblue; }
+    100% { background: rgb(89, 100, 126); }
+}
+
 #content {
     display: flex;
     margin-top: 100px;
@@ -63,7 +71,7 @@
 }
 
 #chatbox-right {
-    margin-right: 10px;
+    margin-right: 20px;
     text-align: right;
     width: 250px;
 }
@@ -91,6 +99,7 @@
     color: rgb(0, 61, 131);
     background: rgb(240, 240, 240);
     border-radius: 20px;
+    transition: transform 0.5s;
 }
 
 .clientmessage {
@@ -102,6 +111,11 @@
     background: rgb(121, 137, 173);
     color: white;
     border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.botmessage:hover, .clientmessage:hover {
+    transform: scale(1.2, 1.2);
 }
 
 #chatbar {

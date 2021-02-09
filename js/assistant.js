@@ -13,7 +13,6 @@ function generateResponse(msg) {
     else if (/contact|call|phone|media|message/.test(msg)) return sentences[3];
     else if (/appointment|schedule|book/.test(msg)) return sentences[4];
     else if (/diagnos/.test(msg)) return sentences[5];
-
     return sentences[Math.floor(Math.random() * sentences.length)]
 }
 
@@ -23,10 +22,18 @@ $('#chat').on('submit', (e) => {
     if (msg.split(" ").join("") != "") {
         $('#chatbox-left').append(`<div class="message"><div class="clientmessage"><b>You</b>: ${msg}</div></div><br>`);
         $('#chatbox-right').append(`<div class="message-invis"><div class="botmessage"><b>You</b>: ${msg}</div></div><br>`);
+        $('#botimage-surrounding').css('animation-name', 'none')
+        $('#botimage-surrounding').css('animation-duration', 'none')
         var response = generateResponse(msg);
-        $('#chatbox-right').append(`<div class="message"><div class="botmessage"><b>Virtual Assistant</b>: ${response}</div></div><br>`);
         $('#chatbox-left').append(`<div class="message-invis"><div class="botmessage"><b>Virtual Assistant</b>: ${response}</div></div><br>`);
-        $('#chatbar').val('')
-        $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight, {behavior: "smooth"});
+        var interval = setInterval(() => {
+            $('#botimage-surrounding').css('animation-name', 'colorchange')
+            $('#botimage-surrounding').css('animation-duration', '3s')
+            $('#chatbox-right').append(`<div class="message"><div class="botmessage"><b>Virtual Assistant</b>: ${response}</div></div><br>`);
+            $('#chatbar').val('')
+            $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight, {behavior: "smooth"});
+            clearInterval(interval)
+        }, 30);
+       
     }
 })
