@@ -28,7 +28,7 @@ $('#chat').on('submit', (e) => {
         $('#chatbox-left').append(`<div class="message-invis"><div class="botmessage"><b>Virtual Assistant</b>: ${response}</div></div><br>`);
         var interval = setInterval(() => {
             $('#botimage-surrounding').css('animation-name', 'colorchange')
-            $('#botimage-surrounding').css('animation-duration', '3s')
+            $('#botimage-surrounding').css('animation-duration', '1s')
             $('#chatbox-right').append(`<div class="message"><div class="botmessage"><b>Virtual Assistant</b>: ${response}</div></div><br>`);
             $('#chatbar').val('')
             $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight, {behavior: "smooth"});
