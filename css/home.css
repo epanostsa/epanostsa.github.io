@@ -8,6 +8,22 @@ a {
 	text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  z-index: 1;
+}
+::-webkit-scrollbar-thumb {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: rgb(84, 92, 112);
+  z-index: 1;
+}
+::-webkit-scrollbar-track {
+    background: white;
+  border-radius: 0px;
+  z-index: 1;
+}
+
 .right-tab {
 	font-family: 'Nunito';
 	padding: 5px;
@@ -115,15 +131,11 @@ a {
 	margin-top: 640px;
 }
 
-#bot-description {
-	background: #849eca; top: 0;
+#bot-description, #diagnosis-description {
+	background: #c7dcff; top: 0;
 }
-#diagnosis-description {
-	background: #6a91d3; top: 0;
-}
-#doctor-description {
-	background: #576178ff;
-}
+
+
 
 #appointment-header, #bot-header, #doctor-header, #diagnosis-header {
 	font-size: 35px;
@@ -135,12 +147,7 @@ a {
 	padding-bottom: 10px;
 	font-weight: bold;
 }
-#bot-header, #doctor-header, #diagnosis-header {
-	color: white;
-	border-bottom: 4px solid;
-    border-image-source: linear-gradient(to right, rgb(165, 186, 235), #ffffff);
-	border-image-slice: 60 30;
-}
+
 
 #appointment-paragraph, #bot-paragraph, #doctor-paragraph, #diagnosis-paragraph {
 	margin-top: 15px;
@@ -149,9 +156,7 @@ a {
 	font-size: 20px;
 	width: 500px;
 }
-#bot-paragraph, #doctor-paragraph, #diagnosis-paragraph {
-	color: white
-}
+
 
 #appointment-image, #doctor-image {
 	margin-left: 60px;

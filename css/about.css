@@ -12,6 +12,23 @@ html, body {
 a {
     text-decoration: none;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    z-index: 1;
+}
+::-webkit-scrollbar-thumb {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: rgb(84, 92, 112);
+    z-index: 1;
+}
+::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 0px;
+    z-index: 1;
+}
+
 .grey {
     color: grey; /* xP */
 }
