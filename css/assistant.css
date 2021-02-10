@@ -1,6 +1,6 @@
 @keyframes colorchange {
     0% { background: rgb(89, 100, 126); }
-    50% { background: rgb(0, 255, 242); }
+    50% { background: #77bdef; }
     100% { background: rgb(89, 100, 126); }
 }
 
