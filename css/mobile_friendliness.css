@@ -604,7 +604,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 }
 
-@media only screen and (max-width: 300px) { /* literally just for the galaxy fold */
+@media only screen and (max-width: 320px) { /* literally just for the galaxy fold */
     #appointment-description, #bot-description, #doctor-description, #diagnosis-description {
         height: 850px;
     }
@@ -674,6 +674,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		display: block;
 		margin-top: -50px;
 		font-size: 30px;
+		width: 200px;
 	}
 
 	#newsletter-a {
