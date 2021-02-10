@@ -530,6 +530,10 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+	.clientmessage, .botmessage {
+		font-size: 25px;
+	}
+
 	.article-contents, .article {
 		width: 1000px !important;
 	}
@@ -553,9 +557,6 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 @media only screen and (max-width: 800px) {
-	.clientmessage, .botmessage {
-		
-	}
 
 	#content {
 		display: block;
