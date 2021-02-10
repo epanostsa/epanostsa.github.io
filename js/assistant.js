@@ -10,6 +10,7 @@ sentences = [
 ]
 function generateResponse(msg) {
     if (/reference|judg|copyright|checklist|grade|grading/.test(msg)) return "Are you a judge? See our references and checklists <a style='text-decoration: underline' href='./references.html'>here</a>.";
+    else if (/vaccin/.test(msg)) return sentences[7];
     else if (/cov|corona|sars|-19/.test(msg)) return sentences[0];
     else if (/who|about/.test(msg)) return sentences[1];
     else if (/doctor|logist|ician/.test(msg)) return sentences[2];
@@ -17,9 +18,29 @@ function generateResponse(msg) {
     else if (/appointment|schedule|book/.test(msg)) return sentences[4];
     else if (/diagnos/.test(msg)) return sentences[5];
     else if (/news|article/.test(msg)) return sentences[6];
-    else if (/vaccin/.test(msg)) return sentences[7];
     else return sentences[Math.floor(Math.random() * sentences.length)]
 }
+
+var questions = [
+    "What is the status of COVID-19 vaccinations?",
+    "How can I protect myself from COVID-19?",
+    "How can I contact Epanos?",
+    "Can you show me some health related articles?",
+    "How can I book an appointment?",
+    "What doctors are in Epanos?",
+]
+
+var botGreeting = `Hello! I am a bot but I can help you with questions about features on our website. Try asking "${questions[Math.floor(Math.random() * questions.length)]}"`
+
+var interval = setInterval(() => {
+    $('#botimage-surrounding').css('animation-name', 'colorchange')
+    $('#botimage-surrounding').css('animation-duration', '1s')
+    $('#chatbox-right').append(`<div class="message"><div class="botmessage"><b>Virtual Assistant</b>: ${botGreeting}</div></div><br>`);
+    $('#chatbox-left').append(`<div class="message-invis"><div class="botmessage"><b>Virtual Assistant</b>: ${botGreeting}</div></div><br>`);
+    $('#chatbar').val('')
+    $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight, {behavior: "smooth"});
+    clearInterval(interval)
+}, 30);
 
 $('#chat').on('submit', (e) => {
     e.preventDefault()
