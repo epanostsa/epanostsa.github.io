@@ -5,7 +5,8 @@ sentences = [
     "Ways to contact us can be found <a style='text-decoration: underline' href='javascript:document.getElementById(\"contact\").scrollIntoView()'>here</a>.",
     "Learn more about our appointments <a style='text-decoration: underline' href='./index.html#appointment-description'>here</a>.",
     "At Epanos, we make sure to help diagnose your condition. More about this can be found <a style='text-decoration: underline' href='./index.html#diagnosis-description'>here</a>.",
-    "Find some of our latest articles on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>."
+    "Find some of our latest articles on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>.",
+    "Information about vaccines can be found on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>."
 ]
 function generateResponse(msg) {
     if (/reference|judg|copyright|checklist|grade|grading/.test(msg)) return "Are you a judge? See our references and checklists <a style='text-decoration: underline' href='./references.html'>here</a>.";
@@ -16,7 +17,8 @@ function generateResponse(msg) {
     else if (/appointment|schedule|book/.test(msg)) return sentences[4];
     else if (/diagnos/.test(msg)) return sentences[5];
     else if (/news|article/.test(msg)) return sentences[6];
-    return sentences[Math.floor(Math.random() * sentences.length)]
+    else if (/vaccin/.test(msg)) return sentences[7];
+    else return sentences[Math.floor(Math.random() * sentences.length)]
 }
 
 $('#chat').on('submit', (e) => {

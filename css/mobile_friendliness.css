@@ -81,7 +81,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 #contact-header {
 	border-bottom: 4px solid;
-    border-image-source: linear-gradient(to right,#2E3440,#4C566A);
+    border-image-source: linear-gradient(to left, #3b4252, #aabeec);
 	border-image-slice: 60 30;
 	padding-bottom: 50px;
 	margin-left: auto;

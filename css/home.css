@@ -229,6 +229,7 @@ a {
 }
 
 .newsletter-article:hover {
+	z-index: 9999;
 	transform: scale(1.1, 1.1);
 }
 
