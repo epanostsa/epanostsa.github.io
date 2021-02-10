@@ -37,6 +37,10 @@ html, body {
 	transition: 0.3s;
 }
 
+.grey {
+	color: black;
+}
+
 a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 .tab:hover {
@@ -58,7 +62,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 #panel {
-	z-index: 9999;
+	z-index: 100000;
 	display: flex;
 	align-items: center;
 	background: white;
@@ -72,11 +76,11 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 #logo {
-	transition: transform 0.5s;
+	transition: transform 0.1s;
 }
 
 #logo:hover {
-	transform: rotate(360deg);
+	transform: scale(1.1);
 }
 
 #contact-header {
@@ -117,7 +121,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 .social-media-section {
 	flex: 1;
-	transition: transform 0.5s;
+	transition: transform 0.2s;
 }
 
 .social-media-section:hover {
@@ -154,6 +158,32 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	#appointment-description {
         text-align: center;
 		margin-top: 450px;
+	}
+
+	.article-main-title, .medium, .article-main-paragraph, #experts {
+		margin-left: 15px;
+	}
+
+	.article {
+		display: block;
+	}
+
+	#topimage {
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	#bottomimage {
+		margin-top: 0;
+	}
+
+	.article-main-paragraph {
+		width: 320px;
+	}
+
+	#experts {
+		width: 300px;
+		line-height: 2;
 	}
 
 	#titletextname {
@@ -267,8 +297,31 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		margin-top: -180px;
 	}
 
+	#header-image {
+		height: 100px;
+		width: 100px;
+		margin-left: 20px;
+	}
+
+	#titletitle-a {
+        font-size: 30px;
+        margin-top: -50px;
+		width: 320px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+	#titlearea-a {
+		display: block;
+		margin-top: 120px;
+	}
+
 	#newsletter {
 		height: 1800px;
+	}
+
+	#newsletter-a {
+		height: 1200px;
 	}
 
 	#first-article {
@@ -476,6 +529,29 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 }
 
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	.article-contents, .article {
+		width: 1000px !important;
+	}
+
+	.article-main-paragraph {
+		width: 700px;
+	}
+
+	#titletitle-a {
+		font-size: 40px;
+		width: 600px;
+	}
+
+	#topimage, #bottomimage {
+		position: relative;
+		margin-right: auto;
+		margin-top: 20px;
+		width: 800px !important;
+		height: 480px;
+	}
+}
+
 @media only screen and (max-width: 800px) {
 	.clientmessage, .botmessage {
 		font-size: initial;
@@ -533,6 +609,28 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
         height: 850px;
     }
 
+	.article-contents {
+		margin-top: 150px;
+	}
+
+	.article {
+		width: 250px;
+		margin-left: 0;
+	}
+
+	#topimage, #bottomimage {
+		height: 250px !important;
+		width: 417px !important;
+	}
+
+	#bottomimage {
+		margin-bottom: -120px;
+	}
+
+	.article-main-paragraph {
+		width: 250px;
+	}
+
 	.doctorbox {
 		width: 70%;
 		height: 430px;
@@ -570,6 +668,16 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 	#chatbox-right {
 		margin-right: 40px;
+	}
+
+	#titletitle-a {
+		display: block;
+		margin-top: -50px;
+		font-size: 30px;
+	}
+
+	#newsletter-a {
+		height: 1200px;
 	}
 }
 

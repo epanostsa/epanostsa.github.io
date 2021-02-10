@@ -10,7 +10,7 @@
   </head>
 <body>
 
-  <div id="panel">
+  <div id="panel" style="z-index: 100000;">
 		<a href='../index.html'><img id="logo" height="50" width="auto" src="../images/logo.png"></a>
 		<a href='../index.html'><p class="name">Epanos</p></a>
 		<a id="show-panel-button" href='javascript:showPanel()' class="tab"><img width="40" src="https://i.imgur.com/9dteN4h.png"></a>
@@ -39,31 +39,59 @@
 	  </div>
 
     <img src="https://imgur.com/8Guih3I.png" id="wave">
-    <div id="titlearea">
-        <img id="header-image" src="../images/mask.jpg"></p>
-        <p id="titletitle">COVID-19 precautions</p>
+    <div id="titlearea-a">
+        <img id="header-image" src="../images/covid.jpg"></p>
+        <p id="titletitle-a">COVID-19 Vaccine Distribution</p>
     </div>
 
     <div class="article-main">
       <div class="article">
         <img src="https://imgur.com/jwolIKB.png" class="article-main-image-m">
         <div class="article-contents">
-          <p class="article-main-title">COVID-19</p>
+          <p class="article-main-title">COVID-19 Vaccine</p>
+          <div class='medium'>
+            <img id="calendar" src="https://cdn.pixabay.com/photo/2017/06/10/06/39/calender-2389150_960_720.png" width="40" height="40">
+            <span id="date">February 4, 2021</span>
+          </div>
+          <small id="experts">
+            <span id="experts-tag">Experts</span>
+            Liam Donaldson (D.P.H., Ed.D), Carter Miller (D.P.A., Ed.D)
+          </small>
           <p class="article-main-paragraph">
-              There are many measures you can take to prevent yourself from being exposed to COVID-19. Here is what you can do to protect yourself and your family.
-              Always wear a mask in public. Make sure it is over your nose and secure under your chin. Make sure your mask fits well and you can still breath easily in it.
-              Stay at least six feet away from others. 
+            Vaccines are starting to be distributed in America. The older people get them may depend on your state, but here are some of the general guidelines distribution might follow. Initial vaccines will be given to healthcare workers. 
           </p>
         </div>
-        <img style="width: 500px" src="https://i.imgur.com/XHXdz1s.png" id="topimage">
+        <img style="width: 500px" src="https://cdn.pixabay.com/photo/2021/01/17/22/03/vaccine-5926664_960_720.jpg" id="topimage">
       </div>
       <div class="article">
         <img src="https://imgur.com/jwolIKB.png" class="article-main-image-m">
-        <img style="width: 500px" src="https://cdn.pixabay.com/photo/2020/05/26/17/51/covid-19-5224053_960_720.png" id="bottomimage">
+        <img style="width: 500px" src="https://imgur.com/vZvfIjM.png" id="bottomimage">
         <div class="article-contents">
           <p class="article-main-paragraph">
-            This is about 2 arm's lengths. Avoid crowds and other tight spaces. Wash your hands. You should wash your hands when you have been in public areas. In addition, if you need to touch your face for any reason, wash your hands first. Remember, you should follow all of these precautions. Wearing a mask alone isn’t as effective as wearing a mask plus staying away from crowds. If you follow these tips, you will significantly reduce your chance of getting COVID.
+            Other essential workers and high-risk groups, such as the elderly, will come next. As vaccine supplies become more abundant, they will be distributed to other groups next. These regulations help minimize death and disease. The overall goal of the vaccine is to train people's immune system to remember COVID-19's material and to fight it when it comes in contact with the individual. Scientists hope this will decrease the spread of the virus and make people who have come into contact with it less contagious.
           </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 50px" id="newsletter-a">
+      <p id="newsletter-header">Other Articles</p>
+      <div id="newsletter-articles">
+        <div id="first-article" class="newsletter-article">
+          <a href='./covid-precautions.html'>
+            <img src="../images/mask.jpg" class="newsletter-article-image">
+          </a>
+          <p class="newsletter-article-header">COVID-19 Precautions</p>
+          <p class="newsletter-article-preview">Scientists say that COVID-19 may spread easier than expected. Learn how to keep you and your family safe.</p>
+          <button onclick="location.href='./covid-precautions.html'" class="newsletter-article-button">See Article</button>
+        </div>
+        <div class="newsletter-article">
+          <a href='./this-may-be-why-you-have-gray-hair.html'>
+            <img src="../images/grayhair.jpg" class="newsletter-article-image">
+          </a>
+          <p class="newsletter-article-header">Have gray hair? This may be why</p>
+          <p class="newsletter-article-preview">A silver lining - New health research finds correlation between specific activities causing gray hair. "It's not all genetics", researchers say.</p>
+          <button onclick="location.href='./this-may-be-why-you-have-gray-hair.html'" class="newsletter-article-button">See Article</button>
         </div>
       </div>
     </div>
