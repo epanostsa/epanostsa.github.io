@@ -677,6 +677,10 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		width: 200px;
 	}
 
+	#ref-content-surround {
+		width: 250px;
+	}
+
 	#newsletter-a {
 		height: 1200px;
 	}
