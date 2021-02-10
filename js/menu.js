@@ -2,6 +2,8 @@ function goToSection(id) {
     if (location.pathname.indexOf("index") != -1 || location.pathname == "/") {
         hidePanel()
         document.getElementById(id).scrollIntoView({behavior: "smooth"});
+    } else if (location.pathname.indexOf("newsletter") != -1) {
+        location.href = location.pathname + `/../../index.html#${id}`
     } else {
         location.href = location.pathname + `/../index.html#${id}`
     }
