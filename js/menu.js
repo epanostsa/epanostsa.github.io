@@ -3,11 +3,11 @@ function goToSection(id) {
         hidePanel()
         document.getElementById(id).scrollIntoView({behavior: "smooth"});
     } else if (location.pathname.indexOf("newsletter") != -1) {
-        if (location.pathname.indexOf("github") != -1 ) location.href = location.pathname + `/../../#${id}`
-        else location.href = location.pathname + `/../../index.html#${id}`
+        if (location.pathname.indexOf("http") != -1) location.href = location.pathname + `/../../#${id}`;
+        else location.href = location.pathname + `/../../index.html#${id}`;
     } else {
-        if (location.pathname.indexOf("github") != -1 ) location.href = location.pathname + `/../#${id}`
-        else location.href = location.pathname + `/../index.html#${id}`
+        if (location.pathname.indexOf("http") != -1) location.href = location.pathname + `/../../#${id}`;
+        else location.href = location.pathname + `/../index.html#${id}`;
     }
 }
 
