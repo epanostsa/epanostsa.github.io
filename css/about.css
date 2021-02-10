@@ -144,3 +144,43 @@ a {
 #about-main-paragraph {
     font-size: 20px;
 }
+
+#bot-image-m {
+	display: none;
+}
+
+#bot-description {
+	display: flex; justify-content: center; align-items: center;
+	height: 700px; background: whitesmoke;
+    background: #849eca; top: 0;
+}
+
+#bot-header {
+	font-size: 35px;
+	font-family: 'Nunito';
+	border-bottom: 4px solid;
+	width: 500px;
+	padding-bottom: 10px;
+	font-weight: bold;
+    color: white;
+    border-image-source: linear-gradient(to right, rgb(165, 186, 235), #ffffff);
+	border-image-slice: 60 30;
+}
+
+#bot-paragraph {
+    color: white;
+	margin-top: 15px;
+	line-height: 1.7;
+	font-family: 'Nunito';
+	font-size: 20px;
+	width: 500px;
+}
+
+#bot-image {
+	margin-right: 60px;
+	transition: 0.2s;
+}
+
+#bot-image:hover {
+	transform: scale(1.05, 1.05);
+}
