@@ -125,9 +125,7 @@ a {
 #appointment-header, #bot-header, #doctor-header, #diagnosis-header {
 	font-size: 35px;
 	font-family: 'Nunito';
-	border-bottom: 4px solid;
-    border-image-source: linear-gradient(to right,#2E3440,#4C566A);
-	border-image-slice: 60 30;
+	border-bottom: 4px solid #4C566A;
 	width: 500px;
 	padding-bottom: 10px;
 	font-weight: bold;
@@ -193,9 +191,7 @@ a {
 	font-size: 40px; 
 	font-weight: bold; 
 	margin-top: 50px;
-	border-bottom: 2px solid;
-    border-image-source: linear-gradient(to top right, rgb(165, 186, 235),#4C566A);
-	border-image-slice: 60 30;
+	border-bottom: 2px solid rgb(165, 186, 235);
 	padding-bottom: 30px;
 	width: 1000px; 
 	margin-left: auto; 
@@ -232,12 +228,10 @@ a {
 }
 .newsletter-article-header {
 	font-size: 20px;
-	border-bottom: 4px solid;
-	border-image-source: linear-gradient(to right,#2E3440,#4C566A);
+	border-bottom: 4px solid #4C566A;
 	width: 300px; 
 	margin-left: auto; 
 	margin-right: auto;
-	border-image-slice: 60 30; 
 	padding-bottom: 20px;
 }
 .newsletter-article-preview {
