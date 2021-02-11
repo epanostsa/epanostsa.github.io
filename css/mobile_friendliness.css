@@ -378,7 +378,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
 	#appointment-description {
-		height: 950px;
+		height: 800px;
 	}
 
 	#contact {
@@ -686,7 +686,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
     }
 
 	#appointment-description {
-		height: 1100px;
+		height: 900px;
 	}
 
 	.article-contents {
