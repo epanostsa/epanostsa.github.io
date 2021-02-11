@@ -780,7 +780,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 420px) {
 	#tabs {
 		line-height: 1.3;
 	}
