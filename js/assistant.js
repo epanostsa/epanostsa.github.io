@@ -35,7 +35,7 @@ var botGreeting = `Hello! I am a bot but I can help you with questions about fea
 
 var interval = setInterval(() => {
     $('#botimage-surrounding').css('animation-name', 'colorchange')
-    $('#botimage-surrounding').css('animation-duration', '1s')
+    $('#botimage-surrounding').css('animation-duration', '2s')
     $('#chatbox-right').append(`<div class="message"><div class="botmessage"><b>Virtual Assistant</b>: ${botGreeting}</div></div><br>`);
     $('#chatbox-left').append(`<div class="message-invis"><div class="botmessage"><b>Virtual Assistant</b>: ${botGreeting}</div></div><br>`);
     $('#chatbar').val('')
