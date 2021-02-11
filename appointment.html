@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="./images/logo.png">
+	<link rel="stylesheet" href="./css/appointments.css">
+	<link rel="stylesheet" href="./css/mobile_friendliness.css">
+	<title>Epanos - Book Appointment</title>
+  </head>
+<body>
+
+	<div id="panel">
+		<a href='./index.html'><img id="logo" height="50" width="auto" src="./images/logo.png"></a>
+		<a href='./index.html'><p class="name">Epanos</p></a>
+		<a id="show-panel-button" href='javascript:showPanel()' class="tab"><img width="40" src="https://i.imgur.com/9dteN4h.png"></a>
+		<p id="tabs2"> 
+		  <a href='javascript:goToSection("titleimage")' style="margin-left: 20px" class="tab">Home</a> <span class='grey'>•</span>
+		  <a href='javascript:goToSection("appointment-description")' class="tab">Appointments</a> <span class='grey'>•</span>
+		  <a href='javascript:goToSection("bot-description")' class="tab">Assistant</a> <span class='grey'>•</span>
+		  <a href='javascript:goToSection("doctor-description")' class="tab">Doctors</a> <span class='grey'>•</span>
+		  <a href='javascript:goToSection("diagnosis-description")' class="tab">Diagnosis</a> <span class='grey'>•</span>
+		  <a href='javascript:goToSection("newsletter")' class="tab">Newsletter</a> <span class='grey'>•</span>
+		  <a href='./about.html' class="tab">About</a> <span class='grey'>•</span>
+		  <a href='javascript:document.getElementById("contact").scrollIntoView()' class="tab">Contact</a> <span class='grey'>•</span>
+		  <a href='./references.html' class="tab">References</a>
+		</p>
+		<p id="tabs"> 
+		  <a href='javascript:goToSection("titleimage")' class="tab">Home</a> <span class='grey'>•</span><br>
+		  <a href='javascript:goToSection("appointment-description")' class="tab">Appointments</a> <span class='grey'>•</span><br>
+		  <a href='javascript:goToSection("bot-description")' class="tab">Assistant</a> <span class='grey'>•</span><br>
+		  <a href='javascript:goToSection("doctor-description")' class="tab">Doctors</a> <span class='grey'>•</span><br>
+		  <a href='javascript:goToSection("diagnosis-description")' class="tab">Diagnosis</a> <span class='grey'>•</span><br>
+		  <a href='javascript:goToSection("newsletter")' class="tab">Newsletter</a> <span class='grey'>•</span><br>
+		  <a href='./about.html' class="tab">About</a><br>
+		  <a href='javascript:document.getElementById("contact").scrollIntoView()' class="tab">Contact</a> <span class='grey'>•</span><br>
+		  <a href='./references.html' class="tab">References</a> <span class='grey'>•</span>
+		</p>
+	  </div>
+
+		<img src="https://i.imgur.com/X7oVTJG.png" id="wave">
+		<div id="titlearea">
+			<p id="titletitle-references">Book Appointment</p>
+		</div>
+
+
+		<div style="margin-top: 70px" id="ref-content-surround">
+			<div id="appointment-content">
+				<p id="references">
+                    <img id="appointment-icon" src="https://imgur.com/WmZcOTm.png" width="200" height="200">
+					<form id="info">
+                        <img id="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
+                        <span id="question">What's your name?</span><br>
+                        <input class="appointment-input" placeholder="Name"><br>
+
+                        <img id="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
+                        <span id="question">What's your email?</span><br>
+                        <input class="appointment-input" placeholder="example@email.com"><br>
+
+                        <img id="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
+                        <span id="question">When would you like to have your appointment?</span><br>
+                        <input class="appointment-input" placeholder="I would like to meet at 12:00 P.M."><br>
+
+                        <img id="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
+                        <span id="question">Can you explain to us any issues you're having?</span><br>
+                        <input class="appointment-input" placeholder="I have been experiencing..."><br>
+
+                        <img id="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
+                        <span id="question">Is there any specific <a style='text-decoration:underline; color:rgb(0, 136, 248)' href='./doctors.html' target="_blank">doctor</a> you'd like to see?</span><br>
+                        <input class="appointment-input" placeholder="Dr. Name"><br><br>
+
+                        <a href='./appointment-booked.html' id="submit-button">Book</a>
+                      </form>
+				</p>
+			</div>
+		</div>
+		<div id="contact">
+			<p id="contact-header">Contact Us</p>
+			<div id="contact-info">
+			  <div class="social-media-section">
+				<img class="social-media-image" src="https://imgur.com/2EdsjK8.png">
+				<br><span class="social-media-label">Call us at 012-345-6789</span>
+			  </div>
+			  <div class="social-media-section">
+				<img class="social-media-image" src="https://imgur.com/vCL9qAa.png">
+				<br><span class="social-media-label">@epanoshealth</span>
+			  </div>
+			  <div class="social-media-section">
+				<img class="social-media-image" src="https://imgur.com/tJzTaeh.png">
+				<br><span class="social-media-label">@epanoshealth</span>
+			  </div>
+			  <div class="social-media-section">
+				<img class="social-media-image" src="https://imgur.com/RQ4yAdO.jpg">
+				<br><span class="social-media-label">@epanoshealth</span>
+			  </div>
+			</p>
+		</div>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+	    <script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 sentences = [
-    "News regarding COVID-19 can be found on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletters</a>.",
+    "News regarding COVID-19 safety can be found on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletters</a>.",
     "If you want to know who we are and what we do, check our <a style='text-decoration: underline' href='./about.html'>about page</a>.",
     "To learn more about our doctors, check out our <a style='text-decoration: underline' href='./index.html#doctor-description'>doctors service</a>.",
     "Ways to contact us can be found <a style='text-decoration: underline' href='javascript:document.getElementById(\"contact\").scrollIntoView()'>here</a>.",
@@ -18,6 +18,7 @@ function generateResponse(msg) {
     else if (/appointment|schedule|book/.test(msg)) return sentences[4];
     else if (/diagnos/.test(msg)) return sentences[5];
     else if (/news|article/.test(msg)) return sentences[6];
+    else if (/thank you|thanks|thx/.test(msg)) return "It's always our pleasure to help.";
     else return sentences[Math.floor(Math.random() * sentences.length)]
 }
 

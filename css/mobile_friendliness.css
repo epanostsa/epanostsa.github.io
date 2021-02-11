@@ -3,6 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+::-webkit-scrollbar {
+	width: 10px;
+	z-index: 1;
+  }
+  ::-webkit-scrollbar-thumb {
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;
+	background: rgb(84, 92, 112);
+	z-index: 1;
+  }
+  ::-webkit-scrollbar-track {
+	  background: white;
+	border-radius: 0px;
+	z-index: 1;
+  }
+  
 html, body {
 	margin: 0;
 	padding: 0;
@@ -148,6 +166,19 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 @media only screen and (max-width: 1025px) {
 	#contact-header {
 		border-bottom: 2px solid;
+	}
+
+	#question {
+		font-size: 15px;
+		width: 200px;
+	}
+
+	#question-mark {
+		margin-bottom: 40px;
+	}
+
+	#appointment-content {
+		padding-left: 5px;
 	}
 
 	body {
@@ -346,6 +377,10 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		margin-top: 500px;
 	}
 
+	#appointment-description {
+		height: 950px;
+	}
+
 	#contact {
 		background: whitesmoke; 
 		font-family: "Nunito";
@@ -449,6 +484,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	#titletitle-references {
 		font-size: 50px;
 		margin-top: 50px;
+		text-align: center;
 	}
 
 	#ref-content-surround {
@@ -607,9 +643,13 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 @media only screen and (max-width: 320px) { /* literally just for the galaxy fold */
-    #appointment-description, #bot-description, #doctor-description, #diagnosis-description {
+    #bot-description, #doctor-description, #diagnosis-description {
         height: 850px;
     }
+
+	#appointment-description {
+		height: 1100px;
+	}
 
 	.article-contents {
 		margin-top: 150px;
