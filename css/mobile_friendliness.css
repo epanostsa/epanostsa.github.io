@@ -43,14 +43,14 @@ html, body {
 
 .tab {
 	color: rgb(0, 28, 54);
-	font-family: 'Quicksand';
+	font-family: 'Nunito';
 	font-weight: 500;
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-right: 1px;
 	margin-left: 1px;
-	font-size: 14px;
+	font-size: 15px;
 	background: transparent;
 	border-radius: 5px;
 	transition: all 0.15s ease;
@@ -307,7 +307,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		display: none;
 		background-color: white;
 		width: 100%;
-		line-height: 3.5;
+		line-height: 3.2;
 		overflow-y: scroll;
 	}
 
@@ -774,8 +774,8 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 568px) {
 	#tabs {
-		line-height: 1.8;
+		line-height: 2.5;
 	}
 }
