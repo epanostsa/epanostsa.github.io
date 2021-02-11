@@ -104,7 +104,13 @@ a {
     width: 100%;
 }
 
-#titlearea {
+#checkmark-paper {
+    background:white; border-radius: 100px;
+    width: 200px;
+    height: auto;
+}
+
+#titlearea-appointment-booked {
     position: relative; 
     display: flex; 
     align-items: center;
@@ -113,7 +119,7 @@ a {
     width: 100%;
 }
 
-#titletitle-references {
+#titletitle-appointment-booked {
     font-family: "Nunito";
     color: white;
     margin-left: 20px;
