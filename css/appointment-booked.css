@@ -127,6 +127,16 @@ a {
     font-weight: bold;
 }
 
+#titletitle-small {
+    position: absolute;
+    margin-top: 150px;
+    font-family: "Nunito";
+    color: white;
+    margin-left: -200px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 #ref-content-surround {
     width: 600px;
     height: fit-content;
@@ -192,21 +202,23 @@ a {
     color: rgb(204, 204, 204);
 }
 
-#submit-button {
-	background: rgb(0, 68, 255); 
+#return-button {
+    position: absolute;
+	background: #51c483; 
 	font-family: "Nunito"; 
 	font-size: 20px;
 	padding-left: 30px; 
     color: white;
 	padding-right: 30px; 
-	padding-top: 5px; 
-	padding-bottom: 5px;
-	margin-top: 20px;
+	padding-top: 10px; 
+	padding-bottom: 10px;
+	margin-top: 350px;
+    margin-left: -375px;
 	border-radius: 10px;
 	transition: 0.3s;
 }
-#submit-button:hover {
-    background: rgb(0, 46, 116);
+#return-button:hover {
+    background: #3b9662;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	transform: scale(1.05, 1.05);
 }
