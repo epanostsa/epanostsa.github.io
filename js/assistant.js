@@ -12,14 +12,14 @@ function generateResponse(msg) {
     if (/reference|judg|copyright|checklist|grade|grading/.test(msg)) return "Are you a judge? See our references and checklists <a style='text-decoration: underline' href='./references.html'>here</a>.";
     else if (/vaccin/.test(msg)) return sentences[7];
     else if (/cov|corona|sars|-19/.test(msg)) return sentences[0];
-    else if (/who|about/.test(msg)) return sentences[1];
     else if (/doctor|logist|ician/.test(msg)) return sentences[2];
     else if (/contact|call|phone|media|message/.test(msg)) return sentences[3];
     else if (/appointment|schedule|book/.test(msg)) return sentences[4];
     else if (/diagnos/.test(msg)) return sentences[5];
     else if (/news|article/.test(msg)) return sentences[6];
+    else if (/who|what do you do|about|company|/.test(msg)) return sentences[1];
     else if (/thank you|thanks|thx/.test(msg)) return "It's always our pleasure to help.";
-    else if (/assistant|bot|/.test(msg)) return "I'm your virtual assistant! I'm a bot but I can help you with questions about our site.";
+    else if (/assistant|bot/.test(msg)) return "I'm your virtual assistant! I'm a bot but I can help you with questions about our site.";
     else if (/hello|good morning|good evening|greetings|how are you/.test(msg)) return "Hello! I'm happy to help with any questions about our site.";
     else return sentences[Math.floor(Math.random() * sentences.length)]
 }
