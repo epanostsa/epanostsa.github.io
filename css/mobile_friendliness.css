@@ -207,11 +207,12 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 	#topimage {
 		margin-top: 0;
-		margin-left: 0;
+		margin-left: -50px;
 	}
 
 	#bottomimage {
 		margin-top: 0;
+		margin-left: -50px;
 	}
 
 	.article-main-paragraph {
@@ -611,6 +612,16 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+	#topimage {
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	#bottomimage {
+		margin-top: 0;
+		margin-left: 0;
+	}
+
 	.clientmessage, .botmessage {
 		font-size: 25px;
 	}
