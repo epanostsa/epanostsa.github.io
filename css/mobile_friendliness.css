@@ -108,7 +108,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 #contact-header {
-	border-bottom: 3px solid rgb(209, 220, 240);
+	border-bottom: 3px solid #3b4252ff;
 	padding-bottom: 50px;
 	margin-left: auto;
 	margin-right: auto;
@@ -171,7 +171,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 @media only screen and (max-width: 1025px) {
 	#contact-header {
-		border-bottom: 2px solid;
+		border-bottom: 2px solid #3b4252ff;
 	}
 
 	#question {
