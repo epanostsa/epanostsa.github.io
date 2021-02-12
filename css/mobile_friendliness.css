@@ -42,9 +42,9 @@ html, body {
 }
 
 .tab {
-	color: rgb(0, 28, 54);
-	font-family: 'Nunito';
-	font-weight: 500;
+	color: rgb(64, 79, 95);
+	font-family: 'Quicksand';
+	font-weight: 550;
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -57,7 +57,10 @@ html, body {
 }
 
 .grey {
-	color: rgb(224, 224, 224);
+	z-index: -999;
+	transform: scale(0.5, 0.5);
+	margin-top: 6px;
+	color: rgb(148, 148, 148);
 }
 
 a { text-decoration: none; display: inline-block; transition: 0.3s; }
@@ -70,6 +73,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 #tabs2 {
+	display: inherit;
 	color: rgb(0, 64, 124);
 }
 
@@ -104,7 +108,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 #contact-header {
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid rgb(209, 220, 240);
 	padding-bottom: 50px;
 	margin-left: auto;
 	margin-right: auto;
@@ -113,7 +117,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	background: whitesmoke; 
 	font-family: "Nunito";
 	font-size: 40px;
-	color: black;
+	color: #3b4252ff;
 	font-weight: bold;
 }
 
