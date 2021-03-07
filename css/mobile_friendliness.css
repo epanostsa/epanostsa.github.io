@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 * {
-	transition: 0.7s ease;
+	transition: 0.5s;
 }
 
 ::-webkit-scrollbar {
