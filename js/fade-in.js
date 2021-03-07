@@ -15,7 +15,7 @@ $(window).scroll(() => {
             $(section).css('margin-left', '-200px')
         }
     })
-    if ($(window).scrollTop() > $('#contact').offset().top - 450) {
+    if ($(window).scrollTop() > $('#contact').offset().top - 550) {
         $('#contact').css('opacity', 1);
         $('#contact').css('margin-left', '0')
     } else {
