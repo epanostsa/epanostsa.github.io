@@ -7,17 +7,19 @@ var sections = [
 ]
 $(window).scroll(() => {
     sections.forEach((section) => {
-        if (($(window).scrollTop() > $(section).offset().top - 450)) {
-            if ($(section).css('opacity') == 0 || $(section).css('left') == '-200px') {
-                $(section).css('opacity', 1);
-                $(section).css('left', '0')
+        try {
+            if (($(window).scrollTop() > $(section).offset().top - 450)) {
+                if ($(section).css('opacity') == 0 || $(section).css('left') == '-200px') {
+                    $(section).css('opacity', 1);
+                    $(section).css('left', '0')
+                }
+            } else {
+                if ($(section).css('opacity') == 1 || $(section).css('left') == 0) {
+                    $(section).css('opacity', 0);
+                    $(section).css('left', '-200px')
+                }
             }
-        } else {
-            if ($(section).css('opacity') == 1 || $(section).css('left') == 0) {
-                $(section).css('opacity', 0);
-                $(section).css('left', '-200px')
-            }
-        }
+        } catch {}
     })
 
     if (($(window).scrollTop() > $('#contact').offset().top - 550)) {
