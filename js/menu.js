@@ -1,4 +1,5 @@
 var defaultColor = "#6a7794"
+var onHomePage = location.pathname == "/" || location.pathname.indexOf("index") > -1
 
 function goToSection(id) {
     if (location.pathname.indexOf("index") != -1 || location.pathname == "/") {
@@ -14,7 +15,7 @@ function goToSection(id) {
 }
 
 function hidePanel() {
-    if ($(window).scrollTop() < 550) {
+    if ($(window).scrollTop() < 550 && onHomePage) {
         $('#panel').css('background', 'transparent')
         $('#panel').css('box-shadow', 'none')
     }
@@ -51,7 +52,7 @@ if (location.pathname != "/" && location.pathname.indexOf("index") == -1) {
 }
 
 $(window).scroll(() => {
-    if (location.pathname == "/" || location.pathname.indexOf("index") > -1) {
+    if (onHomePage) {
         if ($(window).scrollTop() < 550) {
             $('#panel').css('background', 'transparent')
             $('#panel').css('box-shadow', 'none')
