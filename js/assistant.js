@@ -18,7 +18,7 @@ function generateResponse(msg) {
     else if (/contact|call|phone|media|message/i.test(msg)) return sentences[3];
     else if (/appointment|schedule|book/i.test(msg)) return sentences[4];
     else if (/cough|cold|sore|sneez|stomach|head/i.test(msg)) return sentences[8];
-    else if (/breath|/i.test(msg)) return sentences[9];
+    else if (/breath/i.test(msg)) return sentences[9];
     else if (/diagnos/i.test(msg)) return sentences[5];
     else if (/news|article/i.test(msg)) return sentences[6];
     else if (/who|what do you do|about|company|epanos/i.test(msg)) return sentences[1];
