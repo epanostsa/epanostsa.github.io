@@ -9,7 +9,7 @@ $(window).scroll(() => {
     sections.forEach((section) => {
         if ($(window).scrollTop() > $(section).offset().top - 450) {
             $(section).css('opacity', 1);
-            $(section).css('margin-left', '0')
+            $(section).css('margin-left', '0px')
         } else {
             $(section).css('opacity', 0);
             $(section).css('margin-left', '-200px')
@@ -17,7 +17,7 @@ $(window).scroll(() => {
     })
     if ($(window).scrollTop() > $('#contact').offset().top - 550) {
         $('#contact').css('opacity', 1);
-        $('#contact').css('margin-left', '0')
+        $('#contact').css('margin-left', '0px')
     } else {
         $('#contact').css('opacity', 0);
         $('#contact').css('margin-left', '-200px')

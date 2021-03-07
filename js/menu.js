@@ -41,7 +41,7 @@ document.addEventListener('click', (event) => {
 
 setInterval(() => {
     if (document.body.clientWidth > 1025) {
-        document.getElementById("tabs").style.display = "none";
+        $('#tabs').css('height', '0%');
     }
 }, 100)
 
