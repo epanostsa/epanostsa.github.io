@@ -3,7 +3,7 @@ var sections = [
     '#bot-description',
     '#doctor-description',
     '#diagnosis-description',
-    '#newsletter',
+    '#newsletter'
 ]
 $(window).scroll(() => {
     sections.forEach((section) => {
