@@ -18,8 +18,6 @@ a {
     z-index: 1;
 }
 ::-webkit-scrollbar-thumb {
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     background: rgb(84, 92, 112);
     z-index: 1;
 }
@@ -108,7 +106,7 @@ a {
     position: absolute; 
     z-index: 0;
     height: 508px;
-    width: 100%;
+    width: 101%;
 }
 
 #about-main-image-m {

@@ -1,3 +1,5 @@
+var defaultColor = "#6a7794"
+
 function goToSection(id) {
     if (location.pathname.indexOf("index") != -1 || location.pathname == "/") {
         hidePanel()
@@ -12,26 +14,20 @@ function goToSection(id) {
 }
 
 function hidePanel() {
-    var rollUp = setInterval(() => {
-        if (document.getElementById("tabs").clientHeight > 0) {
-            document.getElementById("tabs").style.height = document.getElementById("tabs").clientHeight - 20 + 'px';
-        } else {
-            document.getElementById("tabs").style.display = "none";
-            clearInterval(rollUp)
-        }
-    }, 5);
+    if ($(window).scrollTop() < 550) {
+        $('#panel').css('background', 'transparent')
+        $('#panel').css('box-shadow', 'none')
+    }
+    $('#tabs').css('height', '0%')
 }
 
 function showPanel() {
-    if (document.getElementById("tabs").style.display == "none" || document.getElementById("tabs").style.display == "") {
-        document.getElementById("tabs").style.display = "inline";
-        var rollDown = setInterval(() => {
-            if (document.getElementById("tabs").clientHeight < screen.height) {
-                document.getElementById("tabs").style.height = document.getElementById("tabs").clientHeight + 20 + 'px';
-            } else {
-                clearInterval(rollDown);
-            }
-        }, 5);
+    $('#panel').css('background', defaultColor)
+    $('#panel').css('box-shadow', '0px 0px 15px rgb(63, 63, 63)')
+    $('.tab').css('color', 'white')
+    $('#tabs').css('background', defaultColor)
+    if ($('#tabs').height() == 0) {
+        $('#tabs').css('height', '100%')
     } else {
         hidePanel();
     }
@@ -48,3 +44,20 @@ setInterval(() => {
         document.getElementById("tabs").style.display = "none";
     }
 }, 100)
+
+if (location.pathname != "/" && location.pathname.indexOf("index") == -1) {
+    $('#panel').css('background', defaultColor)
+    $('#panel').css('box-shadow', '0px 0px 15px rgb(63, 63, 63)')
+}
+
+$(window).scroll(() => {
+    if (location.pathname == "/" || location.pathname.indexOf("index") > -1) {
+        if ($(window).scrollTop() < 550) {
+            $('#panel').css('background', 'transparent')
+            $('#panel').css('box-shadow', 'none')
+        } else {
+            $('#panel').css('background', defaultColor)
+            $('#panel').css('box-shadow', '0px 0px 15px rgb(63, 63, 63)')
+        }
+    }
+})

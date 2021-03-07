@@ -6,7 +6,9 @@ sentences = [
     "Learn more about our appointments <a style='text-decoration: underline' href='./index.html#appointment-description'>here</a>.",
     "At Epanos, we make sure to help diagnose your condition. More about this can be found <a style='text-decoration: underline' href='./index.html#diagnosis-description'>here</a>.",
     "Find some of our latest articles on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>.",
-    "Information about vaccines can be found on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>."
+    "Information about vaccines can be found on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>.",
+    "If you are experiencing symptoms like a cough, sore or dry throat, stomach pains, etc, we recommend you to <a style='text-decoration: underline' href='./index.html#appointment-description'>book an appointment</a> in order to help us find the right doctor for you to diagnose your condition.",
+    "Breathing problems may be a sign of COVID-19, but also other illnesses. To narrow down your condition, <a style='text-decoration: underline' href='./index.html#appointment-description'>book an appointment</a> in order to help us find the right doctor for you."
 ]
 function generateResponse(msg) {
     if (/reference|judg|copyright|checklist|grade|grading/i.test(msg)) return "Are you a judge? See our references and checklists <a style='text-decoration: underline' href='./references.html'>here</a>.";
@@ -15,9 +17,11 @@ function generateResponse(msg) {
     else if (/doctor|logist|ician/i.test(msg)) return sentences[2];
     else if (/contact|call|phone|media|message/i.test(msg)) return sentences[3];
     else if (/appointment|schedule|book/i.test(msg)) return sentences[4];
+    else if (/cough|cold|sore|sneez|stomach|head/i.test(msg)) return sentences[8];
+    else if (/breath|/i.test(msg)) return sentences[9];
     else if (/diagnos/i.test(msg)) return sentences[5];
     else if (/news|article/i.test(msg)) return sentences[6];
-    else if (/who|what do you do|about|company/i.test(msg)) return sentences[1];
+    else if (/who|what do you do|about|company|epanos/i.test(msg)) return sentences[1];
     else if (/thank you|thanks|thx/i.test(msg)) return "It's always our pleasure to help.";
     else if (/assistant|bot/i.test(msg)) return "I'm your virtual assistant! I'm a bot but I can help you with questions about our site.";
     else if (/hello|good morning|good evening|good afternoon|greetings|how are you/i.test(msg)) return "Hello! I'm happy to help with any questions about our site.";

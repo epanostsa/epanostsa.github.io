@@ -159,7 +159,8 @@ a {
     color: #3b4252ff;
 }
 .doctorfield {
-    font-size: 25px; 
+    font-size: 22px; 
+    color: grey;
     position: relative;
     margin-top: -45px; 
 }

@@ -3,15 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+* {
+	transition: 1s;
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
 	z-index: 1;
   }
   ::-webkit-scrollbar-thumb {
-	border-bottom-left-radius: 50px;
+	/*border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 	border-top-right-radius: 50px;
-	border-top-left-radius: 50px;
+	border-top-left-radius: 50px;*/
 	background: rgb(84, 92, 112);
 	z-index: 1;
   }
@@ -42,7 +46,7 @@ html, body {
 }
 
 .tab {
-	color: rgb(64, 79, 95);
+	color: white;
 	font-family: 'Quicksand';
 	font-weight: 550;
 	padding: 5px;
@@ -60,7 +64,7 @@ html, body {
 	z-index: -999;
 	transform: scale(0.5, 0.5);
 	margin-top: 6px;
-	color: rgb(148, 148, 148);
+	color: transparent;
 }
 
 a { text-decoration: none; display: inline-block; transition: 0.3s; }
@@ -75,11 +79,13 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 #tabs2 {
 	display: inherit;
 	color: rgb(0, 64, 124);
+	/*margin-left: auto;
+	margin-right: 50px;*/
 }
 
 .name {
 	text-transform: uppercase;
-	color: black;
+	color: white;
 	font-size: 30px;
 	font-family: "Nunito";
 	margin-left: 10px;
@@ -89,14 +95,15 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	z-index: 100000;
 	display: flex;
 	align-items: center;
-	background: white;
+	background: transparent;
 	padding: 20px;
 	height: 40px;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 1;
-	box-shadow: 0px 0px 15px rgb(63, 63, 63);
+	box-shadow: none;
+	transition: 0.3s;
 }
 
 #logo {
@@ -129,6 +136,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 .social-media-image {
 	width: 60px;
+	filter: saturate(200%);
 }
 
 #contact-info {
@@ -153,8 +161,9 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 #tabs {
-	display: none;
+	height: 0%;
 	overflow: hidden;
+	transition: 0.3s;
 }
 
 #show-panel-button {
@@ -162,11 +171,12 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	position: fixed;
 	right: 0;
 	transition: opacity 0.5s;
+	filter: invert();
 }
 
 #show-panel-button:hover {
 	background: none;
-	opacity: 0.3;
+	transform: none;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -251,7 +261,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
 	#titleimage {
-		height: 450px;
+		height: 600px;
 	}
 
 	#line {
@@ -304,13 +314,12 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 	#tabs {
 		opacity: 1;
-		height: 0px;
+		height: 0%;
 		text-align: center;
 		position: fixed;
 		top: 60px;
 		left: 0;
-		display: none;
-		background-color: white;
+		background-color: #6a7794;
 		width: 100%;
 		line-height: 3.2;
 		overflow-y: scroll;
@@ -385,6 +394,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
 	#appointment-description {
+		margin-top: 600px;
 		height: 800px;
 	}
 
