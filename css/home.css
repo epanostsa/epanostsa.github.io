@@ -112,12 +112,11 @@ a {
 
 
 #appointment-description, #bot-description, #doctor-description, #diagnosis-description {
-	display: flex; justify-content: center; align-items: center;
-	height: 700px; background: whitesmoke;
+	display: flex; justify-content: center; align-items: center; margin-left: -200px;
+	height: 700px; background: whitesmoke; opacity: 0;
 }
 
 #appointment-description {
-	opacity: 0;
 	margin-top: 770px;
 }
 
