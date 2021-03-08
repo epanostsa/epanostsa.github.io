@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 * {
-	transition: 0.5s;
+	transition: 0.4s;
 }
 
 ::-webkit-scrollbar {
@@ -326,7 +326,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		background-color: #6a7794;
 		width: 100%;
 		line-height: 3.2;
-		overflow-y: scroll;
+		overflow-y: hidden;
 	}
 
 	#appointment-header, #doctor-header, #diagnosis-header, #bot-header, #newsletter-header, #contact-header {

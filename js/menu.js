@@ -35,7 +35,7 @@ function showPanel() {
 };
 
 document.addEventListener('click', (event) => {
-    if (event.y > 300 && document.getElementById("tabs").style.display == "inline") {
+    if (document.getElementById("tabs").style.visibility == "visible") {
         hidePanel();
     }
 })
