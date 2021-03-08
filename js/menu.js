@@ -42,7 +42,7 @@ function goToSection(id) {
 }
 
 document.addEventListener('click', (event) => {
-    if (document.getElementById("tabs").style.visibility == "visible") {
+    if (document.getElementById("tabs").style.height != '0px') {
         hidePanel();
     }
 })

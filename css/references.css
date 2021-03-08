@@ -119,8 +119,6 @@ a {
 }
 
 #ref-content-surround {
-    position: relative;
-    margin-left: -220px;
     opacity: 0;
     width: 600px;
     height: fit-content;

@@ -38,7 +38,7 @@ a {
 	z-index: -1;
 	margin-top: 100px;
 	height: 600px;
-	filter: brightness(200%);
+	filter: saturate(130%) brightness(200%);
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
@@ -217,11 +217,10 @@ a {
 .newsletter-article {
 	width: 350px; 
 	background: white;
+	margin-left: 10px;
 	padding-bottom: 20px;
 	height: 500px; 
-	margin-left: 10px;
-	border-radius: 20px; 
-	margin-right: 10px; 
+	border-radius: 50px;
 	margin-bottom: 200px;
 	box-shadow: 0 25px 50px rgba(0, 0, 0, 0.438);
 	transition: transform 0.2s;
@@ -236,8 +235,8 @@ a {
 	width: 350px; 
 	height: 200px; 
 	object-fit: cover; 
-	border-top-left-radius: 20px; 
-	border-top-right-radius: 20px;
+	border-top-left-radius: 50px; 
+	border-top-right-radius: 50px;
 }
 .newsletter-article-header {
 	font-size: 20px;

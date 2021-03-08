@@ -5,12 +5,16 @@ var sectionsLeft = [
     '#doctor-description',
     '#newsletter',
     '#about-description',
-    '#ref-content-surround'
+    '#newsletter-a'
 ]
 
 var sectionsRight = [
     '#bot-description',
     '#diagnosis-description'
+]
+
+var sectionsAuto = [
+    '#ref-content-surround'
 ]
 
 function fadeIn() {
@@ -41,6 +45,21 @@ function fadeIn() {
                 if ($(section).css('opacity') == 1 || $(section).css('margin-right') == '0px') {
                     $(section).css('opacity', 0);
                     $(section).css('margin-right', '-200px')
+                }
+            }
+        } catch {}
+    })
+
+    sectionsAuto.forEach((section) => {
+        try {
+            if (($(window).scrollTop() > $(section).offset().top - (window.innerHeight - margin))) {
+                if ($(section).css('opacity') == 0 || $(section).css('opacity') == 0) {
+                    $(section).css('opacity', 1);
+                    $(section).css('margin-left', 'auto')
+                }
+            } else {
+                if ($(section).css('opacity') == 1 || $(section).css('opacity') == 1) {
+                    $(section).css('opacity', 0);
                 }
             }
         } catch {}
