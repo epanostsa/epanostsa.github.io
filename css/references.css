@@ -120,7 +120,7 @@ a {
 
 #ref-content-surround {
     position: relative;
-    left: -220px;
+    margin-left: -220px;
     opacity: 0;
     width: 600px;
     height: fit-content;

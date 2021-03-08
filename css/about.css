@@ -161,7 +161,7 @@ a {
 #about-description {
     position: relative;
     opacity: 0;
-    left: -200px;
+    margin-left: -200px;
 	display: flex; justify-content: center; align-items: center;
     border-radius: 50px;
 	height: 700px; background: whitesmoke;

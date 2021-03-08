@@ -286,7 +286,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		font-size: 18px;
 		margin-left: auto;
 		margin-right: auto;
-		width: 92%;
+		width: 340px;
 		text-align: center;
 	}
 
@@ -401,6 +401,10 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	#appointment-description {
 		margin-top: 650px;
 		height: 800px;
+	}
+
+	#doctor-description {
+		padding-bottom: 50px;
 	}
 
 	#contact {
@@ -716,6 +720,10 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
     #bot-description, #doctor-description, #diagnosis-description {
         height: 850px;
     }
+
+	#appointment-paragraph, #bot-paragraph, #doctor-paragraph, #diagnosis-paragraph {
+		width: 250px;
+	}
 
 	#appointment-description {
 		height: 900px;
