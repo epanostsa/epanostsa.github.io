@@ -3,6 +3,31 @@ var defaultMenuColor2 = "#3b4252ff"
 
 var onHomePage = location.pathname == "/" || location.pathname.indexOf("index") > -1
 
+function hidePanel() {
+    if ($(window).scrollTop() < 550 && onHomePage) {
+        $('#panel').css('background', 'transparent')
+        $('#panel').css('box-shadow', 'none')
+        $('.tab, .name').css('color', defaultMenuColor)
+        $('#show-panel-button').css('filter', 'invert()')
+    }
+    $('#tabs').css('height', '0%')
+    $('body, html').css('overflow-y', 'scroll')
+}
+
+function showPanel() {
+    $('#panel').css('background', defaultMenuColor)
+    $('#panel').css('box-shadow', '0px 0px 15px rgb(63, 63, 63)')
+    $('#tabs').css('background', defaultMenuColor)
+    $('.tab, .name').css('color', defaultMenuColor2)
+    $('#show-panel-button').css('filter', 'invert(0%)')
+    if ($('#tabs').height() == 0) {
+        $('#tabs').css('height', '100%')
+        $('body, html').css('overflow-y', 'hidden')
+    } else {
+        hidePanel()
+    }
+};
+
 function goToSection(id) {
     if (location.pathname.indexOf("index") != -1 || location.pathname == "/") {
         hidePanel()
@@ -15,29 +40,6 @@ function goToSection(id) {
         else location.href = location.pathname + `/../index.html#${id}`;
     }
 }
-
-function hidePanel() {
-    if ($(window).scrollTop() < 550 && onHomePage) {
-        $('#panel').css('background', 'transparent')
-        $('#panel').css('box-shadow', 'none')
-        $('.tab, .name').css('color', defaultMenuColor)
-        $('#show-panel-button').css('filter', 'invert()')
-    }
-    $('#tabs').css('height', '0%')
-}
-
-function showPanel() {
-    $('#panel').css('background', defaultMenuColor)
-    $('#panel').css('box-shadow', '0px 0px 15px rgb(63, 63, 63)')
-    $('#tabs').css('background', defaultMenuColor)
-    $('.tab, .name').css('color', defaultMenuColor2)
-    $('#show-panel-button').css('filter', 'invert(0%)')
-    if ($('#tabs').height() == 0) {
-        $('#tabs').css('height', '100%')
-    } else {
-        hidePanel();
-    }
-};
 
 document.addEventListener('click', (event) => {
     if (document.getElementById("tabs").style.visibility == "visible") {

@@ -1,4 +1,4 @@
-var margin = 250
+var margin = 300
 
 var sectionsLeft = [
     '#appointment-description',
