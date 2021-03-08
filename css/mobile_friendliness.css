@@ -36,7 +36,7 @@ html, body {
 	border-top-left-radius: 50px;
 	border-top-right-radius: 50px;
 	position: relative;
-	left: -200px;
+	margin-right: -200px;
 	background: whitesmoke; 
 	font-family: "Nunito";
 	height: fit-content;
@@ -54,6 +54,7 @@ html, body {
 	font-family: 'Quicksand';
 	font-weight: 550;
 	padding: 5px;
+	border: 2px solid transparent;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-right: 1px;
@@ -74,8 +75,8 @@ html, body {
 a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 .tab:hover {
-	color: white;
-	background: #3b4252ff;
+	color: white !important;
+	background:  #3b4252ff;
 	transform: scale(1.2, 1.2);
 	outline: none;
 }
@@ -173,7 +174,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 #show-panel-button {
 	display: none;
 	position: fixed;
-	right: 0;
+	right: 10px;
 	transition: opacity 0.5s;
 	filter: invert();
 }

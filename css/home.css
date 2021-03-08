@@ -1,9 +1,3 @@
-html, body {
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
-}
-
 body {
 	background: #98c2e4;
 }
@@ -44,7 +38,7 @@ a {
 	z-index: -1;
 	margin-top: 100px;
 	height: 600px;
-	filter: saturate(150%) brightness(200%);
+	filter: brightness(200%);
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
@@ -61,8 +55,8 @@ a {
 	height: 770px;
 	filter: brightness(80%);
 	object-fit: cover;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
+	/*border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;*/
 }
 
 #titletext {
@@ -117,8 +111,16 @@ a {
 #appointment-description, #bot-description, #doctor-description, #diagnosis-description {
 	position: relative;
 	border-radius: 50px;
-	display: flex; justify-content: center; align-items: center; left: -200px;
+	display: flex; justify-content: center; align-items: center;
 	height: 700px; background: whitesmoke; opacity: 0;
+}
+
+#appointment-description, #doctor-description, #newsletter {
+	margin-left: -200px;
+}
+
+#bot-description, #diagnosis-description {
+	margin-right: -200px;
 }
 
 #appointment-description {
@@ -191,7 +193,6 @@ a {
 #newsletter {
 	border-radius: 50px;
 	position: relative;
-	left: -200px;
 	background: #3b4252ff; 
 	font-family: "Nunito";
 	height: 900px;
