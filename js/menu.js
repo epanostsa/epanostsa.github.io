@@ -20,7 +20,8 @@ function hidePanel() {
     if ($(window).scrollTop() < 550 && onHomePage) {
         $('#panel').css('background', 'transparent')
         $('#panel').css('box-shadow', 'none')
-        $('.tab').css('color', defaultMenuColor)
+        $('.tab, .name').css('color', defaultMenuColor)
+        $('#show-panel-button').css('filter', 'invert()')
     }
     $('#tabs').css('height', '0%')
 }
@@ -28,9 +29,9 @@ function hidePanel() {
 function showPanel() {
     $('#panel').css('background', defaultMenuColor)
     $('#panel').css('box-shadow', '0px 0px 15px rgb(63, 63, 63)')
-    $('.tab').css('color', 'white')
     $('#tabs').css('background', defaultMenuColor)
-    $('.tab').css('color', defaultMenuColor2)
+    $('.tab, .name').css('color', defaultMenuColor2)
+    $('#show-panel-button').css('filter', 'invert(0%)')
     if ($('#tabs').height() == 0) {
         $('#tabs').css('height', '100%')
     } else {
