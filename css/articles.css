@@ -6,7 +6,6 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: whitesmoke;
 }
 
 a {
@@ -14,23 +13,7 @@ a {
 }
 .grey {
     color: grey; /* xP */
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-    z-index: 1;
-}
-::-webkit-scrollbar-thumb {
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background: rgb(84, 92, 112);
-    z-index: 1;
-}
-::-webkit-scrollbar-track {
-    background: white;
-    border-radius: 0px;
-    z-index: 1;
-}
+}   
 
 #other {
     flex: 1;
@@ -106,8 +89,9 @@ a {
 #wave {
     position: absolute; 
     z-index: 0;
+    margin-top: -1px;
     height: 508px;
-    width: 100%;
+    width: 101%;
 }
 
 .article-main-image-m {
@@ -151,6 +135,7 @@ a {
     width: 500px;
     height: 300px;
     margin-left: 50px;
+    border-radius: 20px;
 }
 
 #bottomimage {
@@ -158,6 +143,7 @@ a {
     width: 500px;
     height: 300px;
     margin-right: 50px;
+    border-radius: 20px;
 }
 
 
@@ -262,7 +248,7 @@ a {
 	padding-bottom: 20px;
 	height: 500px; 
 	margin-left: 10px;
-	border-radius: 50px;
+	border-radius: 20px;
 	margin-bottom: 200px;
 	box-shadow: 0 25px 50px rgba(0, 0, 0, 0.438);
 	transition: transform 0.2s;
@@ -277,8 +263,8 @@ a {
 	width: 350px; 
 	height: 200px; 
 	object-fit: cover; 
-	border-top-left-radius: 50px; 
-	border-top-right-radius: 50px;
+	border-top-left-radius: 20px; 
+	border-top-right-radius: 20px;
 }
 .newsletter-article-header {
 	font-size: 20px;

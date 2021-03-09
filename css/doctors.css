@@ -101,8 +101,8 @@ a {
 #wave {
     position: absolute;
     z-index: 0;
-    height: 508px;
-    top: 80px;
+    height: 708px;
+    top: -120px;
     width: 100%;
 }
 

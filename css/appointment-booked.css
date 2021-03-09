@@ -17,22 +17,6 @@ a {
     color: grey;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-    z-index: 1;
-}
-::-webkit-scrollbar-thumb {
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background: rgb(84, 92, 112);
-    z-index: 1;
-}
-::-webkit-scrollbar-track {
-    background: white;
-    border-radius: 0px;
-    z-index: 1;
-}
-
 .tab {
     color: black;
     font-family: 'Nunito';
@@ -89,19 +73,11 @@ a {
     box-shadow: 0px 0px 15px rgb(63, 63, 63);
 }
 
-.name {
-    text-transform: uppercase;
-    color: black;
-    font-size: 30px;
-    font-family: "Nunito";
-    margin-left: 10px;
-}
-
 #wave {
     position: absolute;
-    height: 508px;
-    top: 80px;
-    width: 100%;
+    height: 708px;
+    top: -120px;
+    width: 101%;
 }
 
 #checkmark-paper {
@@ -215,7 +191,7 @@ a {
 	margin-top: 350px;
     margin-left: -375px;
 	border-radius: 10px;
-	transition: 0.3s;
+	transition: 0.1s;
 }
 #return-button:hover {
     background: #3b9662;

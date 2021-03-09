@@ -7,6 +7,10 @@
 	transition: 0.3s;
 }
 
+#wave {
+	filter: saturate(220%) brightness(170%);
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
 	z-index: 1;
@@ -28,8 +32,12 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	overflow-y: hidden !important;
 }
 
 #contact {
@@ -37,6 +45,7 @@ html, body {
 	border-top-right-radius: 50px;
 	position: relative;
 	margin-right: -200px;
+	opacity: 0;
 	background: whitesmoke; 
 	font-family: "Nunito";
 	height: fit-content;
@@ -52,14 +61,13 @@ html, body {
 .tab {
 	color: white;
 	font-family: 'Quicksand';
-	font-weight: 550;
 	padding: 5px;
 	border: 2px solid transparent;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-right: 1px;
 	margin-left: 1px;
-	font-size: 15px;
+	font-size: 14px;
 	background: transparent;
 	border-radius: 5px;
 	transition: all 0.15s ease;
@@ -67,7 +75,7 @@ html, body {
 
 .grey {
 	z-index: -999;
-	transform: scale(0.5, 0.5);
+	display: none;
 	margin-top: 6px;
 	color: transparent;
 }
@@ -185,6 +193,15 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 @media only screen and (max-width: 1025px) {
+	.newsletter-article {
+		border-radius: 50px;
+    }
+
+	.newsletter-article-image {
+		border-top-right-radius: 50px;
+		border-top-left-radius: 50px;
+    }
+
 	#contact-header {
 		border-bottom: 2px solid #3b4252ff;
 	}
@@ -416,7 +433,9 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		padding-bottom: 80px;
 	}
 
-	.tab { font-size: 15px; }
+	.tab {
+		font-size: 15px;
+	}
 
 	.grey { display: none }
 
@@ -575,8 +594,10 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
     }
 	
     #wave {
-        top: 80px;
-        height: 300px;
+        top: -80px;
+        height: 500px;
+		width: 120%;
+		left: -20%;
     }
 
 	#content {
@@ -761,7 +782,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
     #wave {
-        height: 350px;
+        height: 500px;
     }
 
     .newsletter-article-image {

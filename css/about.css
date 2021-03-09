@@ -106,11 +106,16 @@ a {
     position: absolute; 
     z-index: 0;
     height: 508px;
+    margin-top: -1px;
     width: 101%;
 }
 
 #about-main-image-m {
     display: none;
+}
+
+#about-main-image {
+    border-radius: 10px;
 }
 
 #titlearea {
