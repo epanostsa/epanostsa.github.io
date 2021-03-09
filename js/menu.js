@@ -53,13 +53,13 @@ function hidePanel() {
         $('#panel').css('box-shadow', 'none')
         $('.tab, .name').css('color', defaultMenuColor)
         $('#show-panel-button').css('filter', 'invert()')
-    } else if ($(window).scrollTop() < 250 && onUnchangedMenuPage) {
+    } else if ($(window).scrollTop() < 150 && onUnchangedMenuPage) {
         $('#panel').css('background', 'transparent')
         $('#panel').css('box-shadow', 'none')
         $('.tab, .name').css('color', defaultMenuColor)
         $('#show-panel-button').css('filter', 'invert()')
     }
-    else if ($(window).scrollTop() < 250 && onUnchangedMenuLightPage) {
+    else if ($(window).scrollTop() < 150 && onUnchangedMenuLightPage) {
         $('#panel').css('background', 'transparent')
         $('#panel').css('box-shadow', 'none')
         $('.tab, .name').css('color', defaultMenuColor2)
@@ -119,12 +119,12 @@ $(window).scroll(() => {
         $('#panel').css('box-shadow', 'none')
         $('.tab, .name').css('color', defaultMenuColor)
         $('#show-panel-button').css('filter', 'invert()')
-    } else if ($(window).scrollTop() < 250 && onUnchangedMenuPage) {
+    } else if ($(window).scrollTop() < 150 && onUnchangedMenuPage) {
         $('#panel').css('background', 'transparent')
         $('#panel').css('box-shadow', 'none')
         $('.tab, .name').css('color', defaultMenuColor)
         $('#show-panel-button').css('filter', 'invert()')
-    } else if ($(window).scrollTop() < 250 && onUnchangedMenuLightPage) {
+    } else if ($(window).scrollTop() < 150 && onUnchangedMenuLightPage) {
         $('#panel').css('background', 'transparent')
         $('#panel').css('box-shadow', 'none')
         $('.tab, .name').css('color', defaultMenuColor2)
