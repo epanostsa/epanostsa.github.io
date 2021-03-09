@@ -257,7 +257,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
 	.article-main-paragraph:nth-child(1) {
-		margin-top: -120px;
+		margin-top: -120px !important;
 	}
 
 	#experts {
