@@ -211,11 +211,12 @@ a {
     line-height: 2;
 }
 
-.article-main-paragraph-2 {
-    flex: 1;
-    font-size: 20px;
-    margin-top: 100px;
-    line-height: 2;
+.article-main-paragraph:nth-child(1) {
+    margin-top: -40px;
+}
+
+#bottomimage {
+    margin-top: 0px;
 }
 
 #newsletter-a {

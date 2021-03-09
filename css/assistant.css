@@ -4,20 +4,8 @@
     100% { background: rgb(89, 100, 126); }
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-    z-index: 1;
-}
-::-webkit-scrollbar-thumb {
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background: rgb(84, 92, 112);
-    z-index: 1;
-}
-::-webkit-scrollbar-track {
-    background: white;
-    border-radius: 0px;
-    z-index: 1;
+body {
+    background-color: rgb(76, 97, 146);
 }
 
 #content {
@@ -37,7 +25,7 @@
 #botimage-surrounding {
     width: 350px;
     height: 350px;
-    background: rgb(89, 100, 126);
+    background: rgb(95, 117, 168);
     border-radius: 100%;
     margin-left: auto;
     margin-right: 70px;
@@ -47,7 +35,7 @@
 
 #bot {
     position: relative;
-    margin-top: 100px;
+    margin-top: 40px;
     text-align: center;
 }
 
