@@ -443,6 +443,8 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
 	.tab {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
 		font-size: 15px;
 	}
 
