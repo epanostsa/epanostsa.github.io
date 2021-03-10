@@ -68,7 +68,7 @@ body {
 	padding-right: 10px;
 	margin-right: 1px;
 	margin-left: 1px;
-	font-size: 15px;
+	font-size: 2.36vh;
 	background: transparent;
 	border-radius: 5px;
 	transition: all 0.15s ease;
@@ -445,7 +445,26 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	.tab {
 		-webkit-transform: translateZ(0);
 		transform: translateZ(0);
-		font-size: 15px;
+		border: none;
+		border-bottom: 2px solid rgba(219, 219, 219, 0.8);
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		width: 40%;
+		padding-top: 0.1vh;
+		font-size: 2.36vh;
+	}
+	.tab:nth-child(24) {
+		border-bottom: 0px solid transparent;
+	}
+
+	.tab:hover {
+		color: white !important;
+		background:  #3b4252ff;
+		transform: scale(1.2, 1.2);
+		outline: none;
+		border-bottom: 0px solid transparent;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
 	}
 
 	.grey { display: none }
@@ -505,6 +524,12 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 	#titletitle-doctors {
 		font-size: 30px;
+		margin-left: 10px;
+	}
+
+	#titleicon {
+		width: 100px;
+		height: 100px;
 	}
 
 	.doctorbox {
@@ -856,7 +881,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
 	.tab {
-		font-size: 12px;
+		font-size: 1.89vh;
 	}
 }
 
