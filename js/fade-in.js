@@ -14,7 +14,8 @@ var sectionsRight = [
 ]
 
 var sectionsAuto = [
-    '#ref-content-surround'
+    '#ref-content-surround',
+    '#appointment-content-surround'
 ]
 
 function fadeIn() {

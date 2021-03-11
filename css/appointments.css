@@ -73,8 +73,9 @@ a {
     font-weight: bold;
 }
 
-#ref-content-surround {
-    width: 600px;
+#appointment-content-surround {
+    width: 800px;
+    opacity: 0;
     height: fit-content;
     background: #576178;
     margin: auto;
