@@ -10,13 +10,31 @@ var sectionsLeft = [
 
 var sectionsRight = [
     '#bot-description',
-    '#diagnosis-description'
+    '#diagnosis-description',
+    '#contact'
 ]
 
 var sectionsAuto = [
     '#ref-content-surround',
     '#appointment-content-surround'
 ]
+
+if (screen.width <= 1024) {
+    sectionsLeft.forEach((element) => {
+        sectionsAuto.push(element);
+        $(element).css('margin-left', '0px')
+        $(element).css('margin-right', '0px')
+    })
+
+    sectionsRight.forEach((element) => {
+        sectionsAuto.push(element);
+        $(element).css('margin-right', '0px')
+        $(element).css('margin-left', '0px')
+    });
+
+    sectionsRight = [];
+    sectionsLeft = [];
+}
 
 function fadeIn() {
     sectionsLeft.forEach((section) => {
@@ -25,11 +43,13 @@ function fadeIn() {
                 if ($(section).css('opacity') == 0 || $(section).css('margin-left') == '-200px') {
                     $(section).css('opacity', 1);
                     $(section).css('margin-left', '0px')
+                    $(section).css('margin-right', '0px')
                 }
             } else {
                 if ($(section).css('opacity') == 1 || $(section).css('margin-left') == '0px') {
                     $(section).css('opacity', 0);
                     $(section).css('margin-left', '-200px')
+                    $(section).css('margin-right', '200px')
                 }
             }
         } catch {}
@@ -41,11 +61,13 @@ function fadeIn() {
                 if ($(section).css('opacity') == 0 || $(section).css('margin-right') == '-200px') {
                     $(section).css('opacity', 1);
                     $(section).css('margin-right', '0px')
+                    $(section).css('margin-left', '0px')
                 }
             } else {
                 if ($(section).css('opacity') == 1 || $(section).css('margin-right') == '0px') {
                     $(section).css('opacity', 0);
                     $(section).css('margin-right', '-200px')
+                    $(section).css('margin-left', '200px')
                 }
             }
         } catch {}
@@ -81,17 +103,19 @@ function fadeIn() {
         })
     })
 
-    if (($(window).scrollTop() > $('#contact').offset().top - (window.innerHeight - (margin - 100)))) {
+    /*if (($(window).scrollTop() > $('#contact').offset().top - (window.innerHeight - (margin - 100)))) {
         if ($('#contact').css('opacity') == 0 || $('#contact').css('margin-right') == '-200px') {
             $('#contact').css('opacity', 1);
             $('#contact').css('margin-right', '0px')
+            $('#contact').css('margin-left', '0px')
         }
     } else {
         if ($('#contact').css('opacity') == 1 || $('#contact').css('margin-right') == '0px') {
             $('#contact').css('opacity', 0);
             $('#contact').css('margin-right', '-200px')
+            $('#contact').css('margin-left', '200px')
         }
-    }
+    }*/
 }
 
 $(window).scroll(() => {

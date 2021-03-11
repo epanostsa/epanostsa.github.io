@@ -75,8 +75,7 @@ body {
 }
 
 .grey {
-	z-index: -999;
-	display: none;
+	margin-left: -10px;
 	margin-top: 6px;
 	color: transparent;
 }
@@ -86,7 +85,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 .tab:hover {
 	color: white !important;
 	background:  #3b4252ff;
-	transform: scale(1.2, 1.2);
+	transform: scale(1.1, 1.1);
 	outline: none;
 }
 
@@ -121,6 +120,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 #logo {
+	height: 40px !important;
 	transition: transform 0.1s;
 }
 
@@ -465,7 +465,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	.tab:hover {
 		color: white !important;
 		background:  #3b4252ff;
-		transform: scale(1.2, 1.2);
+		transform: scale(1.1, 1.1);
 		outline: none;
 		border-bottom: 0px solid transparent;
 		border-bottom-left-radius: 5px;
@@ -889,5 +889,3 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		font-size: 0.125in;
 	}
 }
-
-

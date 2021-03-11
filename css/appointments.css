@@ -54,7 +54,8 @@ a {
     position: absolute;
     height: 708px;
     top: -120px;
-    width: 100%;
+    width: 101%;
+    margin-left: -1px;
 }
 
 #titlearea {

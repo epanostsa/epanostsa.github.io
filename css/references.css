@@ -7,7 +7,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: #3b4252ff;
+    background: rgb(59, 72, 82);
 }
 
 a {
@@ -99,7 +99,8 @@ a {
     position: absolute;
     height: 708px;
     top: -120px;
-    width: 100%;
+    width: 101%;
+    margin-left: -1px;
 }
 
 #titlearea {
