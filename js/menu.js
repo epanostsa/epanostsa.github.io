@@ -1,10 +1,6 @@
-var reqOptions = {
-    method: 'get',
-};
-
-fetch(location.host + '/menu.html', reqOptions)
-.then((res) => {$('body').prepend(res.text())})
-.catch(() => {})
+fetch(location.host + '/menu.html')
+    .then((res) => {$('body').prepend(res.text())})
+    .catch(() => {})
 
 var defaultMenuColor = "white"
 var defaultMenuColor2 = "#3b4252ff"
