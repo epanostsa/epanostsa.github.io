@@ -1,11 +1,18 @@
+const requestOptions = {
+    method: 'POST',
+    headers: {
+        'content-type': 'application/x-www-form-urlencoded',
+    },
+};
+
 if (location.pathname.indexOf('newsletter') > -1) {
-    fetch('../menu.html', {'content-type': 'application/x-www-form-urlencoded',})
-        .then((res) => {$('body').prepend(res.text)})
-        .catch(() => {})
+    fetch('../menu.html', requestOptions)
+    .then((res) => {$('body').prepend(res.text)})
+    .catch(() => {})
 } else {
-    fetch('./menu.html', {'content-type': 'application/x-www-form-urlencoded'})
-        .then((res) => {$('body').prepend(res.text)})
-        .catch(() => {})
+    fetch('./menu.html', requestOptions)
+    .then((res) => {$('body').prepend(res.text)})
+    .catch(() => {})
 }
 
 var defaultMenuColor = "white"
@@ -74,7 +81,7 @@ function hidePanel() {
         $('#panel').css('box-shadow', 'none')
         $('.tab, .name').css('color', defaultMenuColor2)
     }
-
+    
     $('#tabs').css('height', '0%')
     $('body, html').css('overflow-y', 'scroll')
 }
