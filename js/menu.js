@@ -1,19 +1,10 @@
-const requestOptions = {
-    method: 'POST',
-    headers: {
-        'content-type': 'application/x-www-form-urlencoded',
-    },
+var reqOptions = {
+    method: 'get',
 };
 
-if (location.pathname.indexOf('newsletter') > -1) {
-    fetch('../menu.html', requestOptions)
-    .then((res) => {$('body').prepend(res.text)})
-    .catch(() => {})
-} else {
-    fetch('./menu.html', requestOptions)
-    .then((res) => {$('body').prepend(res.text)})
-    .catch(() => {})
-}
+fetch(location.host + '/menu.html', reqOptions)
+.then((res) => {$('body').prepend(res.text())})
+.catch(() => {})
 
 var defaultMenuColor = "white"
 var defaultMenuColor2 = "#3b4252ff"
