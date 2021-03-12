@@ -1,9 +1,9 @@
 if (location.pathname.indexOf('newsletter') > -1) {
-    fetch('../menu.html')
+    fetch('../menu.html', {'content-type': 'application/x-www-form-urlencoded',})
         .then((res) => {$('body').prepend(res.text)})
         .catch(() => {})
 } else {
-    fetch('./menu.html')
+    fetch('./menu.html', {'content-type': 'application/x-www-form-urlencoded'})
         .then((res) => {$('body').prepend(res.text)})
         .catch(() => {})
 }
