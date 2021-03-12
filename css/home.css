@@ -186,7 +186,7 @@ a {
 	color: white;
 }
 #appointment-button:hover, #bot-button:hover, #doctor-button:hover, #diagnosis-button:hover {
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 	transform: scale(1.1, 1.1);
 }
 

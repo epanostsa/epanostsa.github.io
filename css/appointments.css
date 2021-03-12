@@ -75,10 +75,10 @@ a {
 }
 
 #appointment-content-surround {
-    width: 800px;
+    width: 1000px;
     opacity: 0;
     height: fit-content;
-    background: #576178;
+    background: whitesmoke;
     margin: auto;
     padding-left: 10px; padding-right: 10px; padding-bottom: 10px; padding-top: 10px;
     border-bottom: 20px solid white;
@@ -86,14 +86,31 @@ a {
 }
 
 #appointment-content {
-    color: white;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+    color: #3b4271;
     height: fit-content;
     border-radius: 20px;
     font-family: "Nunito";
     padding-left: 40px;
-    margin-top: -20px;
+    margin-top: 20px;
     padding-top: 40px;
+    padding-bottom: 40px;
     line-height: 40px;
+}
+
+#submit-appointment-form {
+    text-align: center;
+    font-family: "Nunito";
+    font-weight: bold;
+    font-size: 30px;
+    color: #3b4252;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 1000px;
+    background: white;
 }
 
 #references {
@@ -116,25 +133,21 @@ a {
     border: none;
     outline: none;
     background: transparent;
-    color: white;
+    color: #3b4252;
     width: 90%;
-    border-bottom: 1px solid white;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #3b4271;
     font-size: 16px;
     box-shadow: 0px 0px 0px transparent;
-    transition: 0.3s;
+    font-family: "Nunito";
+    transition: 0.2s;
 }
 
 .appointment-input:focus {
-    background: #3b4252ff;
-    border-bottom: none;
     border-radius: 10px;
-    color: whitesmoke;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-#appointment-icon {
-    position: relative;
-    margin-right: auto;
+    border: 2px solid #3b4252;
+    background: #3b4252;
+    color: white;
 }
 
 #question {
