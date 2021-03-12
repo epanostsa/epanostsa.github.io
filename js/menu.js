@@ -1,4 +1,4 @@
-fetch(location.host + '/menu.html')
+fetch('https://' + location.host + '/menu.html')
     .then((res) => {$('body').prepend(res.text())})
     .catch(() => {})
 
