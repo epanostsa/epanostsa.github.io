@@ -76,7 +76,7 @@ body {
     display: inline-block;
     font-family: "Nunito";
     width: fit-content;
-    font-size: 2.5vh;
+    font-size: 15px;
     max-width: 71%;
     border-radius: 30px;
     background: rgb(224, 224, 224);
@@ -109,7 +109,7 @@ body {
 
 #chatbar {
     font-family: "Nunito";
-    font-size: 2.7vh;
+    font-size: 17px;
     outline: none;
     border: none;
     border-radius: 30px;
@@ -133,7 +133,7 @@ body {
 
 #typing {
     font-family: "Nunito";
-    font-size: 2.1vh;
+    font-size: 14px;
     color: #3b4252ff;
     padding-bottom: 10px;
     padding-left: 5px;

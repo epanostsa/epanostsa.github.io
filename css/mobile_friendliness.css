@@ -72,6 +72,7 @@ body {
 	background: transparent;
 	border-radius: 5px;
 	transition: all 0.15s ease;
+	outline: none;
 }
 
 .grey {
@@ -85,8 +86,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 .tab:hover {
 	color: white !important;
 	background:  #3b4252ff;
-	transform: scale(1.1, 1.1);
-	outline: none;
+	border-radius: 50px;
 }
 
 #tabs2 {
@@ -681,7 +681,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
 	.clientmessage, .botmessage {
-		font-size: 2.2vh;
+		font-size: 14px;
 	}
 }
 
@@ -689,6 +689,20 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	#topimage {
 		margin-top: 0;
 		margin-left: 0;
+	}
+
+	#chatarea {
+		height: 410px !important;
+	}
+
+	#chatbox {
+		height: 360px !important;
+		width: 115% !important;
+	}
+
+	#chatbar {
+		height: 30px;
+		width: 96% !important;
 	}
 
 	.pfp {
@@ -702,7 +716,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
 	.clientmessage, .botmessage {
-		font-size: 2.3vh;
+		font-size: 15px;
 	}
 
 	.article-contents, .article {
@@ -841,12 +855,20 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
         width: calc(100% - 10px);
     }
 
-	#chatarea, #chatbox {
-		width: 250px;
+	#chatarea {
+		width: 90vw;
+	}
+
+	#chatbox {
+		width: 106%;
+	}
+
+	.botmessage, .clientmessage {
+		width: 70%;
 	}
 
 	#chatbar {
-		width: 220px
+		width: 90%;
 	}
 
 	#chatbox-right {
