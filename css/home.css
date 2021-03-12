@@ -7,28 +7,6 @@ a {
 	text-decoration: none;
 }
 
-
-.right-tab {
-	font-family: 'Nunito';
-	padding: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-right: 1px;
-	margin-left: 1px;
-	font-size: 20px;
-	color: #ffffff;
-	background: #3b4252ff;
-	border-radius: 5px;
-	transition: 0.3s;
-	box-shadow: 2px 2px 2px rgb(161, 161, 161);
-}
-
-.right-tab:hover {
-	color: #ffffff;
-	background: rgb(45, 50, 61);
-	box-shadow: 3px 3px 3px rgb(161, 161, 161);
-}
-
 .spacer {
 	width: 10px;
 }

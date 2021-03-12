@@ -1,3 +1,13 @@
+if (location.pathname.indexOf('newsletter') > -1) {
+    fetch('../menu.html')
+        .then((res) => {$('body').prepend(res.text)})
+        .catch(() => {})
+} else {
+    fetch('./menu.html')
+        .then((res) => {$('body').prepend(res.text)})
+        .catch(() => {})
+}
+
 var defaultMenuColor = "white"
 var defaultMenuColor2 = "#3b4252ff"
 var setMenuToDefault = false;

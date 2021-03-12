@@ -8,6 +8,28 @@
 	transition: 0.3s;
 }
 
+.sign-in-tab {
+	position: fixed;
+	font-family: 'Nunito';
+	padding: 10px;
+	right: 20px;
+	margin-top: -5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 17px;
+	color: #ffffff;
+	background: #3b4252ff;
+	border-radius: 40px;
+	transition: 0.3s;
+	box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+.sign-in-tab:hover {
+	color: #ffffff;
+	background: rgb(45, 50, 61);
+	box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.7);
+}
+
 #wave {
 	filter: saturate(350%) brightness(240%);
 }
@@ -60,6 +82,7 @@ body {
 }
 
 .tab {
+	-webkit-tap-highlight-color: transparent;
 	color: white;
 	font-family: "Nunito";
 	padding: 5px;
@@ -194,6 +217,10 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 @media only screen and (max-width: 1025px) {
+	.m {
+		display: inline-block;
+	}
+
 	.newsletter-article {
 		border-radius: 50px;
     }
@@ -357,7 +384,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		left: 0;
 		background-color: #6a7794;
 		width: 100%;
-		line-height: 3.2;
+		line-height: 3;
 		overflow-y: hidden;
 	}
 
@@ -450,26 +477,50 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	.tab {
 		-webkit-transform: translateZ(0);
 		transform: translateZ(0);
-		border: none;
-		border-bottom: 2px solid rgba(219, 219, 219, 0.8);
-		border-bottom-left-radius: 0px;
-		border-bottom-right-radius: 0px;
+		outline: none;
+		border-radius: 0px;
+		margin-top: 5px;
 		width: 40%;
-		padding-top: 0.1vh;
+		padding: 0px;
 		font-size: 0.15625in;
 	}
+
+	.sign-in-tab {
+		position: relative;
+		width: 84%;
+		padding: 5px;
+		margin-top: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 0.15625in;;
+		height: 40px;
+		right: unset;
+	}
+
+	.tab:nth-child(1) {
+		margin-top: 3px;
+	}
+
 	.tab:nth-child(24) {
-		border-bottom: 0px solid transparent;
+		border-bottom: none;
+	}
+
+	#submit-appointment-form {
+		width: 70%;
+		font-size: 20px;
+		padding: 20px;
+	}
+
+	#submit-button {
+		margin-left: 10px;
 	}
 
 	.tab:hover {
 		color: white !important;
-		background:  #3b4252ff;
-		transform: scale(1.1, 1.1);
 		outline: none;
-		border-bottom: 0px solid transparent;
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
+		border-radius: 10px;
+		background: #3b4252ff;
+		border: 2px solid #3b4252ff;
 	}
 
 	.grey { display: none }
@@ -609,6 +660,12 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		font-size: 50px;
 		margin-top: 50px;
 		text-align: center;
+	}
+
+	#titletitle-appointment {
+		font-size: 30px;
+		margin-top: 50px;
+		margin-left: 0px;
 	}
 
 	#ref-content-surround {

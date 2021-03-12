@@ -18,14 +18,14 @@ function generateResponse(msg) {
     else if (/cov|corona|sars|-19/i.test(msg)) return sentences[0];
     else if (/doctor|logist|ician/i.test(msg)) return sentences[2];
     else if (/contact|call|phone|media|message/i.test(msg)) return sentences[3];
-    else if (/appointment|schedule|book/i.test(msg)) return sentences[4];
+    else if (/appointment|schedule|book|bot/i.test(msg)) return sentences[4];
     else if (/cough|cold|sore|sneez|stomach|head/i.test(msg)) return sentences[8];
     else if (/breath/i.test(msg)) return sentences[9];
     else if (/diagnos/i.test(msg)) return sentences[5];
     else if (/news|article/i.test(msg)) return sentences[6];
     else if (/who|what do you do|about|company|epanos/i.test(msg)) return sentences[1];
     else if (/thank you|thanks|thx/i.test(msg)) return "It's always our pleasure to help.";
-    else if (/assistant|bot/i.test(msg)) return "I'm your virtual assistant! I'm a bot but I can help you with questions about our site.";
+    else if (/assistant|bot|assist/i.test(msg)) return "I'm your virtual assistant! I'm a bot but I can help you with questions about our site.";
     else if (/hello|good morning|good evening|good afternoon|greetings|how are you/i.test(msg)) return "Hello! I'm happy to help with any questions about our site.";
     else return sentences[Math.floor(Math.random() * sentences.length)]
 }
