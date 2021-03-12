@@ -60,6 +60,7 @@ var interval = setInterval(() => {
 
 $('#chat').on('submit', (e) => {
     e.preventDefault()
+    $(window).scrollTop(0)
     var msg = $('#chatbar').val().replace("<", "&#60;")
     if (msg.split(" ").join("") != "") {
         sendMessage("client", msg)
