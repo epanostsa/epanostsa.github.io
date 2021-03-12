@@ -664,38 +664,36 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		margin-top: 60px;
 	}
 
-	#chatarea, #chatbox {
-		width: 500px;
-	}
-
 	#chatarea {
+		width: 90vw;
 		height: 700px;
 	}
 
 	#chatbox {
-		height: 590px;
-	}
-
-	#chatbox-right {
-		margin-right: 40px;
+		width: 113%;
+		height: 630px;
 	}
 
 	#chatbar {
-		font-size: 27px;
-		width: 470px;
+		width: 97%;
 		height: 50px;
 		border-radius: 50px;
 	}
 
 	.clientmessage, .botmessage {
-		font-size: 13px;
+		font-size: 2.2vh;
 	}
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1024px) and (min-width: 767px) {
 	#topimage {
 		margin-top: 0;
 		margin-left: 0;
+	}
+
+	.pfp {
+		height: 70px;
+		width: auto;
 	}
 
 	#bottomimage {
@@ -704,7 +702,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
 	.clientmessage, .botmessage {
-		font-size: 25px;
+		font-size: 2.3vh;
 	}
 
 	.article-contents, .article {
@@ -755,11 +753,12 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
 	#chatarea, #chatbox {
-		width: 300px;
+		width: 90%;
 	}
 
 	#chatbox {
-		height: 200px;
+		width: 104%;
+		height: 240px;
 	}
 
 	#chatarea {
@@ -767,14 +766,16 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
 	#chatbox-right {
-		margin-right: 40px;
+		margin-right: 0px;
+	}
+
+	#chatbox-left {
+		margin-left: 0px;
 	}
 
 	#chatbar {
-		font-size: initial;
-		width: 270px;
+		width: 91%;
 		height: 20px;
-		border-radius: 40px;
 	}
 }
 

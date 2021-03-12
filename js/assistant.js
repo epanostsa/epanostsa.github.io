@@ -1,17 +1,19 @@
 sentences = [
-    "News regarding COVID-19 safety can be found on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletters</a>.",
-    "If you want to know who we are and what we do, check our <a style='text-decoration: underline' href='./about.html'>about page</a>.",
-    "To learn more about our doctors, check out our <a style='text-decoration: underline' href='./index.html#doctor-description'>doctors service</a>.",
-    "Ways to contact us can be found <a style='text-decoration: underline' href='javascript:document.getElementById(\"contact\").scrollIntoView()'>here</a>.",
-    "Learn more about our appointments <a style='text-decoration: underline' href='./index.html#appointment-description'>here</a>.",
-    "At Epanos, we make sure to help diagnose your condition. More about this can be found <a style='text-decoration: underline' href='./index.html#diagnosis-description'>here</a>.",
-    "Find some of our latest articles on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>.",
-    "Information about vaccines can be found on our <a style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>.",
-    "If you are experiencing symptoms like a cough, sore or dry throat, stomach pains, etc, we recommend you to <a style='text-decoration: underline' href='./index.html#appointment-description'>book an appointment</a> in order to help us find the right doctor for you to diagnose your condition.",
-    "Breathing problems may be a sign of COVID-19, but also other illnesses. To narrow down your condition, <a style='text-decoration: underline' href='./index.html#appointment-description'>book an appointment</a> in order to help us find the right doctor for you."
+    "News regarding COVID-19 safety can be found on our <a class='link' style='text-decoration: underline' href='./index.html#newsletter'>newsletters</a>.",
+    "If you want to know who we are and what we do, check our <a class='link' style='text-decoration: underline' href='./about.html'>about page</a>.",
+    "To learn more about our doctors, check out our <a class='link' style='text-decoration: underline' href='./index.html#doctor-description'>doctors service</a>.",
+    "Ways to contact us can be found <a class='link' style='text-decoration: underline' href='javascript:document.getElementById(\"contact\").scrollIntoView()'>here</a>.",
+    "Learn more about our appointments <a class='link' style='text-decoration: underline' href='./index.html#appointment-description'>here</a>.",
+    "At Epanos, we make sure to help diagnose your condition. More about this can be found <a class='link' style='text-decoration: underline' href='./index.html#diagnosis-description'>here</a>.",
+    "Find some of our latest articles on our <a class='link' style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>.",
+    "Information about vaccines can be found on our <a class='link' style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>.",
+    "If you are experiencing symptoms like a cough, sore or dry throat, stomach pains, etc, we recommend you to <a class='link' style='text-decoration: underline' href='./index.html#appointment-description'>book an appointment</a> in order to help us find the right doctor for you to diagnose your condition.",
+    "Breathing problems may be a sign of COVID-19, but also other illnesses. To narrow down your condition, <a class='link' style='text-decoration: underline' href='./index.html#appointment-description'>book an appointment</a> in order to help us find the right doctor for you."
 ]
 function generateResponse(msg) {
-    if (/reference|judg|copyright|checklist|grade|grading/i.test(msg)) return "Are you a judge? See our references and checklists <a style='text-decoration: underline' href='./references.html'>here</a>.";
+    $('#chatbox').append("<div id='typing'>Assistant is typing<span id='dot1'></span><span id='dot2'></span><span id='dot3'></span></div>");
+    $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight, {behavior: "smooth"});
+    if (/reference|judg|copyright|checklist|grade|grading/i.test(msg)) return "Are you a judge? See our references and checklists <a class='link' style='text-decoration: underline' href='./references.html'>here</a>.";
     else if (/vaccin/i.test(msg)) return sentences[7];
     else if (/cov|corona|sars|-19/i.test(msg)) return sentences[0];
     else if (/doctor|logist|ician/i.test(msg)) return sentences[2];
@@ -39,11 +41,18 @@ var questions = [
 
 var botGreeting = `Hello! I am a bot but I can help you with questions about features on our website. Try asking "${questions[Math.floor(Math.random() * questions.length)]}"`
 
+function sendMessage(sender, message) {
+    if (sender == "bot") {
+        $('#chatbox').append(`<div class="botmessage"><b>Virtual Assistant</b>: ${message}</div><img class="pfp" src="images/bot-circle-cropped.png"><br><br>`);
+    } else if (sender == "client") {
+        $('#chatbox').append(`<img class="pfp" src="images/pfp.png"><div class="clientmessage"><b>You</b>: ${message}</div><br><br>`);
+    }
+}
+
 var interval = setInterval(() => {
     $('#botimage-surrounding').css('animation-name', 'colorchange')
     $('#botimage-surrounding').css('animation-duration', '2s')
-    $('#chatbox-right').append(`<div class="message"><div class="botmessage"><b>Virtual Assistant</b>: ${botGreeting}</div></div><br>`);
-    $('#chatbox-left').append(`<div class="message-invis"><div class="botmessage"><b>Virtual Assistant</b>: ${botGreeting}</div></div><br>`);
+    sendMessage("bot", botGreeting)
     $('#chatbar').val('')
     $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight, {behavior: "smooth"});
     clearInterval(interval)
@@ -53,20 +62,24 @@ $('#chat').on('submit', (e) => {
     e.preventDefault()
     var msg = $('#chatbar').val().replace("<", "&#60;")
     if (msg.split(" ").join("") != "") {
-        $('#chatbox-left').append(`<div class="message"><div class="clientmessage"><b>You</b>: ${msg}</div></div><br>`);
-        $('#chatbox-right').append(`<div class="message-invis"><div class="botmessage"><b>You</b>: ${msg}</div></div><br>`);
+        sendMessage("client", msg)
         $('#botimage-surrounding').css('animation-name', 'none')
         $('#botimage-surrounding').css('animation-duration', 'none')
+        $('#chatbar').val('')
+        $("input").prop('readonly', true);
         var response = generateResponse(msg);
-        $('#chatbox-left').append(`<div class="message-invis"><div class="botmessage"><b>Virtual Assistant</b>: ${response}</div></div><br>`);
-        var interval = setInterval(() => {
-            $('#botimage-surrounding').css('animation-name', 'colorchange')
-            $('#botimage-surrounding').css('animation-duration', '1s')
-            $('#chatbox-right').append(`<div class="message"><div class="botmessage"><b>Virtual Assistant</b>: ${response}</div></div><br>`);
-            $('#chatbar').val('')
-            $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight, {behavior: "smooth"});
-            clearInterval(interval)
-        }, 30);
+        setTimeout(() => {
+            var interval = setInterval(() => {
+                $('#botimage-surrounding').css('animation-name', 'colorchange')
+                $('#botimage-surrounding').css('animation-duration', '1s')
+                $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight, {behavior: "smooth"});
+                sendMessage("bot", response)
+                $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight, {behavior: "smooth"});
+                clearInterval(interval)
+                $('#typing').remove()
+                $("input").prop('readonly', false);
+            }, 30);
+        }, response.length * 15);
        
     }
 })

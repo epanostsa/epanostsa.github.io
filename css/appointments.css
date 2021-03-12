@@ -102,8 +102,13 @@ a {
 }
 .link {
     font-size: 20px;
-    color: rgb(165, 165, 245);
-    text-decoration: underline;
+    height: 30px;
+    border-bottom: 2px solid transparent;
+    color: rgb(165, 165, 245) !important;
+}
+
+.link:hover {
+    border-bottom: 2px solid rgb(165, 165, 245);
 }
 
 .appointment-input {
