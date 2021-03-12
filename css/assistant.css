@@ -96,6 +96,7 @@ body {
 }
 
 .pfp {
+    filter: brightness(95%);
     margin-bottom: -20px;
     display: inline-block;
     width: 10%;
