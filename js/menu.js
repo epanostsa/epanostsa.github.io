@@ -48,6 +48,11 @@ fetch(location.pathname.indexOf("newsletter") > -1 ? 'https://epanostsa.github.i
        }
        
        setInterval(() => {
+            if (localStorage.getItem('user') != undefined) {
+                $('.sign-in-tab').hide();
+            } else {
+                $('.profile-tab').hide()
+            }
            if (setMenuToDefault == true) {
                $('.tab, .name').css('color', defaultMenuColor2)
            }

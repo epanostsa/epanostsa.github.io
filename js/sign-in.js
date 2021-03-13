@@ -1,6 +1,6 @@
 $('#sign-in-form').on('submit', (e) => {
     e.preventDefault()
-    if ($('#password').val() != "") {
+    if ($('#password').val() != "" && $('#username').val() != "") {
         var username = $('#username').val()
         username = username.split('@')[0]
         localStorage.setItem("user", username)
