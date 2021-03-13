@@ -1,7 +1,7 @@
 requestOptions = {
     mode: 'cors'
 }
-fetch('https://' + location.hostname + '/menu.html', requestOptions)
+fetch('https://epanostsa.github.io/menu.html', requestOptions)
     .then(async (res) => {
         $('body').prepend(await res.text())
     }).then(() => {
