@@ -1,7 +1,8 @@
 requestOptions = {
     mode: 'cors'
 }
-fetch('https://epanostsa.github.io/menu.html', requestOptions)
+
+fetch(location.pathname.indexOf("newsletter") > -1 ? 'https://epanostsa.github.io/menu-1-directory-away.html' : 'https://epanostsa.github.io/menu.html', requestOptions)
     .then(async (res) => {
         $('body').prepend(await res.text())
     }).then(() => {
