@@ -10,7 +10,8 @@ fetch(location.pathname.indexOf("newsletter") > -1 ? 'https://epanostsa.github.i
         defaultMenuColor2 = "#3b4252ff"
         setMenuToDefault = false;
        
-        onHomePage = location.pathname == "/" || location.pathname.indexOf("index") > -1
+        onHomePage = location.pathname == "/" || location.pathname.indexOf("index") > -1;
+        var onSignInPage = location.pathname.indexOf("sign-in") > -1;
         dontDefaultMenuColor = [
            'about',
            'newsletters',
@@ -42,7 +43,7 @@ fetch(location.pathname.indexOf("newsletter") > -1 ? 'https://epanostsa.github.i
            }
        })
        
-       if (!onUnchangedMenuPage && !onHomePage && !onUnchangedMenuLightPage) {
+       if (!onUnchangedMenuPage && !onHomePage && !onUnchangedMenuLightPage && !onSignInPage) {
            setMenuToDefault = true;
        }
        
@@ -58,7 +59,7 @@ fetch(location.pathname.indexOf("newsletter") > -1 ? 'https://epanostsa.github.i
        }
        
        hidePanel = function () {
-           if ($(window).scrollTop() < 550 && onHomePage) {
+           if ($(window).scrollTop() < 550 && (onHomePage || onSignInPage) ) {
                $('#panel').css('background', 'transparent')
                $('#panel').css('box-shadow', 'none')
                $('.tab, .name').css('color', defaultMenuColor)
@@ -118,13 +119,13 @@ fetch(location.pathname.indexOf("newsletter") > -1 ? 'https://epanostsa.github.i
            }
        }, 100)
        
-       if (!onHomePage && !onUnchangedMenuPage && !onUnchangedMenuLightPage) {
+       if (!onHomePage && !onUnchangedMenuPage && !onUnchangedMenuLightPage && !onSignInPage) {
            $('#panel').css('background', defaultMenuColor)
            $('#panel').css('box-shadow', '0px 0px 15px rgb(63, 63, 63)')
        }
        
        $(window).scroll(() => {
-           if ($(window).scrollTop() < 550 && onHomePage) {
+           if ($(window).scrollTop() < 550 && (onHomePage || onSignInPage)) {
                $('#panel').css('background', 'transparent')
                $('#panel').css('box-shadow', 'none')
                $('.tab, .name').css('color', defaultMenuColor)

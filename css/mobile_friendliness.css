@@ -217,6 +217,10 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 @media only screen and (max-width: 1025px) {
+	#section-spacer {
+		height: 600px;	
+	}
+
 	.m {
 		display: inline-block;
 	}
