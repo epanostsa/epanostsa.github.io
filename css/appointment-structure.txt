@@ -1,0 +1,6 @@
+`<div class="appointment">
+    <p class="appointment-date"><img class="icon" style="background-color: white; border-radius: 30px;" src="images/appointment-booked-icon.png" height="30">${appointments[i]["date"]}</p>
+    Time: <span id="time">${appointments[i]["time"]}</span><br>
+    Doctor: <span id="doctor">${appointments[i]["doctor"]}</span><br>
+    Meeting link: <span>Pending</span><br>
+</div>`

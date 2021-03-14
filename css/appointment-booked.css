@@ -180,11 +180,12 @@ a {
 
 #return-button {
     position: absolute;
-	background: #51c483;
+	background: #00c559;
 	font-family: "Nunito"; 
 	font-size: 20px;
 	padding-left: 30px; 
     color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	padding-right: 30px; 
 	padding-top: 10px; 
 	padding-bottom: 10px;
@@ -196,5 +197,4 @@ a {
 #return-button:hover {
     background: #3b9662;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-	transform: scale(1.05, 1.05);
 }

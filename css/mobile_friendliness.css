@@ -24,6 +24,10 @@
 	box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
 }
 
+.profile-tab {
+	display: none;
+}
+
 .sign-in-tab:hover, .profile-tab:hover {
 	color: #ffffff;
 	background: rgb(45, 50, 61);
@@ -162,7 +166,6 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	font-family: "Nunito";
 	font-size: 40px;
 	color: #3b4252ff;
-	font-weight: bold;
 }
 
 .social-media-label {
@@ -242,17 +245,18 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		border-bottom: 2px solid #3b4252ff;
 	}
 
-	#question {
+	.question {
 		font-size: 15px;
 		width: 200px;
 	}
 
-	#question-mark {
+	.question-mark {
 		margin-bottom: 40px;
 	}
 
 	#appointment-content {
 		padding-left: 5px;
+		margin-top: -100px;
 		width: 100%;
 	}
 
@@ -538,8 +542,19 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
         font-size: 50px;
         margin-top: 0px;
         padding-left: 20px;
+		padding-top: 10px;
         padding-bottom: 20px;
     }
+
+	.profile-header {
+		margin-top: 30px;
+	}
+	
+	#appointment-dashboard {
+		text-align: center;
+		padding: 40px;
+		width: fit-content;
+	}
 
 	#about-description {
 		height: 900px;

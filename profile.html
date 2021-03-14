@@ -2,52 +2,49 @@
 
 <html>
 <head>
-  <meta name="viewport" content="width=device-width">
-  <meta charset="utf-8">
-  <title>Epanos - Sign in</title>
-  <link rel="icon" href="./images/logo-small.png">
-  <link rel="stylesheet" href="./css/sign-in.css">
-  <link rel="stylesheet" href="./css/mobile_friendliness.css">
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>Epanos - Account</title>
+    <link rel="icon" href="./images/logo-small.png">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/mobile_friendliness.css">
 </head>
 <body>
-  <img id="titleimage" src="./images/homebackground.png">
-  <div id="sign-in-surround">
-    <div id="sign-in-header">Sign in</div>
-    <form id="sign-in-form">
-        <input id="username" type="email" autocomplete="off" class="sign-in-input" placeholder="Email"><br>
-        <input id="password" type="password" class="sign-in-input" placeholder="Password"><br>
-        <div id="error">Please input a password.</div>
-        <button id="sign-in-button">Sign in</button>
-    </form>
-  </div>
-  
-  <div id="contact">
-    <p id="contact-header">Contact Us</p>
-    <div id="contact-info">
-      <div class="social-media-section">
-        <img class="social-media-image" src="./images/phone.png">
-        <br><span class="social-media-label">Call us at 012-345-6789</span>
-      </div>
-      <div class="social-media-section">
-        <img class="social-media-image" src="./images/instagram.png">
-        <br><span class="social-media-label">@epanoshealth</span>
-      </div>
-      <div class="social-media-section">
-        <img class="social-media-image" src="./images/facebook.png">
-        <br><span class="social-media-label">@epanoshealth</span>
-      </div>
-      <div class="social-media-section">
-        <img class="social-media-image" src="./images/email.png">
-        <br><span class="social-media-label">help@epanoshealth.com</span>
-      </div>
-    </p>
-  </div>
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/fade-in.js"></script>
-  <script src="js/sign-in.js"></script>
+    <img src="https://imgur.com/8Guih3I.png" id="wave">
+    <div id="titlearea">
+        <p id="titletitle"></p>
+    </div>
+    <div id="appointment-header" class="profile-header"><img class="icon" src="images/appointment-icon.png" width="50"> Your appointments</div>
+    <div id="appointment-dashboard" class="dashboard-container"></div>
+    <button id="logout-button">Log out</button>
+
+    <div id="contact">
+        <p id="contact-header">Contact Us</p>
+        <div id="contact-info">
+            <div class="social-media-section">
+                <img class="social-media-image" src="./images/phone.png">
+                <br><span class="social-media-label">Call us at 012-345-6789</span>
+            </div>
+            <div class="social-media-section">
+                <img class="social-media-image" src="./images/instagram.png">
+                <br><span class="social-media-label">@epanoshealth</span>
+            </div>
+            <div class="social-media-section">
+                <img class="social-media-image" src="./images/facebook.png">
+                <br><span class="social-media-label">@epanoshealth</span>
+            </div>
+            <div class="social-media-section">
+                <img class="social-media-image" src="./images/email.png">
+                <br><span class="social-media-label">help@epanoshealth.com</span>
+            </div>
+        </p>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/fade-in.js"></script>
+    <script src="js/profile.js"></script>
 </body>
 </html>

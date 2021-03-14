@@ -6,7 +6,7 @@ $('#sign-in-form').on('submit', (e) => {
         localStorage.setItem("user", username)
         $('#sign-in-surround').css('opacity', 0)
         setTimeout(() => {
-            location.href = "./index.html"
+            location.href = "./profile.html"
         }, 600);
     } else {
         $('#error').css('display', 'block')

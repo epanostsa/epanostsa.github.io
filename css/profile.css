@@ -1,0 +1,140 @@
+body {
+	background: white;
+	padding-right: 10px;
+}
+
+#welcome {
+    position: relative;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 50px;
+    font-family: "Nunito";
+    color: #3b4252ff;
+}
+
+.profile-header {
+    position: relative;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 40px;
+    font-family: "Nunito";
+    color: #3b4252ff;
+}
+
+#wave {
+    position: absolute; 
+    z-index: 0;
+    height: 508px;
+    margin-top: -1px;
+    width: 101%;
+}
+
+#titlearea {
+    position: relative; 
+    display: flex; 
+    margin-top: 40px;
+    z-index: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto; margin-right: auto;
+    
+}
+
+#titletitle {
+    text-align: center;
+    font-family: "Nunito";
+    word-break: break-word;
+    color: white;
+    font-size: 70px;
+    padding-left: 40px; padding-bottom: 40px; padding-right: 80px; padding-top: 90px;
+}
+
+.icon {
+    margin-right: 10px;
+    margin-bottom: -10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.spacer {
+	width: 10px;
+}
+
+.info-container {
+    border-radius: 50px;
+    padding: 20px;
+    background: whitesmoke
+}
+
+.dashboard-container {
+    font-family: "Nunito";
+    color: grey;
+    margin-top: 50px;
+    box-shadow: 7px 7px 7px rgb(0, 0, 0, 0.1);
+    border-radius: 50px;
+    background: whitesmoke;
+    width: 830px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.appointment {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 250px;
+    height: fit-content;
+    padding-bottom: 30px;
+    border-radius: 50px;
+    color: grey;
+    font-family: "Nunito";
+    text-align: center;
+    background: white;
+    box-shadow: 7px 7px 7px rgb(0, 0, 0, 0.1);
+}
+
+.appointment-date {
+    word-wrap: break-word;
+    font-size: 17px;
+    color: whitesmoke;
+    background: #3b4252ff;
+    padding: 20px;
+    margin-top: 0px;
+    border-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#logout-button {
+    position: relative;
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+	background: #bd0000; 
+	font-family: "Nunito"; 
+	font-size: 20px;
+	padding-left: 30px; 
+    outline: none;
+    border: none;
+    color: white;
+	padding-right: 30px; 
+	padding-top: 5px; 
+    height: 50px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+#logout-button:hover {
+    cursor: pointer;
+    background: #790000;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
