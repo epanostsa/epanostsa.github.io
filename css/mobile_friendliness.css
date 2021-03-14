@@ -8,6 +8,14 @@
 	transition: 0.3s;
 }
 
+option {
+	background: #3b4252ff;
+	color: white;
+	font-family: "Nunito";
+	outline: none;
+	border: none;
+}
+
 .sign-in-tab, .profile-tab {
 	position: fixed;
 	font-family: 'Nunito';

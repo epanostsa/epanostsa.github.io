@@ -1,9 +1,40 @@
+for (var i = 7; i < 11; i++) {
+    $('#time').append(`<option value="${i}:00 A.M.">${i}:00 A.M.</option>`)
+    $('#time').append(`<option value="${i}:30 A.M.">${i}:30 A.M.</option>`)
+}
+
+$('#time').append(`<option value="12:00 PM">12:00 P.M.</option>`)
+$('#time').append(`<option value="12:30 PM">12:30 P.M.</option>`)
+
+for (var i = 1; i < 11; i++) {
+    $('#time').append(`<option value="${i}:00 P.M.">${i}:00 P.M.</option>`)
+    $('#time').append(`<option value="${i}:30 P.M.">${i}:30 P.M.</option>`)
+}
+
+var doctors = [
+    "Greg Johnson (Family Physician)",
+    "Anna Fielder (Family Physician)",
+    "Katie Hall (Pediatrician)",
+    "Bobert Robert (Psychiatrist)",
+    "Sila Ramsey (Dermatologist)",
+    "Donald Tooth (Neurologist)",
+    "Ann Waffle (Cardiologist)",
+    "Donald McChicken (General Surgeon)"
+]
+
+doctors.forEach((doctor) => {
+    $('#doctor').append(`<option value="${doctor}">${doctor}</option>`)
+})
+
+$('#time').append(`<option value="12:00 A.M.">12:00 A.M.</option>`)
+
 $('#info').on('submit', (e) => {
     e.preventDefault()
     if ($('#date').val().trim().length && $('#time').val().trim().length)  {
         var appointments = JSON.parse(localStorage.getItem("appointments")) || [];
+        var date = new Date($('#date').val().trim());
         appointments.push({
-            "date" : $('#date').val().trim(),
+            "date" : date.toLocaleString('default', {month: 'long', day: 'numeric', year: 'numeric'}),
             "time" : $('#time').val().trim(),
             "doctor" : $('#doctor').val().trim() || "Pending"
         })

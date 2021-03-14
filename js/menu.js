@@ -131,7 +131,7 @@ fetch(location.pathname.indexOf("newsletter") > -1 ? 'https://epanostsa.github.i
         $('#panel').css('box-shadow', '0px 0px 15px rgb(63, 63, 63)')
     }
     
-    function menu() {
+    menu = function() {
         if ($(window).scrollTop() < 550 && (onHomePage || onSignInPage)) {
             $('#panel').css('background', 'transparent')
             $('#panel').css('box-shadow', 'none')
@@ -159,4 +159,6 @@ fetch(location.pathname.indexOf("newsletter") > -1 ? 'https://epanostsa.github.i
 })
 .catch(() => {})
 
-$('body, html').animate({ scrollTop: $(window).scrollTop() + 1 });
+setTimeout(() => {
+    menu()
+}, 200);

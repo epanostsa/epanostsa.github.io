@@ -31,12 +31,15 @@
 					
 					<img class="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
 					<span class="question">Specify a date that we can meet with you</span><br>
-					<input id="date" class="appointment-input" placeholder="January 1st, 2020"><br>
+					<input type="date" id="date" class="appointment-input" placeholder="January 1st, 2020"><br>
 					<div id="date-error" class="error">A date is required.</div>
 
 					<img class="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
 					<span class="question">Specify a time for that date</span><br>
-					<input id="time" class="appointment-input" placeholder="3:00 pm"><br>
+					<select id="time" autocomplete="off" onkeydown="return false" list="time-input" class="appointment-input" placeholder="3:00 pm">
+						
+					</select>
+					<br>
 					<div id="time-error" class="error">A time is required.</div>
 					
 					<img class="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
@@ -45,7 +48,10 @@
 					
 					<img class="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
 					<span class="question">Is there any specific <a class="link" href='./doctors.html' target="_blank">doctor</a> you would like to see?</span><br>
-					<input id="doctor" class="appointment-input" placeholder="Dr. Name"><br><br>
+					<select id="doctor" class="appointment-input" placeholder="Dr. Name">
+						<option value="Dr. Johnson">Dr. Johnson</option>
+					</select>
+					<br><br>
 					
 					<button id="submit-button">Book</a>
 				</form>
