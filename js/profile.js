@@ -1,7 +1,7 @@
 var user = localStorage.getItem("user")
 
 if (!user) {
-    location.href = "./index.html"
+    location.href = "./sign-in.html"
 }
 
 user = user.length > 18 ? user.substring(0, 17) : user;
