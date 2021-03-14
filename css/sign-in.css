@@ -42,7 +42,9 @@ a {
     padding-top: 16px;
     padding-bottom: 16px;
     width: 600px;
-    border-radius: 1000px;
+    border-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 #sign-in-surround {
@@ -68,7 +70,7 @@ a {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -15px;
+    margin-top: -10px;
     background: white;
     padding-top: 50px;
 }
