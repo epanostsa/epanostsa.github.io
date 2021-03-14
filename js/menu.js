@@ -159,4 +159,4 @@ fetch(location.pathname.indexOf("newsletter") > -1 ? 'https://epanostsa.github.i
 })
 .catch(() => {})
 
-$(window).scrollTop($(window).scrollTop() + 10)
+$('body, html').animate({ scrollTop: $(window).scrollTop() + 1 });
