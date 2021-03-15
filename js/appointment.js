@@ -1,4 +1,4 @@
-for (var i = 7; i < 11; i++) {
+for (var i = 7; i < 12; i++) {
     $('#time').append(`<option value="${i}:00 A.M.">${i}:00 A.M.</option>`)
     $('#time').append(`<option value="${i}:30 A.M.">${i}:30 A.M.</option>`)
 }
@@ -6,7 +6,7 @@ for (var i = 7; i < 11; i++) {
 $('#time').append(`<option value="12:00 PM">12:00 P.M.</option>`)
 $('#time').append(`<option value="12:30 PM">12:30 P.M.</option>`)
 
-for (var i = 1; i < 11; i++) {
+for (var i = 1; i < 12; i++) {
     $('#time').append(`<option value="${i}:00 P.M.">${i}:00 P.M.</option>`)
     $('#time').append(`<option value="${i}:30 P.M.">${i}:30 P.M.</option>`)
 }
