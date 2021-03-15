@@ -32,7 +32,7 @@ $('#info').on('submit', (e) => {
     e.preventDefault()
     if ($('#date').val().trim().length && $('#time').val().trim().length)  {
         var appointments = JSON.parse(localStorage.getItem("appointments")) || [];
-        var date = new Date($('#date').val().trim());
+        var date = new Date($('#date').val().trim() + " EST");
         appointments.push({
             "date" : date.toLocaleString('default', {month: 'long', day: 'numeric', year: 'numeric'}),
             "time" : $('#time').val().trim(),
