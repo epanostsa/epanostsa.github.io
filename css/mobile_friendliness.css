@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@350&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
@@ -29,7 +29,7 @@ option {
 	background: #3b4252ff;
 	border-radius: 40px;
 	transition: 0.3s;
-	box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+	box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.2);
 }
 
 .profile-tab {
@@ -39,11 +39,11 @@ option {
 .sign-in-tab:hover, .profile-tab:hover {
 	color: #ffffff;
 	background: rgb(45, 50, 61);
-	box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.7);
+	box-shadow: 3px 6px 6px rgb(0, 0, 0, 0.35);
 }
 
 #wave {
-	filter: saturate(350%) brightness(240%);
+	filter: saturate(140%) brightness(240%);
 }
 
 ::-webkit-scrollbar {
@@ -76,6 +76,7 @@ body {
 }
 
 #contact {
+	box-shadow: -5px -3px 10px rgba(0, 0, 0, 0.1);
 	border-top-left-radius: 50px;
 	border-top-right-radius: 50px;
 	position: relative;
@@ -96,7 +97,7 @@ body {
 .tab {
 	-webkit-tap-highlight-color: transparent;
 	color: white;
-	font-family: "Nunito";
+	font-family: "Quicksand";
 	padding: 5px;
 	border: 2px solid transparent;
 	padding-left: 10px;
@@ -556,6 +557,20 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 	.profile-header {
 		margin-top: 30px;
+		width: 70vw !important;
+	}
+
+	.icon {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px !important;
+	}
+
+	button .icon {
+		display: inline;
+		margin-bottom: -10px !important;
+		margin-right: 10px;
 	}
 
 	#sign-in-surround {
@@ -566,7 +581,16 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	#appointment-dashboard {
 		text-align: center;
 		padding: 40px;
-		width: fit-content;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 30px;
+		width: 95%;
+	}
+
+	.appointment {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	#about-description {
