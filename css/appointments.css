@@ -86,9 +86,8 @@ a {
     padding-bottom: 20px;
     margin: auto;
     padding-left: 10px; padding-right: 10px; padding-top: 10px;
-    border-bottom: 20px solid rgb(135, 148, 179);
-    border-top: 20px solid rgb(135, 148, 179);
-    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
 }
 
 #appointment-content {
