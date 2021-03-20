@@ -401,7 +401,6 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		left: 0;
 		background-color: #6a7794;
 		width: 100%;
-		line-height: 3;
 		overflow-y: hidden;
 	}
 
@@ -506,20 +505,17 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		position: relative;
 		width: 84%;
 		padding: 5px;
+		padding-bottom: 10px;
 		margin-top: 0px;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 0.15625in;;
+		font-size: 14px;;
 		height: 40px;
 		right: unset;
 	}
 
-	.tab:nth-child(1) {
+	.tab:first-of-type {
 		margin-top: 3px;
-	}
-
-	.tab:nth-child(24) {
-		border-bottom: none;
 	}
 
 	#submit-appointment-form {
@@ -557,6 +553,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 	.profile-header {
 		margin-top: 30px;
+		font-size: 25px;
 		width: 70vw !important;
 	}
 
@@ -584,7 +581,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		padding-left: 10px;
 		padding-right: 10px;
 		padding-bottom: 30px;
-		width: 95%;
+		width: -webkit-calc(70vw + 80px);
 	}
 
 	.appointment {
@@ -1010,17 +1007,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 }*/
 
-@media screen and (max-height: 568px) {
-	#tabs {
-		line-height: 2.5;
-	}
-}
-
 @media screen and (max-height: 420px) {
-	#tabs {
-		line-height: 1.3;
-	}
-
 	.tab {
 		font-size: 0.125in;
 	}

@@ -156,6 +156,8 @@ fetch(location.pathname.indexOf("newsletter") > -1 ? 'https://epanostsa.github.i
     $(window).scroll(() => {
         menu()
     })
+
+    var h = setInterval(() => {$('#tabs').css('line-height', (window.innerHeight/window.innerWidth) * ((window.innerHeight <= 600) || (window.innerWidth < 300) ? 1.33 : 1.7))}, 100);
 })
 .catch(() => {})
 

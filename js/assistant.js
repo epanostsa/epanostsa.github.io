@@ -6,16 +6,17 @@ sentences = [
     "Learn more about our appointments <a class='link' style='text-decoration: underline' href='./index.html#appointment-description'>here</a>.",
     "At Epanos, we make sure to help diagnose your condition. More about this can be found <a class='link' style='text-decoration: underline' href='./index.html#diagnosis-description'>here</a>.",
     "Find some of our latest articles on our <a class='link' style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>.",
-    "Information about vaccines can be found on our <a class='link' style='text-decoration: underline' href='./index.html#newsletter'>newsletter</a>.",
-    "If you are experiencing symptoms like a cough, sore or dry throat, stomach pains, etc, we recommend you to <a class='link' style='text-decoration: underline' href='./index.html#appointment-description'>book an appointment</a> in order to help us find the right doctor for you to diagnose your condition.",
+    "Information about vaccines has been covered by some of our researches in <a class='link' style='text-decoration: underline' href='./newsletters/2-million-covid-packages-shipped.html'>this article</a>.",
+    "If you are experiencing symptoms like a persistent cough, sore or dry throat, stomach pains, etc, we recommend you to <a class='link' style='text-decoration: underline' href='./index.html#appointment-description'>book an appointment</a> in order to help us find the right doctor for you to diagnose your condition.",
     "Breathing problems may be a sign of COVID-19, but also other illnesses. To narrow down your condition, <a class='link' style='text-decoration: underline' href='./index.html#appointment-description'>book an appointment</a> in order to help us find the right doctor for you.",
-    "You can find your profile <a class='link' style='text-decoration: underline' href='./index.html#appointment-description'>here</a>. You can find information about all your booked appointments on your profile."
+    "You can find your profile <a class='link' style='text-decoration: underline' href='./profile.html'>here</a>. On your profile you will find information about all your booked appointments."
 ]
 function generateResponse(msg) {
     $('#chatbox').append("<div id='typing'>Assistant is typing<span id='dot1'></span><span id='dot2'></span><span id='dot3'></span></div>");
     $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight, {behavior: "smooth"});
     if (/reference|judg|copyright|checklist|grade|grading/i.test(msg)) return "Are you a judge? See our references and checklists <a class='link' style='text-decoration: underline' href='./references.html'>here</a>.";
     else if (/vaccin/i.test(msg)) return sentences[7];
+    else if (/mask/i.test(msg)) return "As COVID-19 is still in duration, always make sure to wear a mask if you are outside of your house in a place near other people. Learn more about COVID-19 precautions in <a class='link' style='text-decoration: underline' href='./newsletters/covid-precautions.html'>this article.</a>";
     else if (/cov|corona|sars|-19/i.test(msg)) return sentences[0];
     else if (/account|profile/i.test(msg)) return sentences[10];
     else if (/doctor|logist|ician/i.test(msg)) return sentences[2];
@@ -39,6 +40,10 @@ var questions = [
     "Can you show me some health related articles?",
     "How can I book an appointment?",
     "What doctors are in Epanos?",
+    "How do I check my account?",
+    "What should I do if I have a cough?",
+    "What does Epanos do?",
+    "Shoud I wear a mask?"
 ]
 
 var botGreeting = `Hello! I am a bot but I can help you with questions about features on our website. Try asking "${questions[Math.floor(Math.random() * questions.length)]}"`
