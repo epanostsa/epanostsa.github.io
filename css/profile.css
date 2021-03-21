@@ -16,16 +16,16 @@ body {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px;
+    padding: 40px;
     text-align: center;
-    width: 770px;
+    width: 790px;
     margin-top: 150px;
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Nunito";
     text-align: center;
     border-radius: 50px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    /*border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;*/
     background: rgb(157, 172, 204);
     box-shadow: 0px 0px 20px 0px rgb(0, 0, 0, 0.4);
     color: white;
@@ -88,8 +88,9 @@ a {
     color: grey;
     box-shadow: 0px 0px 20px 0px rgb(0, 0, 0, 0.2);
     border-radius: 50px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    margin-top: 20px;
+    /*border-top-left-radius: 0px;
+    border-top-right-radius: 0px;*/
     background: rgb(255, 255, 255);
     width: 860px;
     padding-bottom: 40px;

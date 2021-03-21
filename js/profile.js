@@ -1,4 +1,5 @@
 var user = localStorage.getItem("user")
+var onSmallerDevice = window.innerWidth <= 1024;
 
 if (!user) {
     location.href = "./sign-in.html"
@@ -15,7 +16,7 @@ try {
     });
 } catch {
     $('#appointment-dashboard').css('text-align', 'center')
-    $('#appointment-dashboard').css('padding-top', '40px')
+    $('#appointment-dashboard').css('padding-top', onSmallerDevice ? '30px' : '40px')
     $('#appointment-dashboard').html("No appointments yet. Book one <a href='./appointment.html'>here</a>.")
 }
 
@@ -28,7 +29,7 @@ var cancel = function () {
         if (!appointments.length) {
             localStorage.removeItem("appointments")
             $('#appointment-dashboard').css('text-align', 'center')
-            $('#appointment-dashboard').css('padding-top', '40px')
+            $('#appointment-dashboard').css('padding-top', onSmallerDevice ? '30px' : '40px')
             $('#appointment-dashboard').html("No appointments yet. Book one <a href='./appointment.html'>here</a>.")
         } else {
             $('#appointment-dashboard').html("");
