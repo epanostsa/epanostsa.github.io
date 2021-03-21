@@ -676,8 +676,8 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	#return-button {
 		width: fit-content;
 		font-size: 15px;
-		width: 90px;
-		margin-left: -70px;
+		width: fit-content;
+		margin-left: -90px;
 		margin-right: auto;
 		margin-top: 40px;
 	}
