@@ -61,8 +61,12 @@ body {
 }
 
 .icon {
-    margin-right: 10px;
-    margin-bottom: -10px;
+    margin-bottom: 20px;
+}
+
+.icon1 {
+    margin-right: 5px;
+    filter: invert();
 }
 
 .profile-header .icon {
@@ -163,25 +167,25 @@ span { font-weight: bold; }
 #logout-button {
     position: fixed;
     display: block;
-    bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    bottom: 50px;
+    right: 10px;
     z-index: 9999;
-    width: 100%;
-	background: whitesmoke; 
+    width: 80px;
+	background: #ff4930; 
 	font-family: "Nunito"; 
 	font-size: 20px;
     outline: none;
     border: none;
-    color: #3b4252ff;
+    color: white;
 	padding: 20px;
-    padding-bottom: 48px;
-    height: 50px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 	transition: 0.3s;
+    border-radius: 30px;
 }
 #logout-button:hover {
     cursor: pointer;
-    background: #3b4252ff;
+    background: rgb(255, 114, 114);
     color: whitesmoke;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
