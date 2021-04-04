@@ -1,23 +1,38 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
-    <title>Epanos - Account</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="icon" href="./images/logo-small.png">
-    <link rel="stylesheet" href="./css/profile.css">
+    <title>Epanos - About us</title>
+    <link rel="stylesheet" href="./css/symptom-checker.css">
     <link rel="stylesheet" href="./css/mobile_friendliness.css">
 </head>
 <body>
     <img src="https://imgur.com/8Guih3I.png" id="wave">
     <div id="titlearea">
-        <p id="titletitle"></p>
+        <p id="titletitle">Symptom Checker</p>
     </div>
-    <div class="profile-header" id="appointment-profile-header"><img class="icon" src="images/appointment-icon.png" width="70"> Your appointments</div>
-    <div id="appointment-dashboard" class="dashboard-container"></div>
-    <button id="logout-button"><img class="icon1" src="https://cdn.pixabay.com/photo/2012/04/15/22/07/log-35496_960_720.png" width="20"><br>Log Out</button>
-
+    <p id="body-header">Please select all areas that you feel pain in.</p>
+    <div id="body">
+        <img id="body-image" src="images/body.png" width="400">
+        <!--front-->
+        <input id="right-leg-front" type="radio">
+        <input id="left-leg-front" type="radio">
+        <input id="right-arm-front" type="radio">
+        <input id="left-arm-front" type="radio">
+        <input id="chest" type="radio">
+        <input id="head-front" type="radio">
+        <!--back-->
+        <input id="head-back" type="radio">
+        <input id="back" type="radio">
+        <input id="right-arm-back" type="radio">
+        <input id="left-arm-back" type="radio">
+        <input id="right-leg-back" type="radio">
+        <input id="left-leg-back" type="radio"><br>
+        <a href='javascript:checkSymptoms()' id="submit-button">Check Symptoms</a>
+        <a href='javascript:clear()' id="clear-button">Clear</a>
+    </div>
     <div id="contact">
         <p id="contact-header">Contact Us</p>
         <div id="contact-info">
@@ -45,6 +60,6 @@
     crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
     <script src="js/fade-in.js"></script>
-    <script src="js/profile.js"></script>
+    <script src="js/body-checker.js"></script>
 </body>
 </html>

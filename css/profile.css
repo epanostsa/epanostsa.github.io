@@ -61,7 +61,8 @@ body {
 }
 
 .icon {
-    margin-bottom: 20px;
+    margin-bottom: -7px;
+    margin-right: 10px;
 }
 
 .icon1 {
@@ -167,21 +168,23 @@ span { font-weight: bold; }
 #logout-button {
     position: fixed;
     display: block;
-    bottom: 50px;
-    right: 10px;
+    top: 320px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 9999;
-    width: 80px;
+    width: 120px;
+    height: 60px;
 	background: #ff4930; 
 	font-family: "Nunito"; 
-	font-size: 20px;
+	font-size: 13px;
     outline: none;
     border: none;
     color: white;
-	padding: 20px;
-    padding-bottom: 40px;
-    padding-top: 40px;
+	padding: 10px;
 	transition: 0.3s;
-    border-radius: 30px;
+    border-radius: 90px;
 }
 #logout-button:hover {
     cursor: pointer;

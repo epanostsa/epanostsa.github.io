@@ -230,12 +230,20 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 @media only screen and (max-width: 1025px) {
+	#body-image {
+		width: 60vw;
+	}
+
 	#section-spacer {
 		height: 600px;	
 	}
 
 	.m {
 		display: inline-block;
+	}
+
+	#logout-button {
+		top: 250px;
 	}
 
 	.newsletter-article {
@@ -646,6 +654,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		display: block;
 		width: 76%;
 		height: 360px;
+		padding-bottom: 50px;
 	}
 
 	#titlearea-appointment-booked {

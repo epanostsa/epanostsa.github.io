@@ -11,6 +11,9 @@ for (var i = 1; i < 12; i++) {
     $('#time').append(`<option value="${i}:30 P.M.">${i}:30 P.M.</option>`)
 }
 
+var url = new URL(document.URL).searchParams
+var doctor = url.get("doctor")
+
 var doctors = [
     "Greg Johnson (Family Physician)",
     "Anna Fielder (Family Physician)",
@@ -21,6 +24,9 @@ var doctors = [
     "Ann Waffle (Cardiologist)",
     "Donald McChicken (General Surgeon)"
 ]
+
+if (doctor) doctors.push(doctor);
+doctors.reverse()
 
 doctors.forEach((doctor) => {
     $('#doctor').append(`<option value="${doctor}">${doctor}</option>`)

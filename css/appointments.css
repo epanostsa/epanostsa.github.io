@@ -87,7 +87,7 @@ a {
     margin: auto;
     padding-left: 10px; padding-right: 10px; padding-top: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 #appointment-content {
@@ -112,7 +112,7 @@ a {
     width: 600px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-radius: 1000px;
+    border-radius: 100px;
     background: white;
 }
 
@@ -190,6 +190,25 @@ a {
     cursor: pointer;
     background: #3b9662;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.symptom-checker-button {
+	font-family: "Nunito";
+	padding: 3px;
+    position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: 1px;
+	margin-left: 20px;
+	font-size: 20px;
+	color: #ffffff;
+	background: #3b4252ff;
+	border: none;
+	border-radius: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 2px 2px 2px rgb(161, 161, 161);
 }
 
 .error {

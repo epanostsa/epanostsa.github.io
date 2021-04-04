@@ -9,7 +9,8 @@ sentences = [
     "Information about vaccines has been covered by some of our researches in <a class='link' style='text-decoration: underline' href='./newsletters/2-million-covid-packages-shipped.html'>this article</a>.",
     "If you are experiencing symptoms like a persistent cough, sore or dry throat, stomach pains, etc, we recommend you to <a class='link' style='text-decoration: underline' href='./index.html#appointment-description'>book an appointment</a> in order to help us find the right doctor for you to diagnose your condition.",
     "Breathing problems may be a sign of COVID-19, but also other illnesses. To narrow down your condition, <a class='link' style='text-decoration: underline' href='./index.html#appointment-description'>book an appointment</a> in order to help us find the right doctor for you.",
-    "You can find your profile <a class='link' style='text-decoration: underline' href='./profile.html'>here</a>. On your profile you will find information about all your booked appointments."
+    "You can find your profile <a class='link' style='text-decoration: underline' href='./profile.html'>here</a>. On your profile you will find information about all your booked appointments.",
+    "Use our <a class='link' style='text-decoration: underline' href='./symptom-checker.html'>Symptom Checker</a> to create a small summary of your health problems and also make predictions of any diagnosis you might receive. You are strongly recommended to submit its assessment in an appointment form so that your doctor can correctly diagnose you."
 ]
 function generateResponse(msg) {
     $('#chatbox').append("<div id='typing'>Assistant is typing<span id='dot1'></span><span id='dot2'></span><span id='dot3'></span></div>");
@@ -19,15 +20,16 @@ function generateResponse(msg) {
     else if (/mask/i.test(msg)) return "As COVID-19 is still in duration, always make sure to wear a mask if you are outside of your house in a place near other people. Learn more about COVID-19 precautions in <a class='link' style='text-decoration: underline' href='./newsletters/covid-precautions.html'>this article.</a>";
     else if (/cov|corona|sars|-19/i.test(msg)) return sentences[0];
     else if (/account|profile/i.test(msg)) return sentences[10];
+    else if (/symptom|check|body/i.test(msg)) return sentences[11];
     else if (/doctor|logist|ician/i.test(msg)) return sentences[2];
     else if (/contact|call|phone|media|message/i.test(msg)) return sentences[3];
     else if (/appointment|schedule|book|bot/i.test(msg)) return sentences[4];
-    else if (/cough|cold|sore|sneez|stomach|head/i.test(msg)) return sentences[8];
+    else if (/cough|cold|sore|sneez|stomach|head|sick/i.test(msg)) return sentences[8];
     else if (/breath/i.test(msg)) return sentences[9];
     else if (/diagnos/i.test(msg)) return sentences[5];
     else if (/news|article/i.test(msg)) return sentences[6];
     else if (/who|what do you do|about|company|epanos/i.test(msg)) return sentences[1];
-    else if (/thank you|thanks|thx/i.test(msg)) return "It's always our pleasure to help.";
+    else if (/thank you|thanks|thx|epic/i.test(msg)) return "It's always our pleasure to help.";
     else if (/assistant|bot|assist/i.test(msg)) return "I'm your virtual assistant! I'm a bot but I can help you with questions about our site.";
     else if (/hello|good morning|good evening|good afternoon|greetings|how are you/i.test(msg)) return "Hello! I'm happy to help with any questions about our site.";
     else return sentences[Math.floor(Math.random() * sentences.length)]

@@ -17,7 +17,8 @@ fetch(location.pathname.indexOf("newsletter") > -1 ? 'https://epanostsa.github.i
         'newsletters',
         'assistant',
         'appointment-booked',
-        'profile'
+        'profile',
+        'symptom-checker'
     ]
     
     dontDefaultMenuColorLight = [

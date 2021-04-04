@@ -1,4 +1,9 @@
 var margin = 250
+var onSmallerDevice = window.innerWidth <= 1024;
+
+$(window).resize(() => {
+    onSmallerDevice = window.innerWidth <= 1024;
+})
 
 var sectionsLeft = [
     '#appointment-description',
@@ -45,12 +50,6 @@ function fadeIn() {
                     $(section).css('margin-left', '0px')
                     $(section).css('margin-right', '0px')
                 }
-            } else {
-                if ($(section).css('opacity') == 1 || $(section).css('margin-left') == '0px') {
-                    $(section).css('opacity', 0);
-                    $(section).css('margin-left', '-200px')
-                    $(section).css('margin-right', '200px')
-                }
             }
         } catch {}
     })
@@ -63,12 +62,6 @@ function fadeIn() {
                     $(section).css('margin-right', '0px')
                     $(section).css('margin-left', '0px')
                 }
-            } else {
-                if ($(section).css('opacity') == 1 || $(section).css('margin-right') == '0px') {
-                    $(section).css('opacity', 0);
-                    $(section).css('margin-right', '-200px')
-                    $(section).css('margin-left', '200px')
-                }
             }
         } catch {}
     })
@@ -79,10 +72,6 @@ function fadeIn() {
                 if ($(section).css('opacity') == 0 || $(section).css('opacity') == 0) {
                     $(section).css('opacity', 1);
                 }
-            } else {
-                if ($(section).css('opacity') == 1) {
-                    $(section).css('opacity', 0);
-                }
             }
         } catch {}
     
@@ -92,11 +81,6 @@ function fadeIn() {
                     if ($(this).css('opacity') == 0 || $(this).css('opacity') == 0) {
                         $(this).css('opacity', 1);
                         $(this).css('transform', 'scale(1, 1)');
-                    }
-                } else {
-                    if ($(this).css('opacity') == 1) {
-                        $(this).css('opacity', 0);
-                        $(this).css('transform', 'scale(1.1, 1.1)');
                     }
                 }
             } catch {}
@@ -120,6 +104,10 @@ function fadeIn() {
 
 $(window).scroll(() => {
     fadeIn();
+    if (window.scrollY > 0) {
+        $('#logout-button').css('top', window.innerHeight - 70 + 'px')
+    }
+    else $('#logout-button').css('top', onSmallerDevice ? '250px' : '320px')
 })
 
 setInterval(() => {

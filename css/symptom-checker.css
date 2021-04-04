@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@350&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html, body {
+    background: white;
+}
+
+.spacer {
+    width: 10px;
+}
+
+#wave {
+    position: absolute; 
+    z-index: 0;
+    height: 508px;
+    margin-top: -1px;
+    width: 101%;
+}
+
+#titlearea {
+    position: relative; 
+    display: flex; 
+    margin-top: 40px;
+    z-index: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto; margin-right: auto;
+}
+
+#titletitle {
+    font-family: "Nunito";
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 40px; padding-bottom: 40px; padding-right: 40px; padding-top: 80px;
+}
+
+#body-header {
+    position: relative;
+    margin-top: 100px;
+    font-size: 40px;
+    font-family: "Nunito";
+    color: #3b4252ff;
+    text-align: center;
+}
+
+#body {
+    position: relative;
+    background: whitesmoke;
+    width: fit-content;
+    padding: 50px;
+    text-align: center;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#submit-button, #clear-button {
+    position: relative;
+	font-family: "Nunito"; 
+	font-size: 20px;
+	padding-left: 30px; 
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	padding-right: 30px; 
+	padding-top: 10px; 
+	padding-bottom: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+	border-radius: 10px;
+	transition: 0.1s;
+}
+
+#submit-button {
+    background: #00c559;
+}
+
+#clear-button {
+    background: #ff4930; ;
+}
+
+#submit-button:hover {
+    background: #3b9662;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#clear-button:hover {
+    background: rgb(255, 114, 114);;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/*******************************FRONT*****************************************/
+/* leg area */
+#right-leg-front {
+    position: absolute;
+    left: 117px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    background: #3b4252ff;
+    top: 293px;
+}
+
+#left-leg-front {
+    position: absolute;
+    right: 315px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    background: #3b4252ff;
+    top: 293px;
+}
+
+/* arms */
+#right-arm-front {
+    position: absolute;
+    left: 87px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    background: #3b4252ff;
+    top: 163px;
+}
+
+#left-arm-front {
+    position: absolute;
+    right: 285px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    background: #3b4252ff;
+    top: 163px;
+}
+
+/*chest*/
+
+#chest {
+    position: absolute;
+    left: 117px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+    background: #3b4252ff;
+    top: 123px;
+}
+
+/*head*/
+
+#head-front {
+    position: absolute;
+    left: 132px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    background: #3b4252ff;
+    top: 60px;
+}
+
+/**********************BACK**************************************/
+/*head*/
+
+#head-back {
+    position: absolute;
+    right: 132px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    background: #3b4252ff;
+    top: 60px;
+}
+
+/*back*/
+
+#back {
+    position: absolute;
+    right: 117px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+    background: #3b4252ff;
+    top: 123px;
+}
+
+/* arms */
+#right-arm-back {
+    position: absolute;
+    right: 87px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    background: #3b4252ff;
+    top: 163px;
+}
+
+#left-arm-back {
+    position: absolute;
+    left: 285px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    background: #3b4252ff;
+    top: 163px;
+}
+
+/* leg area */
+#right-leg-back {
+    position: absolute;
+    right: 117px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    background: #3b4252ff;
+    top: 293px;
+}
+
+#left-leg-back {
+    position: absolute;
+    left: 315px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    background: #3b4252ff;
+    top: 293px;
+}

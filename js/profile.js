@@ -34,7 +34,7 @@ var cancel = function () {
         } else {
             $('#appointment-dashboard').html("");
             appointments.forEach((appointment, i) => {
-                $('#appointment-dashboard').append(`<div class="appointment" id="${i}"> <p class="appointment-date"><img class="icon" style="background-color: white; border-radius: 30px;" src="images/appointment-booked-icon.png" height="30">${appointments[i]["date"]}</p> Time: <span id="time">${appointments[i]["time"]}</span><br> Doctor: <span id="doctor">${appointments[i]["doctor"].substring(0, appointments[i]["doctor"].indexOf("(") - 1)}</span><br> Meeting link: <span>Pending</span><br><button class="cancel-appointment-button" index="${i}">Cancel</button></div>`)
+                $('#appointment-dashboard').append(`<div class="appointment" id="${i}"> <p class="appointment-date"><img class="icon" style="background-color: white; border-radius: 30px;" src="images/appointment-booked-icon.png" height="30">${appointments[i]["date"]}</p> Time: <span id="time">${appointments[i]["time"]}</span><br> Doctor: <span id="doctor">${appointments[i]["doctor"].substring(0, appointments[i]["doctor"].indexOf("(") > -1 ? appointments[i]["doctor"].indexOf("(") - 1 : appointments[i]["doctor"].length - 1)}</span><br> Meeting link: <span>Pending</span><br><button class="cancel-appointment-button" index="${i}">Cancel</button></div>`)
             });
         }
         cancel()

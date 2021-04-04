@@ -101,6 +101,24 @@ a {
     width: 90%;
 }
 
+.book-button {
+	font-family: "Nunito";
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-right: 1px;
+	margin-left: 1px;
+	font-size: 20px;
+	color: #ffffff;
+	background: #3b4252ff;
+	border: none;
+	border-radius: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 2px 2px 2px rgb(161, 161, 161);
+}
+
 #titletitle-doctors {
     font-family: "Nunito";
     color: #3b4252ff;
@@ -123,6 +141,7 @@ a {
     -webkit-transform: translateZ(0);
 	transform: translateZ(0);
     width: 820px;
+    opacity: 0;
     background: white;
     display: flex;
     border-radius: 40px;
@@ -131,6 +150,8 @@ a {
     justify-content: center;
     margin-left: auto; margin-right: auto;
     padding-left: 35px; padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .doctorimage {
     width: 250px; height: 250px;
