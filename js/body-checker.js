@@ -49,5 +49,6 @@ function checkSymptoms() {
 
 function clear() {
     $('input').prop('checked', false)
+    $('#summary').val('');
     $('#copied').css('height', '0px')
 }
