@@ -94,6 +94,42 @@ html, body {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+#summary {
+    position: relative;
+    display: block;
+    border-radius: 20px;
+    outline: none;
+    width: 75%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    caret-color: transparent !important;
+    margin-left: auto;
+    font-family: "Nunito";
+    font-size: 15px;
+    margin-right: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-top: -5px;
+}
+
+#copied {
+    margin-top: 20px;
+    color: rgb(0, 185, 71);
+    font-family: "Nunito";
+    text-align: center;
+    overflow-y: hidden;
+    height: 0px;
+}
+
+#recommendation {
+    height: inherit;
+    color: grey;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+}
 
 /*******************************FRONT*****************************************/
 /* leg area */

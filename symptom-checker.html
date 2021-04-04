@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="./images/logo-small.png">
-    <title>Epanos - About us</title>
+    <title>Epanos - Symptom Checker</title>
     <link rel="stylesheet" href="./css/symptom-checker.css">
     <link rel="stylesheet" href="./css/mobile_friendliness.css">
 </head>
@@ -32,6 +32,11 @@
         <input id="left-leg-back" type="radio"><br>
         <a href='javascript:checkSymptoms()' id="submit-button">Check Symptoms</a>
         <a href='javascript:clear()' id="clear-button">Clear</a>
+        <div id="copied">
+            Symptoms have been copied to clipboard.
+            <p id="recommendation">We recommend you to paste this information when prompted to describe any issues you've had on your appointment form.</p>
+        </div>
+        <input id="summary" placeholder="Symptom summary" onkeydown="return false">
     </div>
     <div id="contact">
         <p id="contact-header">Contact Us</p>
