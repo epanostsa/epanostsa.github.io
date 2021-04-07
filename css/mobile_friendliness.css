@@ -267,6 +267,10 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		right: 24px;
 	}
 
+	#body-header {
+		font-size: 16px;
+	}
+
 	#right-arm-front {
 		top: 132px;
 		left: unset;

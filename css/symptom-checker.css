@@ -50,7 +50,7 @@ html, body {
 #body {
     position: relative;
     background: whitesmoke;
-    width: fit-content;
+    width: 400px;
     padding: 50px;
     text-align: center;
     border-radius: 50px;
