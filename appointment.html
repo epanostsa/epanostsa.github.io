@@ -9,9 +9,9 @@
 	<title>Epanos - Book Appointment</title>
 </head>
 <body>
-	<img src="https://i.imgur.com/X7oVTJG.png" id="wave">
+	<img src="images/X7oVTJG.png" id="wave">
 	<div id="titlearea">
-		<img height="318" src="https://imgur.com/WmZcOTm.png" id="titleicon">
+		<img height="318" src="images/WmZcOTm.png" id="titleicon">
 		<p id="titletitle-appointment">Book an Appointment</p>
 	</div>
 	
@@ -21,20 +21,24 @@
 		<div id="appointment-content">
 			<p id="references">
 				<form id="info">
-					<img class="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
+					<img class="question-mark" src="images/question-mark-1750942_960_720.png">
+					<span class="question">Please explain any issues you are having<br><a href="./symptom-checker.html" class="symptom-checker-button">Symptom Checker</a></span><br>
+					<br><input class="appointment-input" placeholder="I have been experiencing..."><br>
+
+					<img class="question-mark" src="images/question-mark-1750942_960_720.png">
 					<span class="question">What is your name?</span><br>
 					<input class="appointment-input" placeholder="Name"><br>
 					
-					<img class="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
+					<img class="question-mark" src="images/question-mark-1750942_960_720.png">
 					<span class="question">What is your email?</span><br>
 					<input class="appointment-input" placeholder="example@email.com"><br>
 					
-					<img class="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
+					<img class="question-mark" src="images/question-mark-1750942_960_720.png">
 					<span class="question">Specify a date that we can meet with you</span><br>
 					<input type="date" id="date" class="appointment-input" placeholder="January 1st, 2020"><br>
 					<div id="date-error" class="error">A date is required.</div>
 
-					<img class="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
+					<img class="question-mark" src="images/question-mark-1750942_960_720.png">
 					<span class="question">Specify a time for that date</span><br>
 					<select id="time" autocomplete="off" onkeydown="return false" list="time-input" class="appointment-input" placeholder="3:00 pm">
 						
@@ -42,11 +46,7 @@
 					<br>
 					<div id="time-error" class="error">A time is required.</div>
 					
-					<img class="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
-					<span class="question">Please explain any issues you are having<a href="./symptom-checker.html" class="symptom-checker-button">Symptom Checker</a></span><br>
-					<input class="appointment-input" placeholder="I have been experiencing..."><br>
-					
-					<img class="question-mark" src="https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png">
+					<img class="question-mark" src="images/question-mark-1750942_960_720.png">
 					<span class="question">Is there any specific <a class="link" href='./doctors.html' target="_blank">doctor</a> you would like to see?</span><br>
 					<select id="doctor" class="appointment-input" placeholder="Dr. Name">
 						

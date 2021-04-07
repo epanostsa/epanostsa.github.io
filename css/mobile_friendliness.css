@@ -230,10 +230,103 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 }
 
 @media only screen and (max-width: 1025px) {
+
 	#body-image {
-		width: 60vw;
+		width: 300px;
 	}
 
+	#body {
+		padding-left: 0;
+		width: 250px;
+	}
+
+	#head-front {
+		left: 57px;
+		right: unset;
+		top: 53px;
+	}
+
+	#head-back {
+		right: 57px;
+		top: 53px;
+	}
+
+	#left-arm-front {
+		top: 182px;
+		left: 7px;
+	}
+
+	#left-arm-back {
+		top: 182px;
+		left: unset;
+		right: 115px;
+	}
+
+	#right-arm-back {
+		top: 182px;
+		right: 7px;
+	}
+
+	#right-arm-front {
+		top: 182px;
+		left: unset;
+		left: 117px;
+	}
+
+	#right-leg-back {
+		top: 230px;
+		right: 45px;
+	}
+	
+	#left-leg-back {
+		top: 230px;
+		left: 195px;
+	}
+
+	#right-leg-front {
+		top: 230px;
+		left: 46px;
+	}
+	
+	#left-leg-front {
+		top: 230px;
+		left: 78px;
+	}
+
+	#chest {
+		top: 95px;
+		left: 40px;
+	}
+
+	#back {
+		top: 95px;
+		right: 40px;
+	}
+
+	#clear-button, #submit-button {
+		width: 70%;
+		font-size: 15px;
+		margin-right: -50px;
+	}
+
+	#submit-button {
+		margin-right: -40px;
+	}
+
+	#copied {
+		margin-left: 40px;
+		width: 220px;
+	}
+
+	#summary {
+		margin-right: -10px;
+	}
+
+	.symptom-checker-button {
+		width: fit-content;
+		font-size: 15px;
+		margin-left: 0;
+	}
 	#section-spacer {
 		height: 600px;	
 	}

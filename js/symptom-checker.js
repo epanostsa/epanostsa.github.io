@@ -1,3 +1,4 @@
+var onSmallerDevice = window.innerWidth <= 1024;
 function checkSymptoms() {
     var symptoms = [];
     if ($('#head-front').prop('checked') == true) symptoms.push("Head pain (front)")
@@ -27,7 +28,7 @@ function checkSymptoms() {
     $('#summary').val((symptoms.join(', ') || "No symptoms") + " (Verified by Symptom Checker ✅)")
     document.getElementById('summary').select();
     document.execCommand('copy');
-    $('#copied').css('height', '140px')
+    $('#copied').css('height', onSmallerDevice ? '200px' : '140px');
     $(window).scrollTop($('#submit-button').offset().top - 150)
 }
 

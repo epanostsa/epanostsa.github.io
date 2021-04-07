@@ -199,7 +199,6 @@ a {
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-right: 1px;
-	margin-left: 20px;
 	font-size: 20px;
 	color: #ffffff;
 	background: #3b4252ff;
@@ -209,6 +208,12 @@ a {
 	cursor: pointer;
 	outline: none;
 	box-shadow: 2px 2px 2px rgb(161, 161, 161);
+}
+
+.symptom-checker-button:hover {
+	color: #ffffff;
+	background: rgb(45, 50, 61);
+	box-shadow: 3px 3px 3px rgb(161, 161, 161);
 }
 
 .error {
