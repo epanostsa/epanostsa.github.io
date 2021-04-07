@@ -252,25 +252,25 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 	}
 
 	#left-arm-front {
-		top: 182px;
-		left: 7px;
+		top: 132px;
+		left: 24px;
 	}
 
 	#left-arm-back {
-		top: 182px;
+		top: 132px;
 		left: unset;
-		right: 115px;
+		right: 99px;
 	}
 
 	#right-arm-back {
-		top: 182px;
-		right: 7px;
+		top: 132px;
+		right: 24px;
 	}
 
 	#right-arm-front {
-		top: 182px;
+		top: 132px;
 		left: unset;
-		left: 117px;
+		left: 97px;
 	}
 
 	#right-leg-back {
@@ -300,7 +300,7 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 	#back {
 		top: 95px;
-		right: 40px;
+		right: 42px;
 	}
 
 	#clear-button, #submit-button {
