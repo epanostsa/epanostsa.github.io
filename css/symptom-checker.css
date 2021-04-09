@@ -10,6 +10,18 @@ html, body {
     width: 10px;
 }
 
+a {
+    color: blue;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+a:focus {
+    color: rgb(0, 0, 27);
+}
+
 #wave {
     position: absolute; 
     z-index: 0;
@@ -59,7 +71,7 @@ html, body {
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-#submit-button, #clear-button {
+#submit-button, #clear-button, #return-to-appointment-button {
     position: relative;
 	font-family: "Nunito"; 
 	font-size: 20px;
@@ -82,6 +94,15 @@ html, body {
 
 #clear-button {
     background: #ff4930; ;
+}
+
+#return-to-appointment-button {
+    background: #3b4252ff;
+}
+
+#return-to-appointment-button:hover {
+    background: rgb(45, 50, 61);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 #submit-button:hover {

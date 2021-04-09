@@ -313,6 +313,10 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 		margin-right: -50px;
 	}
 
+	#return-to-appointment-button {
+		font-size: 15px;
+	}
+
 	#submit-button {
 		margin-right: -40px;
 	}

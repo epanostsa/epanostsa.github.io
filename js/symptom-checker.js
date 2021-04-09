@@ -28,7 +28,7 @@ function checkSymptoms() {
     $('#summary').val((symptoms.join(', ') || "No symptoms") + " (Verified by Symptom Checker ✅)")
     document.getElementById('summary').select();
     document.execCommand('copy');
-    $('#copied').css('height', onSmallerDevice ? '200px' : '140px');
+    $('#copied').css('height', onSmallerDevice ? '300px' : '240px');
     $(window).scrollTop($('#submit-button').offset().top - 150)
 }
 
