@@ -8,6 +8,10 @@
 	transition: 0.3s;
 }
 
+.show-on-mobile {
+    display: none;
+}
+
 option {
 	background: #3b4252ff;
 	color: white;
@@ -233,6 +237,10 @@ a { text-decoration: none; display: inline-block; transition: 0.3s; }
 
 	#body-image {
 		width: 300px;
+	}
+
+	.show-on-mobile {
+		display: initial;
 	}
 
 	#body {
