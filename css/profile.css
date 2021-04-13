@@ -23,7 +23,7 @@ body {
     font-size: 30px;
     font-family: "Nunito";
     text-align: center;
-    border-radius: 50px;
+    border-radius: 30px;
     /*border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;*/
     background: rgb(157, 172, 204);
@@ -92,7 +92,7 @@ a {
     font-family: "Nunito";
     color: grey;
     box-shadow: 0px 0px 20px 0px rgb(0, 0, 0, 0.2);
-    border-radius: 50px;
+    border-radius: 30px;
     margin-top: 20px;
     /*border-top-left-radius: 0px;
     border-top-right-radius: 0px;*/
@@ -113,7 +113,7 @@ a {
     width: 260px;
     height: fit-content;
     padding-bottom: 30px;
-    border-radius: 50px;
+    border-radius: 30px;
     color: #3b4252ff;
     font-family: "Nunito";
     text-align: center;
@@ -151,6 +151,30 @@ a {
 	box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.3);
 }
 
+.cancel-appointment-button-other {
+	font-family: "Nunito";
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 1px;
+	margin-left: 1px;
+	font-size: 20px;
+	color: #ffffff;
+	background: #3b4252ff;
+	border: none;
+    margin-top: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+.cancel-appointment-button-other:hover {
+	color: #ffffff;
+	background: rgb(45, 50, 61);
+	box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.3);
+}
+
 span { font-weight: bold; }
 
 .appointment-date {
@@ -160,7 +184,7 @@ span { font-weight: bold; }
     background: #3b4252ff;
     padding: 20px;
     margin-top: 0px;
-    border-radius: 50px;
+    border-radius: 30px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
